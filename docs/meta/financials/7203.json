@@ -1,8 +1,8 @@
 {
   "ticker": "7203",
   "market": "jp",
-  "source": "yfinance",
-  "updated_at": "2026-07-14T21:25:14",
+  "source": "jquants+yfinance",
+  "updated_at": "2026-07-14T23:28:22",
   "metrics": {
     "pe": 9.617535,
     "pb": 0.92692477,
@@ -13,14 +13,14 @@
     "grossMargin": 0.1671,
     "debtToEquity": 107.061,
     "currentRatio": 1.274,
-    "revenueGrowth": 0.019,
+    "revenueGrowth": 0.028094091855475126,
     "eps": 295.19,
     "dividendYield": 0.0356,
     "marketCap": 33618548228096,
     "52wHigh": 4000.0,
     "52wLow": 2471.0,
     "beta": 0.321,
-    "totalRevenue": 50684951003136,
+    "totalRevenue": 45095325000000.0,
     "totalCash": 13867543429120,
     "totalDebt": 43916481003520,
     "freeCashflow": -1204836106240,
@@ -52,7 +52,7 @@
     "operatingCashflowPrev": 3696934000000.0,
     "grossProfit": 8463740000000.0,
     "sga": 4697524000000.0,
-    "totalRevenuePrev": 48036704000000.0,
+    "totalRevenuePrev": 11837879000000.0,
     "grossProfitPrev": 9578038000000.0,
     "grossMarginPrev": 0.19938999145320213,
     "sgaPrev": 4782452000000.0,
@@ -66,19 +66,19 @@
   },
   "scores": {
     "profitability": 68,
-    "safety": 70,
+    "safety": 60,
     "valuation": 90
   },
   "advanced": {
     "altman_z": {
-      "value": 1.38,
+      "value": 1.327,
       "label": "破綻圏寄り（倒産リスク高）",
       "components": {
         "X1": 0.3014,
         "X2": 0.0025,
         "X3": 0.0671,
         "X4": 0.5212,
-        "X5": 0.4803
+        "X5": 0.4274
       },
       "formula": "Z=1.2*X1+1.4*X2+3.3*X3+0.6*X4+1.0*X5",
       "note": "米製造業由来の古典モデル。業種・日本企業では誤差が出うる。"
@@ -150,15 +150,15 @@
       "note": "前年比較が取れない項目は未採点。取得できた基準から9点満点へ換算。"
     },
     "beneish_m": {
-      "value": -2.286,
-      "label": "低",
+      "value": -0.438,
+      "label": "高（粉飾疑い高め）",
       "components": {
-        "DSRI": 1.0895,
+        "DSRI": 0.3018,
         "GMI": 1.1932,
         "AQI": 1.0418,
-        "SGI": 1.0551,
+        "SGI": 3.8094,
         "DEPI": 1.0545,
-        "SGAI": 0.9309,
+        "SGAI": 0.2578,
         "TATA": -0.0154,
         "LVGI": 1.0087
       },
@@ -171,20 +171,67 @@
     "signals": {
       "health_rank": "A",
       "quality_rank": "C",
-      "fraud_risk": "低",
+      "fraud_risk": "高",
       "health_model": "Z''",
-      "caption": "健全性A / ファンダC / 粉飾リスク低"
+      "caption": "健全性A / ファンダC / 粉飾リスク高"
     },
-    "accounting_standard": "unknown",
-    "accounting_note": "日本株はJ-GAAP/IFRSが混在しうるため、営業利益やのれん処理の単純比較には注意が必要です。",
+    "accounting_standard": "IFRS",
+    "accounting_note": "会計基準はIFRS想定です。経常利益・特別損益の区分が無く、のれんの規則償却も行わないため、J-GAAP企業との営業利益比較には注意が必要です。",
     "jquants": {
-      "used": false,
-      "latest_doc": null
+      "used": true,
+      "latest_doc": {
+        "type": "FYFinancialStatements_Consolidated_IFRS",
+        "disclosed_date": null,
+        "period_end": null,
+        "period_type": null
+      }
     },
-    "edinet": null,
+    "edinet": {
+      "source": "edinet",
+      "code": "7203",
+      "filings": [
+        {
+          "docID": "S100YQ7I",
+          "date": "2026-07-13",
+          "filerName": "トヨタ自動車株式会社",
+          "docDescription": "自己株券買付状況報告書（法２４条の６第１項に基づくもの）",
+          "docTypeCode": "220",
+          "periodStart": null,
+          "periodEnd": null,
+          "submitDateTime": "2026-07-13 12:08",
+          "csvFlag": "1",
+          "edinet_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YQ7I"
+        },
+        {
+          "docID": "S100YIXC",
+          "date": "2026-07-08",
+          "filerName": "トヨタ自動車株式会社",
+          "docDescription": "変更報告書",
+          "docTypeCode": "350",
+          "periodStart": null,
+          "periodEnd": null,
+          "submitDateTime": "2026-07-08 09:18",
+          "csvFlag": "1",
+          "edinet_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YIXC"
+        }
+      ],
+      "latest": {
+        "docID": "S100YQ7I",
+        "date": "2026-07-13",
+        "filerName": "トヨタ自動車株式会社",
+        "docDescription": "自己株券買付状況報告書（法２４条の６第１項に基づくもの）",
+        "docTypeCode": "220",
+        "periodStart": null,
+        "periodEnd": null,
+        "submitDateTime": "2026-07-13 12:08",
+        "csvFlag": "1",
+        "edinet_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YQ7I"
+      },
+      "errors": []
+    },
     "criteria_source": "企業財務の調査と評価基準（Googleドキュメント）"
   },
-  "summary_ja": "7203の主な指標は PER 9.62、PBR 0.93、ROE 10.2%、営業利益率 4.6%、負債自己資本比率 107.06 です。Altman Zスコアは 1.38（破綻圏寄り（倒産リスク高））。日本株向け補助のZ''は 3.10（安全圏（倒産リスク低））。Piotroski Fスコアは 3/9（弱め / バリュートラップ注意）。Beneish Mスコアは -2.29（粉飾リスク: 低）。総合シグナルは 健全性A、ファンダC、粉飾リスク低。バランスシートは比較的安定。バリュエーションは相対的に抑えめ。日本株はJ-GAAP/IFRSが混在しうるため、営業利益やのれん処理の単純比較には注意が必要です。数値は情報提供目的であり、投資判断はご自身で行ってください。",
+  "summary_ja": "7203の主な指標は PER 9.62、PBR 0.93、ROE 10.2%、営業利益率 4.6%、負債自己資本比率 107.06 です。Altman Zスコアは 1.33（破綻圏寄り（倒産リスク高））。日本株向け補助のZ''は 3.10（安全圏（倒産リスク低））。Piotroski Fスコアは 3/9（弱め / バリュートラップ注意）。Beneish Mスコアは -0.44（粉飾リスク: 高（粉飾疑い高め））。総合シグナルは 健全性A、ファンダC、粉飾リスク高。バリュエーションは相対的に抑えめ。会計基準はIFRS想定です。経常利益・特別損益の区分が無く、のれんの規則償却も行わないため、J-GAAP企業との営業利益比較には注意が必要です。数値は情報提供目的であり、投資判断はご自身で行ってください。",
   "display": {
     "PER": "9.62",
     "PBR": "0.93",
@@ -192,23 +239,23 @@
     "ROA": "2.4%",
     "営業利益率": "4.6%",
     "純利益率": "7.6%",
-    "売上成長率": "1.9%",
+    "売上成長率": "2.8%",
     "EPS": "295.19",
     "配当利回り": "3.6%",
     "時価総額": "33.62兆",
     "負債自己資本比率": "107.06",
     "流動比率": "1.27",
     "総資産": "105.52兆",
-    "売上高": "50.68兆",
+    "売上高": "45.10兆",
     "営業CF": "5.47兆",
-    "会計基準": "unknown",
+    "会計基準": "IFRS",
     "52週高値": "4000.00",
     "52週安値": "2471.00",
-    "Altman Z": "1.38 / 破綻圏寄り（倒産リスク高）",
+    "Altman Z": "1.33 / 破綻圏寄り（倒産リスク高）",
     "Altman Z''": "3.10 / 安全圏（倒産リスク低）",
     "Piotroski F": "3/9 / 弱め / バリュートラップ注意",
-    "Beneish M": "-2.29 / 低",
-    "総合シグナル": "健全性A / ファンダC / 粉飾リスク低"
+    "Beneish M": "-0.44 / 高（粉飾疑い高め）",
+    "総合シグナル": "健全性A / ファンダC / 粉飾リスク高"
   },
   "raw_meta": {
     "yf_symbol": "7203.T",
