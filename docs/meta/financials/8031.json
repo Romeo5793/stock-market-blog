@@ -1,0 +1,264 @@
+{
+  "ticker": "8031",
+  "market": "jp",
+  "source": "jquants+yfinance",
+  "updated_at": "2026-07-14T23:30:03",
+  "metrics": {
+    "pe": 16.153767,
+    "pb": 1.5186368,
+    "roe": 0.10301,
+    "roa": 0.0159,
+    "profitMargin": 0.05959,
+    "operatingMargin": 0.0379,
+    "grossMargin": 0.0949,
+    "debtToEquity": 63.294,
+    "currentRatio": 1.408,
+    "revenueGrowth": 0.024701146952770293,
+    "eps": 290.83,
+    "dividendYield": 0.030600000000000002,
+    "marketCap": 13315016228864,
+    "52wHigh": 6675.0,
+    "52wLow": 2949.0,
+    "beta": 0.435,
+    "totalRevenue": 13324942000000.0,
+    "totalCash": 983874994176,
+    "totalDebt": 5707766169600,
+    "freeCashflow": -477800988672,
+    "operatingCashflow": 952911986688,
+    "netIncome": 833971027968,
+    "ebit": 1527961000000.0,
+    "operatingIncome": 1527961000000.0,
+    "totalAssets": 20821528000000.0,
+    "totalLiabilities": 11803607000000.0,
+    "currentAssets": 13765485000000.0,
+    "currentLiabilities": 6793005000000.0,
+    "retainedEarnings": 6140218000000.0,
+    "longTermDebt": 5032042000000.0,
+    "sharesOutstanding": 2834188227,
+    "bookValue": 3093.564,
+    "receivables": 2344476000000.0,
+    "ppe": 3721772000000.0,
+    "longTermDebtPrev": 4047663000000.0,
+    "totalAssetsPrev": 16811509000000.0,
+    "currentAssetsPrev": 11124568000000.0,
+    "currentLiabilitiesPrev": 5394692000000.0,
+    "receivablesPrev": 2224953000000.0,
+    "ppePrev": 2469558000000.0,
+    "totalLiabilitiesPrev": 9048877000000.0,
+    "totalDebtPrev": 4841260000000.0,
+    "currentRatioPrev": 2.062132184747526,
+    "depreciation": 333248000000.0,
+    "depreciationPrev": 313730000000.0,
+    "operatingCashflowPrev": 1017518000000.0,
+    "grossProfit": 1328153000000.0,
+    "sga": 902130000000.0,
+    "totalRevenuePrev": 3839914000000.0,
+    "grossProfitPrev": 1288366000000.0,
+    "grossMarginPrev": 0.08786737977250995,
+    "sgaPrev": 887712000000.0,
+    "netIncomePrev": 900342000000.0,
+    "roaPrev": 0.05355509728484219,
+    "assetTurnover": 0.672151546091334,
+    "assetTurnoverPrev": 0.8721775064927247,
+    "workingCapital": 6972480000000.0,
+    "leverage": 0.5668943700961813,
+    "leveragePrev": 0.5382548943107962
+  },
+  "scores": {
+    "profitability": 68,
+    "safety": 75,
+    "valuation": 65
+  },
+  "advanced": {
+    "altman_z": {
+      "value": 2.374,
+      "label": "グレーゾーン（警戒）",
+      "components": {
+        "X1": 0.3349,
+        "X2": 0.2949,
+        "X3": 0.0734,
+        "X4": 1.128,
+        "X5": 0.64
+      },
+      "formula": "Z=1.2*X1+1.4*X2+3.3*X3+0.6*X4+1.0*X5",
+      "note": "米製造業由来の古典モデル。業種・日本企業では誤差が出うる。"
+    },
+    "altman_z2": {
+      "value": 4.453,
+      "label": "安全圏（倒産リスク低）",
+      "components": {
+        "X1": 0.3349,
+        "X2": 0.2949,
+        "X3": 0.0734,
+        "X4": 0.764
+      },
+      "formula": "Z''=6.56*X1+3.26*X2+6.72*X3+1.05*X4",
+      "note": "非製造業向けZ''。日本株の補助指標として表示（古典Zより業種差に強い）。"
+    },
+    "piotroski_f": {
+      "score": 4,
+      "raw_points": 4,
+      "raw_max": 8,
+      "label": "平均的な財務健全性",
+      "checks": [
+        {
+          "name": "純利益がプラス",
+          "pass": true,
+          "detail": "833.97B"
+        },
+        {
+          "name": "営業CFがプラス",
+          "pass": true,
+          "detail": "952.91B"
+        },
+        {
+          "name": "ROAが改善",
+          "pass": false,
+          "detail": "1.6% <- 5.4%"
+        },
+        {
+          "name": "営業CF > 純利益（利益の質）",
+          "pass": true,
+          "detail": "OCF 952.91B / NI 833.97B"
+        },
+        {
+          "name": "長期負債が減少",
+          "pass": false,
+          "detail": "5.03兆 <- 4.05兆"
+        },
+        {
+          "name": "流動比率が改善",
+          "pass": false,
+          "detail": "1.41 <- 2.06"
+        },
+        {
+          "name": "希薄化なし",
+          "pass": null,
+          "detail": "-"
+        },
+        {
+          "name": "粗利率が改善",
+          "pass": true,
+          "detail": "9.5% <- 8.8%"
+        },
+        {
+          "name": "総資産回転率が改善",
+          "pass": false,
+          "detail": "0.67 <- 0.87"
+        }
+      ],
+      "note": "前年比較が取れない項目は未採点。取得できた基準から9点満点へ換算。"
+    },
+    "beneish_m": {
+      "value": -0.902,
+      "label": "高（粉飾疑い高め）",
+      "components": {
+        "DSRI": 0.3037,
+        "GMI": 0.9259,
+        "AQI": 0.8367,
+        "SGI": 3.4701,
+        "DEPI": 1.3716,
+        "SGAI": 0.2929,
+        "TATA": -0.0057,
+        "LVGI": 1.0532
+      },
+      "filled_defaults": [],
+      "available": 8,
+      "threshold": -1.78,
+      "formula": "M=-4.84+0.920*DSRI+0.528*GMI+0.404*AQI+0.892*SGI+0.115*DEPI-0.172*SGAI+4.679*TATA-0.327*LVGI",
+      "note": "M>-1.78で粉飾疑いが相対的に高い。欠損指数は1.0（TATAは0）で補完。"
+    },
+    "signals": {
+      "health_rank": "A",
+      "quality_rank": "A",
+      "fraud_risk": "高",
+      "health_model": "Z''",
+      "caption": "健全性A / ファンダA / 粉飾リスク高"
+    },
+    "accounting_standard": "IFRS",
+    "accounting_note": "会計基準はIFRS想定です。経常利益・特別損益の区分が無く、のれんの規則償却も行わないため、J-GAAP企業との営業利益比較には注意が必要です。",
+    "jquants": {
+      "used": true,
+      "latest_doc": {
+        "type": "FYFinancialStatements_Consolidated_IFRS",
+        "disclosed_date": null,
+        "period_end": null,
+        "period_type": null
+      }
+    },
+    "edinet": {
+      "source": "edinet",
+      "code": "8031",
+      "filings": [
+        {
+          "docID": "S100YPB2",
+          "date": "2026-07-08",
+          "filerName": "三井物産株式会社",
+          "docDescription": "臨時報告書",
+          "docTypeCode": "180",
+          "periodStart": null,
+          "periodEnd": null,
+          "submitDateTime": "2026-07-08 15:15",
+          "csvFlag": "1",
+          "edinet_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YPB2"
+        },
+        {
+          "docID": "S100YPB3",
+          "date": "2026-07-08",
+          "filerName": "三井物産株式会社",
+          "docDescription": "訂正発行登録書",
+          "docTypeCode": "090",
+          "periodStart": null,
+          "periodEnd": null,
+          "submitDateTime": "2026-07-08 15:17",
+          "csvFlag": "0",
+          "edinet_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YPB3"
+        }
+      ],
+      "latest": {
+        "docID": "S100YPB2",
+        "date": "2026-07-08",
+        "filerName": "三井物産株式会社",
+        "docDescription": "臨時報告書",
+        "docTypeCode": "180",
+        "periodStart": null,
+        "periodEnd": null,
+        "submitDateTime": "2026-07-08 15:15",
+        "csvFlag": "1",
+        "edinet_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YPB2"
+      },
+      "errors": []
+    },
+    "criteria_source": "企業財務の調査と評価基準（Googleドキュメント）"
+  },
+  "summary_ja": "8031の主な指標は PER 16.15、PBR 1.52、ROE 10.3%、営業利益率 3.8%、負債自己資本比率 63.29 です。Altman Zスコアは 2.37（グレーゾーン（警戒））。日本株向け補助のZ''は 4.45（安全圏（倒産リスク低））。Piotroski Fスコアは 4/9（平均的な財務健全性）。Beneish Mスコアは -0.90（粉飾リスク: 高（粉飾疑い高め））。総合シグナルは 健全性A、ファンダA、粉飾リスク高。バランスシートは比較的安定。会計基準はIFRS想定です。経常利益・特別損益の区分が無く、のれんの規則償却も行わないため、J-GAAP企業との営業利益比較には注意が必要です。数値は情報提供目的であり、投資判断はご自身で行ってください。",
+  "display": {
+    "PER": "16.15",
+    "PBR": "1.52",
+    "ROE": "10.3%",
+    "ROA": "1.6%",
+    "営業利益率": "3.8%",
+    "純利益率": "6.0%",
+    "売上成長率": "2.5%",
+    "EPS": "290.83",
+    "配当利回り": "3.1%",
+    "時価総額": "13.32兆",
+    "負債自己資本比率": "63.29",
+    "流動比率": "1.41",
+    "総資産": "20.82兆",
+    "売上高": "13.32兆",
+    "営業CF": "952.91B",
+    "会計基準": "IFRS",
+    "52週高値": "6675.00",
+    "52週安値": "2949.00",
+    "Altman Z": "2.37 / グレーゾーン（警戒）",
+    "Altman Z''": "4.45 / 安全圏（倒産リスク低）",
+    "Piotroski F": "4/9 / 平均的な財務健全性",
+    "Beneish M": "-0.90 / 高（粉飾疑い高め）",
+    "総合シグナル": "健全性A / ファンダA / 粉飾リスク高"
+  },
+  "raw_meta": {
+    "yf_symbol": "8031.T",
+    "errors": []
+  }
+}
