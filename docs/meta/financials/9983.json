@@ -1,9 +1,37 @@
 {
   "ticker": "9983",
   "market": "jp",
-  "source": "jquants+yfinance",
-  "updated_at": "2026-07-14T23:29:23",
+  "source": "jquants+yfinance+edinet_csv",
+  "updated_at": "2026-07-15T00:29:54",
   "metrics": {
+    "operatingIncome": 879900000000.0,
+    "netIncome": 519987003392,
+    "equityBook": 233566000000.0,
+    "totalAssets": 3859353000000.0,
+    "cash": 977330000000.0,
+    "receivables": 90863000000.0,
+    "currentAssets": 1331538000000.0,
+    "ppe": 809462000000.0,
+    "currentLiabilities": 620562000000.0,
+    "retainedEarnings": 2056437000000.0,
+    "grossProfit": 1828858000000.0,
+    "sga": 1277701000000.0,
+    "depreciation": 216492000000.0,
+    "operatingIncomePrev": 564265000000.0,
+    "netIncomePrev": 372000000000.0,
+    "equityBookPrev": 2273115000000.0,
+    "totalAssetsPrev": 3587565000000.0,
+    "cashPrev": 893239000000.0,
+    "receivablesPrev": 96407000000.0,
+    "currentAssetsPrev": 1224294000000.0,
+    "ppePrev": 662454000000.0,
+    "currentLiabilitiesPrev": 666922000000.0,
+    "retainedEarningsPrev": 2056437000000.0,
+    "ebit": 879900000000.0,
+    "totalLiabilities": 1531853000000.0,
+    "totalLiabilitiesPrev": 1519312000000.0,
+    "currentRatio": 3.135,
+    "currentRatioPrev": 1.8357379123795585,
     "pe": 51.159897,
     "pb": 9.300329,
     "roe": 0.22481,
@@ -12,7 +40,6 @@
     "operatingMargin": 0.20999001,
     "grossMargin": 0.54662,
     "debtToEquity": 25.167,
-    "currentRatio": 3.135,
     "revenueGrowth": -0.32431932207085484,
     "eps": 1559.62,
     "dividendYield": 0.79,
@@ -25,38 +52,17 @@
     "totalDebt": 707045031936,
     "freeCashflow": 441967116288,
     "operatingCashflow": 803592011776,
-    "netIncome": 519987003392,
-    "ebit": 879900000000.0,
-    "operatingIncome": 879900000000.0,
-    "totalAssets": 3859353000000.0,
-    "totalLiabilities": 1531853000000.0,
-    "currentAssets": 1331538000000.0,
-    "currentLiabilities": 620562000000.0,
-    "retainedEarnings": 2056437000000.0,
     "longTermDebt": 386670000000.0,
     "sharesOutstanding": 306851024,
     "bookValue": 8579.267,
-    "receivables": null,
-    "ppe": 809462000000.0,
     "longTermDebtPrev": 347318000000.0,
-    "totalAssetsPrev": 3587565000000.0,
-    "currentAssetsPrev": 1224294000000.0,
-    "currentLiabilitiesPrev": 666922000000.0,
-    "receivablesPrev": null,
-    "ppePrev": 662454000000.0,
-    "totalLiabilitiesPrev": 1519312000000.0,
     "totalDebtPrev": 478062000000.0,
-    "currentRatioPrev": 1.8357379123795585,
-    "depreciation": 216492000000.0,
     "depreciationPrev": 204388000000.0,
     "operatingCashflowPrev": 651521000000.0,
-    "grossProfit": 1828858000000.0,
-    "sga": 1277701000000.0,
     "totalRevenuePrev": 2366501000000.0,
     "grossProfitPrev": 1673071000000.0,
     "grossMarginPrev": 0.5390333123270689,
     "sgaPrev": 1187713000000.0,
-    "netIncomePrev": 372000000000.0,
     "roaPrev": 0.10369150105991111,
     "assetTurnover": 0.997320769552824,
     "assetTurnoverPrev": 0.8651650910854577,
@@ -84,16 +90,34 @@
       "note": "米製造業由来の古典モデル。業種・日本企業では誤差が出うる。"
     },
     "altman_z2": {
-      "value": 6.073,
+      "value": 4.638,
       "label": "安全圏（倒産リスク低）",
       "components": {
         "X1": 0.1842,
         "X2": 0.5328,
         "X3": 0.228,
-        "X4": 1.5194
+        "X4": 0.1525
       },
       "formula": "Z''=6.56*X1+3.26*X2+6.72*X3+1.05*X4",
       "note": "非製造業向けZ''。日本株の補助指標として表示（古典Zより業種差に強い）。"
+    },
+    "altman_z2_jp": {
+      "value": 4.385,
+      "label": "安全圏（倒産リスク低）",
+      "components": {
+        "X1": 0.1842,
+        "X2": 0.5328,
+        "X3": 0.228,
+        "X4": 0.1525
+      },
+      "formula": "Z''_JP=5.80*X1+3.10*X2+6.40*X3+1.35*X4",
+      "thresholds": {
+        "safe": 2.4,
+        "grey": 1.0
+      },
+      "x2_source": "retainedEarnings",
+      "model": "Z''_JP",
+      "note": "日本の資本構成を意識したルールベース係数。上場企業の倒産データで再学習したMLモデルではない。"
     },
     "piotroski_f": {
       "score": 8,
@@ -150,10 +174,10 @@
       "note": "前年比較が取れない項目は未採点。取得できた基準から9点満点へ換算。"
     },
     "beneish_m": {
-      "value": -3.213,
+      "value": -2.85,
       "label": "低",
       "components": {
-        "DSRI": null,
+        "DSRI": 1.3949,
         "GMI": 0.9861,
         "AQI": 0.9392,
         "SGI": 0.6757,
@@ -162,10 +186,8 @@
         "TATA": -0.0735,
         "LVGI": 0.9372
       },
-      "filled_defaults": [
-        "DSRI"
-      ],
-      "available": 7,
+      "filled_defaults": [],
+      "available": 8,
       "threshold": -1.78,
       "formula": "M=-4.84+0.920*DSRI+0.528*GMI+0.404*AQI+0.892*SGI+0.115*DEPI-0.172*SGAI+4.679*TATA-0.327*LVGI",
       "note": "M>-1.78で粉飾疑いが相対的に高い。欠損指数は1.0（TATAは0）で補完。"
@@ -174,11 +196,27 @@
       "health_rank": "A",
       "quality_rank": "S",
       "fraud_risk": "低",
-      "health_model": "Z''",
+      "health_model": "Z''_JP",
       "caption": "健全性A / ファンダS / 粉飾リスク低"
     },
     "accounting_standard": "IFRS",
-    "accounting_note": "会計基準はIFRS想定です。経常利益・特別損益の区分が無く、のれんの規則償却も行わないため、J-GAAP企業との営業利益比較には注意が必要です。",
+    "accounting_note": "【IFRS】経常利益・特別損益の区分がありません。のれんは規則償却せず減損のみのため、同業のJ-GAAP企業より営業利益が大きく見えやすい点に注意してください。",
+    "jp_calibration": {
+      "financial_firm": false,
+      "calibration_note": "日本向けZ''_JP（ルールベース係数）で健全性を再判定しました。"
+    },
+    "market_segment": {
+      "code": "0111",
+      "name": "プライム",
+      "label": "東証プライム"
+    },
+    "listed_info": {
+      "company_name": "ファーストリテイリング",
+      "sector17": "小売",
+      "sector33": "小売業",
+      "scale_category": "TOPIX Core30",
+      "source": "jquants_master"
+    },
     "jquants": {
       "used": true,
       "latest_doc": {
@@ -186,18 +224,102 @@
         "disclosed_date": null,
         "period_end": null,
         "period_type": null
-      }
+      },
+      "master_used": true
     },
     "edinet": {
       "source": "edinet",
       "code": "9983",
-      "filings": [],
-      "note": "直近期間に該当書類が見つかりませんでした。",
+      "filings": [
+        {
+          "docID": "S100XXP2",
+          "date": "2026-04-10",
+          "filerName": "株式会社ファーストリテイリング",
+          "docDescription": "半期報告書－第65期(2025/09/01－2026/08/31)",
+          "docTypeCode": "160",
+          "periodStart": "2025-09-01",
+          "periodEnd": "2026-08-31",
+          "submitDateTime": "2026-04-10 13:00",
+          "csvFlag": "1",
+          "edinet_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100XXP2",
+          "csvParsed": true,
+          "csvFields": 28
+        },
+        {
+          "docID": "S100XXP3",
+          "date": "2026-04-10",
+          "filerName": "株式会社ファーストリテイリング",
+          "docDescription": "確認書",
+          "docTypeCode": "135",
+          "periodStart": null,
+          "periodEnd": null,
+          "submitDateTime": "2026-04-10 13:00",
+          "csvFlag": "0",
+          "edinet_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100XXP3"
+        }
+      ],
+      "latest": {
+        "docID": "S100XXP2",
+        "date": "2026-04-10",
+        "filerName": "株式会社ファーストリテイリング",
+        "docDescription": "半期報告書－第65期(2025/09/01－2026/08/31)",
+        "docTypeCode": "160",
+        "periodStart": "2025-09-01",
+        "periodEnd": "2026-08-31",
+        "submitDateTime": "2026-04-10 13:00",
+        "csvFlag": "1",
+        "edinet_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100XXP2",
+        "csvParsed": true,
+        "csvFields": 28
+      },
+      "csv_metrics": {
+        "売上総利益": 954827000000.0,
+        "営業利益": 304217000000.0,
+        "純利益": 233566000000.0,
+        "総資産": 3729143000000.0,
+        "流動資産": 22321000000.0,
+        "固定資産(有形)": 358781000000.0,
+        "売掛金": 90863000000.0,
+        "純資産": 233566000000.0,
+        "利益剰余金": 233566000000.0,
+        "負債合計": 3495577000000.0,
+        "流動負債": 151522000000.0
+      },
+      "csv_raw": {
+        "operatingIncome": 304217000000.0,
+        "netIncome": 233566000000.0,
+        "equityBook": 233566000000.0,
+        "totalAssets": 3729143000000.0,
+        "cash": 977330000000.0,
+        "receivables": 90863000000.0,
+        "currentAssets": 22321000000.0,
+        "ppe": 358781000000.0,
+        "currentLiabilities": 151522000000.0,
+        "retainedEarnings": 233566000000.0,
+        "grossProfit": 954827000000.0,
+        "sga": 653155000000.0,
+        "depreciation": 107905000000.0,
+        "operatingIncomePrev": 564265000000.0,
+        "netIncomePrev": 433009000000.0,
+        "equityBookPrev": 2273115000000.0,
+        "totalAssetsPrev": 3859353000000.0,
+        "cashPrev": 893239000000.0,
+        "receivablesPrev": 96407000000.0,
+        "currentAssetsPrev": 24662000000.0,
+        "ppePrev": 332351000000.0,
+        "currentLiabilitiesPrev": 149394000000.0,
+        "retainedEarningsPrev": 2056437000000.0,
+        "ebit": 304217000000.0,
+        "totalLiabilities": 3495577000000.0,
+        "totalLiabilitiesPrev": 1586238000000.0,
+        "currentRatio": 0.14731194150024418,
+        "currentRatioPrev": 0.16508025757393202
+      },
       "errors": []
     },
     "criteria_source": "企業財務の調査と評価基準（Googleドキュメント）"
   },
-  "summary_ja": "9983の主な指標は PER 51.16、PBR 9.30、ROE 22.5%、営業利益率 21.0%、負債自己資本比率 25.17 です。Altman Zスコアは 11.72（安全圏（倒産リスク低））。日本株向け補助のZ''は 6.07（安全圏（倒産リスク低））。Piotroski Fスコアは 8/9（健全性が高い（強いファンダメンタルズ））。Beneish Mスコアは -3.21（粉飾リスク: 低）。総合シグナルは 健全性A、ファンダS、粉飾リスク低。収益性は相対的に高い。バランスシートは比較的安定。株価は割高寄りに見える。会計基準はIFRS想定です。経常利益・特別損益の区分が無く、のれんの規則償却も行わないため、J-GAAP企業との営業利益比較には注意が必要です。数値は情報提供目的であり、投資判断はご自身で行ってください。",
+  "summary_ja": "9983の主な指標は PER 51.16、PBR 9.30、ROE 22.5%、営業利益率 21.0%、負債自己資本比率 25.17 です。Altman Zスコアは 11.72（安全圏（倒産リスク低））。日本株向け補助のZ''は 4.64（安全圏（倒産リスク低））。日本校正Z''_JPは 4.38（安全圏（倒産リスク低））。日本向けZ''_JP（ルールベース係数）で健全性を再判定しました。Piotroski Fスコアは 8/9（健全性が高い（強いファンダメンタルズ））。Beneish Mスコアは -2.85（粉飾リスク: 低）。総合シグナルは 健全性A、ファンダS、粉飾リスク低。収益性は相対的に高い。バランスシートは比較的安定。株価は割高寄りに見える。【IFRS】経常利益・特別損益の区分がありません。のれんは規則償却せず減損のみのため、同業のJ-GAAP企業より営業利益が大きく見えやすい点に注意してください。数値は情報提供目的であり、投資判断はご自身で行ってください。",
   "display": {
     "PER": "51.16",
     "PBR": "9.30",
@@ -215,12 +337,14 @@
     "売上高": "1.60兆",
     "営業CF": "803.59B",
     "会計基準": "IFRS",
+    "市場区分": "東証プライム",
     "52週高値": "88690.00",
     "52週安値": "43930.00",
     "Altman Z": "11.72 / 安全圏（倒産リスク低）",
-    "Altman Z''": "6.07 / 安全圏（倒産リスク低）",
+    "Altman Z''": "4.64 / 安全圏（倒産リスク低）",
+    "Altman Z''_JP": "4.38 / 安全圏（倒産リスク低）",
     "Piotroski F": "8/9 / 健全性が高い（強いファンダメンタルズ）",
-    "Beneish M": "-3.21 / 低",
+    "Beneish M": "-2.85 / 低",
     "総合シグナル": "健全性A / ファンダS / 粉飾リスク低"
   },
   "raw_meta": {
