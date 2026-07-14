@@ -2,7 +2,7 @@
   "ticker": "7203",
   "market": "jp",
   "source": "jquants+yfinance+edinet_csv",
-  "updated_at": "2026-07-15T00:00:36",
+  "updated_at": "2026-07-15T00:28:36",
   "metrics": {
     "totalRevenue": 45095325000000.0,
     "netIncome": 3848098021376,
@@ -211,6 +211,18 @@
       "financial_firm": false,
       "calibration_note": "日本向けZ''_JP（ルールベース係数）で健全性を再判定しました。"
     },
+    "market_segment": {
+      "code": "0111",
+      "name": "プライム",
+      "label": "東証プライム"
+    },
+    "listed_info": {
+      "company_name": "トヨタ自動車",
+      "sector17": "自動車・輸送機",
+      "sector33": "輸送用機器",
+      "scale_category": "TOPIX Core30",
+      "source": "jquants_master"
+    },
     "jquants": {
       "used": true,
       "latest_doc": {
@@ -218,7 +230,8 @@
         "disclosed_date": null,
         "period_end": null,
         "period_type": null
-      }
+      },
+      "master_used": true
     },
     "edinet": {
       "source": "edinet",
@@ -461,6 +474,7 @@
     "売上高": "45.10兆",
     "営業CF": "5.47兆",
     "会計基準": "IFRS",
+    "市場区分": "東証プライム",
     "52週高値": "4000.00",
     "52週安値": "2471.00",
     "Altman Z": "1.33 / 破綻圏寄り（倒産リスク高）",
