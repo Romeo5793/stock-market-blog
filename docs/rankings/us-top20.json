@@ -12,160 +12,381 @@
       "ticker": "MSFT",
       "companyName": "Microsoft Corp.",
       "sector": "Technology",
-      "score": 95,
-      "reason": "クラウドサービスとソフトウェアで安定した成長を続ける。幅広い事業展開でリスクが分散されています。"
+      "score": 100,
+      "reason": "クラウドサービスとソフトウェアで安定した成長を続ける。幅広い事業展開でリスクが分散されています。",
+      "scoreBase": 95,
+      "scoreBoost": 6,
+      "financialSignals": {
+        "health_rank": "A",
+        "quality_rank": "S",
+        "fraud_risk": "低",
+        "caption": "健全性A / ファンダS / 粉飾リスク低",
+        "health_model": "Z"
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:32:59"
     },
     {
       "rank": 2,
       "ticker": "JNJ",
       "companyName": "Johnson & Johnson",
       "sector": "Healthcare",
-      "score": 92,
-      "reason": "多角的なヘルスケア事業で安定した収益を誇る。配当も魅力的で初心者にも安心です。"
+      "score": 96,
+      "reason": "多角的なヘルスケア事業で安定した収益を誇る。配当も魅力的で初心者にも安心です。",
+      "scoreBase": 92,
+      "scoreBoost": 4,
+      "financialSignals": {
+        "health_rank": "A",
+        "quality_rank": "A",
+        "fraud_risk": "低",
+        "caption": "健全性A / ファンダA / 粉飾リスク低",
+        "health_model": "Z"
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:34:17"
     },
     {
       "rank": 3,
       "ticker": "PG",
       "companyName": "Procter & Gamble Co.",
       "sector": "Consumer Staples",
-      "score": 90,
-      "reason": "日用品大手で景気変動に強いディフェンシブ銘柄。強力なブランドポートフォリオを持っています。"
+      "score": 96,
+      "reason": "日用品大手で景気変動に強いディフェンシブ銘柄。強力なブランドポートフォリオを持っています。",
+      "scoreBase": 90,
+      "scoreBoost": 6,
+      "financialSignals": {
+        "health_rank": "A",
+        "quality_rank": "S",
+        "fraud_risk": "低",
+        "caption": "健全性A / ファンダS / 粉飾リスク低",
+        "health_model": "Z"
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:34:22"
     },
     {
       "rank": 4,
       "ticker": "AAPL",
       "companyName": "Apple Inc.",
       "sector": "Technology",
-      "score": 90,
-      "reason": "強固なブランド力とエコシステムを持つ。安定した収益基盤と成長性が期待できます。"
+      "score": 96,
+      "reason": "強固なブランド力とエコシステムを持つ。安定した収益基盤と成長性が期待できます。",
+      "scoreBase": 90,
+      "scoreBoost": 6,
+      "financialSignals": {
+        "health_rank": "A",
+        "quality_rank": "S",
+        "fraud_risk": "低",
+        "caption": "健全性A / ファンダS / 粉飾リスク低",
+        "health_model": null
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T20:52:16"
     },
     {
       "rank": 5,
-      "ticker": "UNH",
-      "companyName": "UnitedHealth Group Inc.",
-      "sector": "Healthcare",
-      "score": 89,
-      "reason": "米国最大の医療保険会社であり、ヘルスケアサービスも提供。安定した成長が見込まれます。"
-    },
-    {
-      "rank": 6,
       "ticker": "KO",
       "companyName": "The Coca-Cola Co.",
       "sector": "Consumer Staples",
-      "score": 88,
-      "reason": "世界的な飲料ブランドで安定した需要がある。配当も魅力的なディフェンシブ銘柄です。"
+      "score": 94,
+      "reason": "世界的な飲料ブランドで安定した需要がある。配当も魅力的なディフェンシブ銘柄です。",
+      "scoreBase": 88,
+      "scoreBoost": 6,
+      "financialSignals": {
+        "health_rank": "A",
+        "quality_rank": "S",
+        "fraud_risk": "低",
+        "caption": "健全性A / ファンダS / 粉飾リスク低",
+        "health_model": "Z"
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:34:31"
+    },
+    {
+      "rank": 6,
+      "ticker": "UNH",
+      "companyName": "UnitedHealth Group Inc.",
+      "sector": "Healthcare",
+      "score": 93,
+      "reason": "米国最大の医療保険会社であり、ヘルスケアサービスも提供。安定した成長が見込まれます。",
+      "scoreBase": 89,
+      "scoreBoost": 4,
+      "financialSignals": {
+        "health_rank": "A",
+        "quality_rank": "A",
+        "fraud_risk": "低",
+        "caption": "健全性A / ファンダA / 粉飾リスク低",
+        "health_model": "Z"
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:34:27"
     },
     {
       "rank": 7,
-      "ticker": "NVDA",
-      "companyName": "NVIDIA Corp.",
-      "sector": "Technology",
-      "score": 88,
-      "reason": "AIとデータセンター向け半導体で市場を牽引。高い成長性が期待されます。"
-    },
-    {
-      "rank": 8,
-      "ticker": "GOOGL",
-      "companyName": "Alphabet Inc. (Class A)",
-      "sector": "Technology",
-      "score": 87,
-      "reason": "検索広告とクラウドサービスで安定した収益基盤を持つ。AI分野への投資も積極的です。"
-    },
-    {
-      "rank": 9,
       "ticker": "V",
       "companyName": "Visa Inc. (Class A)",
       "sector": "Financial Services",
-      "score": 86,
-      "reason": "世界的な決済ネットワークを提供し、キャッシュレス化の恩恵を受ける。安定した収益成長が期待できます。"
+      "score": 92,
+      "reason": "世界的な決済ネットワークを提供し、キャッシュレス化の恩恵を受ける。安定した収益成長が期待できます。",
+      "scoreBase": 86,
+      "scoreBoost": 6,
+      "financialSignals": {
+        "health_rank": "A",
+        "quality_rank": "S",
+        "fraud_risk": "低",
+        "caption": "健全性A / ファンダS / 粉飾リスク低",
+        "health_model": "Z"
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:34:50"
+    },
+    {
+      "rank": 8,
+      "ticker": "COST",
+      "companyName": "Costco Wholesale Corp.",
+      "sector": "Consumer Staples",
+      "score": 90,
+      "reason": "会員制倉庫型店舗で高い顧客ロイヤルティを持つ。安定した売上成長が期待できます。",
+      "scoreBase": 84,
+      "scoreBoost": 6,
+      "financialSignals": {
+        "health_rank": "A",
+        "quality_rank": "S",
+        "fraud_risk": "低",
+        "caption": "健全性A / ファンダS / 粉飾リスク低",
+        "health_model": "Z"
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:35:04"
+    },
+    {
+      "rank": 9,
+      "ticker": "GOOGL",
+      "companyName": "Alphabet Inc. (Class A)",
+      "sector": "Technology",
+      "score": 89,
+      "reason": "検索広告とクラウドサービスで安定した収益基盤を持つ。AI分野への投資も積極的です。",
+      "scoreBase": 87,
+      "scoreBoost": 2,
+      "financialSignals": {
+        "health_rank": "A",
+        "quality_rank": "A",
+        "fraud_risk": "注意",
+        "caption": "健全性A / ファンダA / 粉飾リスク注意",
+        "health_model": "Z"
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:34:45"
     },
     {
       "rank": 10,
       "ticker": "AMZN",
       "companyName": "Amazon.com Inc.",
       "sector": "Technology",
-      "score": 85,
-      "reason": "クラウドサービスAWSとEコマースで市場をリード。長期的な成長ポテンシャルが高いです。"
+      "score": 89,
+      "reason": "クラウドサービスAWSとEコマースで市場をリード。長期的な成長ポテンシャルが高いです。",
+      "scoreBase": 85,
+      "scoreBoost": 4,
+      "financialSignals": {
+        "health_rank": "A",
+        "quality_rank": "A",
+        "fraud_risk": "低",
+        "caption": "健全性A / ファンダA / 粉飾リスク低",
+        "health_model": "Z"
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:34:55"
     },
     {
       "rank": 11,
       "ticker": "WMT",
       "companyName": "Walmart Inc.",
       "sector": "Consumer Staples",
-      "score": 85,
-      "reason": "世界最大の小売業者として安定した収益基盤を持つ。Eコマースへの投資も積極的です。"
+      "score": 89,
+      "reason": "世界最大の小売業者として安定した収益基盤を持つ。Eコマースへの投資も積極的です。",
+      "scoreBase": 85,
+      "scoreBoost": 4,
+      "financialSignals": {
+        "health_rank": "A",
+        "quality_rank": "A",
+        "fraud_risk": "低",
+        "caption": "健全性A / ファンダA / 粉飾リスク低",
+        "health_model": "Z"
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:34:59"
     },
     {
       "rank": 12,
-      "ticker": "COST",
-      "companyName": "Costco Wholesale Corp.",
-      "sector": "Consumer Staples",
-      "score": 84,
-      "reason": "会員制倉庫型店舗で高い顧客ロイヤルティを持つ。安定した売上成長が期待できます。"
+      "ticker": "NVDA",
+      "companyName": "NVIDIA Corp.",
+      "sector": "Technology",
+      "score": 87,
+      "reason": "AIとデータセンター向け半導体で市場を牽引。高い成長性が期待されます。",
+      "scoreBase": 88,
+      "scoreBoost": -1,
+      "financialSignals": {
+        "health_rank": "A",
+        "quality_rank": "A",
+        "fraud_risk": "高",
+        "caption": "健全性A / ファンダA / 粉飾リスク高",
+        "health_model": "Z"
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:34:36"
     },
     {
       "rank": 13,
+      "ticker": "CRWD",
+      "companyName": "CrowdStrike Holdings Inc. (Class A)",
+      "sector": "Technology",
+      "score": 86,
+      "reason": "サイバーセキュリティ分野のリーダー企業。クラウドベースのソリューションで需要が拡大しています。",
+      "scoreBase": 82,
+      "scoreBoost": 4,
+      "financialSignals": {
+        "health_rank": "A",
+        "quality_rank": "A",
+        "fraud_risk": "低",
+        "caption": "健全性A / ファンダA / 粉飾リスク低",
+        "health_model": "Z"
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:35:14"
+    },
+    {
+      "rank": 14,
+      "ticker": "PANW",
+      "companyName": "Palo Alto Networks Inc.",
+      "sector": "Technology",
+      "score": 84,
+      "reason": "ネットワークセキュリティの主要プロバイダー。企業のデジタル変革に伴い需要が増加しています。",
+      "scoreBase": 80,
+      "scoreBoost": 4,
+      "financialSignals": {
+        "health_rank": "A",
+        "quality_rank": "A",
+        "fraud_risk": "低",
+        "caption": "健全性A / ファンダA / 粉飾リスク低",
+        "health_model": "Z"
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:35:20"
+    },
+    {
+      "rank": 15,
       "ticker": "NEE",
       "companyName": "NextEra Energy Inc.",
       "sector": "Utilities",
       "score": 83,
-      "reason": "米国最大の電力会社の一つで、再生可能エネルギーに注力。安定性と成長性を兼ね備えます。"
-    },
-    {
-      "rank": 14,
-      "ticker": "CRWD",
-      "companyName": "CrowdStrike Holdings Inc. (Class A)",
-      "sector": "Technology",
-      "score": 82,
-      "reason": "サイバーセキュリティ分野のリーダー企業。クラウドベースのソリューションで需要が拡大しています。"
-    },
-    {
-      "rank": 15,
-      "ticker": "PANW",
-      "companyName": "Palo Alto Networks Inc.",
-      "sector": "Technology",
-      "score": 80,
-      "reason": "ネットワークセキュリティの主要プロバイダー。企業のデジタル変革に伴い需要が増加しています。"
+      "reason": "米国最大の電力会社の一つで、再生可能エネルギーに注力。安定性と成長性を兼ね備えます。",
+      "scoreBase": 83,
+      "scoreBoost": 0,
+      "financialSignals": {
+        "health_rank": "C",
+        "quality_rank": "S",
+        "fraud_risk": "低",
+        "caption": "健全性C / ファンダS / 粉飾リスク低",
+        "health_model": "Z"
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:35:09"
     },
     {
       "rank": 16,
-      "ticker": "JPM",
-      "companyName": "JPMorgan Chase & Co.",
-      "sector": "Financial Services",
-      "score": 78,
-      "reason": "米国最大級の金融機関で強固な財務基盤を持つ。多様な金融サービスを提供しています。"
-    },
-    {
-      "rank": 17,
       "ticker": "HD",
       "companyName": "The Home Depot Inc.",
       "sector": "Consumer Discretionary",
-      "score": 77,
-      "reason": "住宅リフォーム市場のリーダー企業。景気変動に左右されるが、長期的な需要は堅調です。"
+      "score": 81,
+      "reason": "住宅リフォーム市場のリーダー企業。景気変動に左右されるが、長期的な需要は堅調です。",
+      "scoreBase": 77,
+      "scoreBoost": 4,
+      "financialSignals": {
+        "health_rank": "A",
+        "quality_rank": "A",
+        "fraud_risk": "低",
+        "caption": "健全性A / ファンダA / 粉飾リスク低",
+        "health_model": "Z"
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:35:30"
     },
     {
-      "rank": 18,
-      "ticker": "C",
-      "companyName": "Citigroup Inc.",
-      "sector": "Financial Services",
-      "score": 75,
-      "reason": "大手金融機関として安定した事業基盤を持つ。地政学的リスク下でも一定の需要が見込まれます。"
-    },
-    {
-      "rank": 19,
+      "rank": 17,
       "ticker": "XOM",
       "companyName": "Exxon Mobil Corp.",
       "sector": "Energy",
-      "score": 75,
-      "reason": "大手エネルギー企業として安定した収益を上げている。高配当も魅力の一つです。"
+      "score": 79,
+      "reason": "大手エネルギー企業として安定した収益を上げている。高配当も魅力の一つです。",
+      "scoreBase": 75,
+      "scoreBoost": 4,
+      "financialSignals": {
+        "health_rank": "A",
+        "quality_rank": "A",
+        "fraud_risk": "低",
+        "caption": "健全性A / ファンダA / 粉飾リスク低",
+        "health_model": "Z"
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:35:39"
+    },
+    {
+      "rank": 18,
+      "ticker": "JPM",
+      "companyName": "JPMorgan Chase & Co.",
+      "sector": "Financial Services",
+      "score": 76,
+      "reason": "米国最大級の金融機関で強固な財務基盤を持つ。多様な金融サービスを提供しています。",
+      "scoreBase": 78,
+      "scoreBoost": -2,
+      "financialSignals": {
+        "health_rank": "-",
+        "quality_rank": "C",
+        "fraud_risk": "低",
+        "caption": "健全性- / ファンダC / 粉飾リスク低",
+        "health_model": "Z"
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:35:25"
+    },
+    {
+      "rank": 19,
+      "ticker": "C",
+      "companyName": "Citigroup Inc.",
+      "sector": "Financial Services",
+      "score": 71,
+      "reason": "大手金融機関として安定した事業基盤を持つ。地政学的リスク下でも一定の需要が見込まれます。",
+      "scoreBase": 75,
+      "scoreBoost": -4,
+      "financialSignals": {
+        "health_rank": "-",
+        "quality_rank": "C",
+        "fraud_risk": "注意",
+        "caption": "健全性- / ファンダC / 粉飾リスク注意",
+        "health_model": "Z"
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:35:34"
     },
     {
       "rank": 20,
       "ticker": "T",
       "companyName": "AT&T Inc.",
       "sector": "Communication Services",
-      "score": 70,
-      "reason": "安定した通信サービスを提供し、高配当が魅力。初心者にも分かりやすいビジネスモデルです。"
+      "score": 68,
+      "reason": "安定した通信サービスを提供し、高配当が魅力。初心者にも分かりやすいビジネスモデルです。",
+      "scoreBase": 70,
+      "scoreBoost": -2,
+      "financialSignals": {
+        "health_rank": "C",
+        "quality_rank": "A",
+        "fraud_risk": "低",
+        "caption": "健全性C / ファンダA / 粉飾リスク低",
+        "health_model": "Z"
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:35:46"
     }
-  ]
+  ],
+  "financials_enriched_at": "2026-07-14T23:41:03"
 }
