@@ -1,0 +1,276 @@
+{
+  "ticker": "4502",
+  "market": "jp",
+  "source": "jquants+yfinance",
+  "updated_at": "2026-07-14T23:29:50",
+  "metrics": {
+    "pe": 37.944298,
+    "pb": 1.1327622,
+    "roe": -0.02118,
+    "roa": 0.02553,
+    "profitMargin": -0.03382,
+    "operatingMargin": 0.11106,
+    "grossMargin": 0.64063,
+    "debtToEquity": 73.7,
+    "currentRatio": 1.091,
+    "revenueGrowth": 0.025296335234563202,
+    "eps": -96.79,
+    "dividendYield": 0.0384,
+    "marketCap": 8505895419904,
+    "52wHigh": 6033.0,
+    "52wLow": 4102.0,
+    "beta": 0.088,
+    "totalRevenue": 4263762000000.0,
+    "totalCash": 595053969408,
+    "totalDebt": 5476358029312,
+    "freeCashflow": 672782745600,
+    "operatingCashflow": 1041431003136,
+    "netIncome": -152389992448,
+    "ebit": 1187750000000.0,
+    "operatingIncome": 1187750000000.0,
+    "totalAssets": 15511506000000.0,
+    "totalLiabilities": 8080857000000.0,
+    "currentAssets": 12421004000000.0,
+    "currentLiabilities": 5248783000000.0,
+    "retainedEarnings": -2848000000.0,
+    "longTermDebt": 4369681000000.0,
+    "sharesOutstanding": 1596751439,
+    "bookValue": 4702.664,
+    "receivables": 876348000000.0,
+    "ppe": 2120639000000.0,
+    "longTermDebtPrev": 3966326000000.0,
+    "totalAssetsPrev": 14248344000000.0,
+    "currentAssetsPrev": 11727152000000.0,
+    "currentLiabilitiesPrev": 4805844000000.0,
+    "receivablesPrev": 725254000000.0,
+    "ppePrev": 1968209000000.0,
+    "totalLiabilitiesPrev": 7312365000000.0,
+    "totalDebtPrev": 4515265000000.0,
+    "currentRatioPrev": 2.4401857405275744,
+    "depreciation": 721127000000.0,
+    "depreciationPrev": 761396000000.0,
+    "operatingCashflowPrev": 1057182000000.0,
+    "grossProfit": 2934132000000.0,
+    "sga": 1084215000000.0,
+    "totalRevenuePrev": 1207990000000.0,
+    "grossProfitPrev": 3001334000000.0,
+    "grossMarginPrev": 0.6550912562143256,
+    "sgaPrev": 1104766000000.0,
+    "netIncomePrev": 107928000000.0,
+    "roaPrev": 0.00757477500543221,
+    "assetTurnover": 0.2904759900136067,
+    "assetTurnoverPrev": 0.3215497183391979,
+    "workingCapital": 7172221000000.0,
+    "leverage": 0.5209588933531019,
+    "leveragePrev": 0.5132080612315368
+  },
+  "scores": {
+    "profitability": 45,
+    "safety": 75,
+    "valuation": 60
+  },
+  "advanced": {
+    "altman_z": {
+      "value": 1.714,
+      "label": "破綻圏寄り（倒産リスク高）",
+      "components": {
+        "X1": 0.4624,
+        "X2": -0.0002,
+        "X3": 0.0766,
+        "X4": 1.0526,
+        "X5": 0.2749
+      },
+      "formula": "Z=1.2*X1+1.4*X2+3.3*X3+0.6*X4+1.0*X5",
+      "note": "米製造業由来の古典モデル。業種・日本企業では誤差が出うる。"
+    },
+    "altman_z2": {
+      "value": 4.513,
+      "label": "安全圏（倒産リスク低）",
+      "components": {
+        "X1": 0.4624,
+        "X2": -0.0002,
+        "X3": 0.0766,
+        "X4": 0.9195
+      },
+      "formula": "Z''=6.56*X1+3.26*X2+6.72*X3+1.05*X4",
+      "note": "非製造業向けZ''。日本株の補助指標として表示（古典Zより業種差に強い）。"
+    },
+    "piotroski_f": {
+      "score": 3,
+      "raw_points": 3,
+      "raw_max": 8,
+      "label": "弱め / バリュートラップ注意",
+      "checks": [
+        {
+          "name": "純利益がプラス",
+          "pass": false,
+          "detail": "-152.39B"
+        },
+        {
+          "name": "営業CFがプラス",
+          "pass": true,
+          "detail": "1.04兆"
+        },
+        {
+          "name": "ROAが改善",
+          "pass": true,
+          "detail": "2.6% <- 0.8%"
+        },
+        {
+          "name": "営業CF > 純利益（利益の質）",
+          "pass": true,
+          "detail": "OCF 1.04兆 / NI -152.39B"
+        },
+        {
+          "name": "長期負債が減少",
+          "pass": false,
+          "detail": "4.37兆 <- 3.97兆"
+        },
+        {
+          "name": "流動比率が改善",
+          "pass": false,
+          "detail": "1.09 <- 2.44"
+        },
+        {
+          "name": "希薄化なし",
+          "pass": null,
+          "detail": "-"
+        },
+        {
+          "name": "粗利率が改善",
+          "pass": false,
+          "detail": "64.1% <- 65.5%"
+        },
+        {
+          "name": "総資産回転率が改善",
+          "pass": false,
+          "detail": "0.29 <- 0.32"
+        }
+      ],
+      "note": "前年比較が取れない項目は未採点。取得できた基準から9点満点へ換算。"
+    },
+    "beneish_m": {
+      "value": -0.799,
+      "label": "高（粉飾疑い高め）",
+      "components": {
+        "DSRI": 0.3423,
+        "GMI": 1.0226,
+        "AQI": 1.6111,
+        "SGI": 3.5296,
+        "DEPI": 1.0992,
+        "SGAI": 0.278,
+        "TATA": -0.077,
+        "LVGI": 1.0151
+      },
+      "filled_defaults": [],
+      "available": 8,
+      "threshold": -1.78,
+      "formula": "M=-4.84+0.920*DSRI+0.528*GMI+0.404*AQI+0.892*SGI+0.115*DEPI-0.172*SGAI+4.679*TATA-0.327*LVGI",
+      "note": "M>-1.78で粉飾疑いが相対的に高い。欠損指数は1.0（TATAは0）で補完。"
+    },
+    "signals": {
+      "health_rank": "A",
+      "quality_rank": "C",
+      "fraud_risk": "高",
+      "health_model": "Z''",
+      "caption": "健全性A / ファンダC / 粉飾リスク高"
+    },
+    "accounting_standard": "IFRS",
+    "accounting_note": "会計基準はIFRS想定です。経常利益・特別損益の区分が無く、のれんの規則償却も行わないため、J-GAAP企業との営業利益比較には注意が必要です。",
+    "jquants": {
+      "used": true,
+      "latest_doc": {
+        "type": "FYFinancialStatements_Consolidated_IFRS",
+        "disclosed_date": null,
+        "period_end": null,
+        "period_type": null
+      }
+    },
+    "edinet": {
+      "source": "edinet",
+      "code": "4502",
+      "filings": [
+        {
+          "docID": "S100YLNK",
+          "date": "2026-06-26",
+          "filerName": "武田薬品工業株式会社",
+          "docDescription": "臨時報告書",
+          "docTypeCode": "180",
+          "periodStart": null,
+          "periodEnd": null,
+          "submitDateTime": "2026-06-26 12:01",
+          "csvFlag": "1",
+          "edinet_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YLNK"
+        },
+        {
+          "docID": "S100YLOM",
+          "date": "2026-06-26",
+          "filerName": "武田薬品工業株式会社",
+          "docDescription": "訂正発行登録書",
+          "docTypeCode": "090",
+          "periodStart": null,
+          "periodEnd": null,
+          "submitDateTime": "2026-06-26 12:03",
+          "csvFlag": "0",
+          "edinet_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YLOM"
+        },
+        {
+          "docID": "S100YLOL",
+          "date": "2026-06-26",
+          "filerName": "武田薬品工業株式会社",
+          "docDescription": "訂正発行登録書",
+          "docTypeCode": "090",
+          "periodStart": null,
+          "periodEnd": null,
+          "submitDateTime": "2026-06-26 12:03",
+          "csvFlag": "0",
+          "edinet_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YLOL"
+        }
+      ],
+      "latest": {
+        "docID": "S100YLNK",
+        "date": "2026-06-26",
+        "filerName": "武田薬品工業株式会社",
+        "docDescription": "臨時報告書",
+        "docTypeCode": "180",
+        "periodStart": null,
+        "periodEnd": null,
+        "submitDateTime": "2026-06-26 12:01",
+        "csvFlag": "1",
+        "edinet_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YLNK"
+      },
+      "errors": []
+    },
+    "criteria_source": "企業財務の調査と評価基準（Googleドキュメント）"
+  },
+  "summary_ja": "4502の主な指標は PER 37.94、PBR 1.13、ROE -2.1%、営業利益率 11.1%、負債自己資本比率 73.70 です。Altman Zスコアは 1.71（破綻圏寄り（倒産リスク高））。日本株向け補助のZ''は 4.51（安全圏（倒産リスク低））。Piotroski Fスコアは 3/9（弱め / バリュートラップ注意）。Beneish Mスコアは -0.80（粉飾リスク: 高（粉飾疑い高め））。総合シグナルは 健全性A、ファンダC、粉飾リスク高。バランスシートは比較的安定。会計基準はIFRS想定です。経常利益・特別損益の区分が無く、のれんの規則償却も行わないため、J-GAAP企業との営業利益比較には注意が必要です。数値は情報提供目的であり、投資判断はご自身で行ってください。",
+  "display": {
+    "PER": "37.94",
+    "PBR": "1.13",
+    "ROE": "-2.1%",
+    "ROA": "2.6%",
+    "営業利益率": "11.1%",
+    "純利益率": "-3.4%",
+    "売上成長率": "2.5%",
+    "EPS": "-96.79",
+    "配当利回り": "3.8%",
+    "時価総額": "8.51兆",
+    "負債自己資本比率": "73.70",
+    "流動比率": "1.09",
+    "総資産": "15.51兆",
+    "売上高": "4.26兆",
+    "営業CF": "1.04兆",
+    "会計基準": "IFRS",
+    "52週高値": "6033.00",
+    "52週安値": "4102.00",
+    "Altman Z": "1.71 / 破綻圏寄り（倒産リスク高）",
+    "Altman Z''": "4.51 / 安全圏（倒産リスク低）",
+    "Piotroski F": "3/9 / 弱め / バリュートラップ注意",
+    "Beneish M": "-0.80 / 高（粉飾疑い高め）",
+    "総合シグナル": "健全性A / ファンダC / 粉飾リスク高"
+  },
+  "raw_meta": {
+    "yf_symbol": "4502.T",
+    "errors": []
+  }
+}
