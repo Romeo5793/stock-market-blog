@@ -1,0 +1,264 @@
+{
+  "ticker": "4063",
+  "market": "jp",
+  "source": "jquants+yfinance",
+  "updated_at": "2026-07-14T23:30:26",
+  "metrics": {
+    "pe": 29.58812,
+    "pb": 3.1071167,
+    "roe": 0.106800005,
+    "roa": 0.07028,
+    "profitMargin": 0.18433,
+    "operatingMargin": 0.21435,
+    "grossMargin": 0.34219003,
+    "debtToEquity": 5.24,
+    "currentRatio": 5.943,
+    "revenueGrowth": 0.030388289599116956,
+    "eps": 252.5,
+    "dividendYield": 1.44,
+    "marketCap": 13893778800640,
+    "52wHigh": 7930.0,
+    "52wLow": 4280.0,
+    "beta": 1.082,
+    "totalRevenue": 2414937000000.0,
+    "totalCash": 1667094937600,
+    "totalDebt": 243294994432,
+    "freeCashflow": 229346492416,
+    "operatingCashflow": 712650981376,
+    "netIncome": 474459013120,
+    "ebit": 957810000000.0,
+    "operatingIncome": 957810000000.0,
+    "totalAssets": 5661907000000.0,
+    "totalLiabilities": 1018602000000.0,
+    "currentAssets": 2555850000000.0,
+    "currentLiabilities": 495971000000.0,
+    "retainedEarnings": 4022591000000.0,
+    "longTermDebt": 236366000000.0,
+    "sharesOutstanding": 1859694761,
+    "bookValue": 2404.48,
+    "receivables": 535383000000.0,
+    "ppe": 2153287000000.0,
+    "longTermDebtPrev": 7452000000.0,
+    "totalAssetsPrev": 5636601000000.0,
+    "currentAssetsPrev": 2426947000000.0,
+    "currentLiabilitiesPrev": 261925000000.0,
+    "receivablesPrev": 514702000000.0,
+    "ppePrev": 2065945000000.0,
+    "totalLiabilitiesPrev": 799019000000.0,
+    "totalDebtPrev": 16841000000.0,
+    "currentRatioPrev": 9.265808914765676,
+    "depreciation": 242973000000.0,
+    "depreciationPrev": 238357000000.0,
+    "operatingCashflowPrev": 881934000000.0,
+    "grossProfit": 880793000000.0,
+    "totalRevenuePrev": 597930000000.0,
+    "grossProfitPrev": 984121000000.0,
+    "grossMarginPrev": 0.3842348010677603,
+    "netIncomePrev": 534021000000.0,
+    "roaPrev": 0.09474167144348163,
+    "assetTurnover": 0.4546116934580522,
+    "assetTurnoverPrev": 0.4543960092261276,
+    "workingCapital": 2059879000000.0,
+    "leverage": 0.17990440323375145,
+    "leveragePrev": 0.14175546574966014
+  },
+  "scores": {
+    "profitability": 85,
+    "safety": 50,
+    "valuation": 35
+  },
+  "advanced": {
+    "altman_z": {
+      "value": 10.6,
+      "label": "安全圏（倒産リスク低）",
+      "components": {
+        "X1": 0.3638,
+        "X2": 0.7105,
+        "X3": 0.1692,
+        "X4": 13.64,
+        "X5": 0.4265
+      },
+      "formula": "Z=1.2*X1+1.4*X2+3.3*X3+0.6*X4+1.0*X5",
+      "note": "米製造業由来の古典モデル。業種・日本企業では誤差が出うる。"
+    },
+    "altman_z2": {
+      "value": 10.626,
+      "label": "安全圏（倒産リスク低）",
+      "components": {
+        "X1": 0.3638,
+        "X2": 0.7105,
+        "X3": 0.1692,
+        "X4": 4.5585
+      },
+      "formula": "Z''=6.56*X1+3.26*X2+6.72*X3+1.05*X4",
+      "note": "非製造業向けZ''。日本株の補助指標として表示（古典Zより業種差に強い）。"
+    },
+    "piotroski_f": {
+      "score": 4,
+      "raw_points": 4,
+      "raw_max": 8,
+      "label": "平均的な財務健全性",
+      "checks": [
+        {
+          "name": "純利益がプラス",
+          "pass": true,
+          "detail": "474.46B"
+        },
+        {
+          "name": "営業CFがプラス",
+          "pass": true,
+          "detail": "712.65B"
+        },
+        {
+          "name": "ROAが改善",
+          "pass": false,
+          "detail": "7.0% <- 9.5%"
+        },
+        {
+          "name": "営業CF > 純利益（利益の質）",
+          "pass": true,
+          "detail": "OCF 712.65B / NI 474.46B"
+        },
+        {
+          "name": "長期負債が減少",
+          "pass": false,
+          "detail": "236.37B <- 7.45B"
+        },
+        {
+          "name": "流動比率が改善",
+          "pass": false,
+          "detail": "5.94 <- 9.27"
+        },
+        {
+          "name": "希薄化なし",
+          "pass": null,
+          "detail": "-"
+        },
+        {
+          "name": "粗利率が改善",
+          "pass": false,
+          "detail": "34.2% <- 38.4%"
+        },
+        {
+          "name": "総資産回転率が改善",
+          "pass": true,
+          "detail": "0.45 <- 0.45"
+        }
+      ],
+      "note": "前年比較が取れない項目は未採点。取得できた基準から9点満点へ換算。"
+    },
+    "beneish_m": {
+      "value": -0.739,
+      "label": "高（粉飾疑い高め）",
+      "components": {
+        "DSRI": 0.2575,
+        "GMI": 1.1229,
+        "AQI": 0.8293,
+        "SGI": 4.0388,
+        "DEPI": 1.0202,
+        "SGAI": null,
+        "TATA": -0.0421,
+        "LVGI": 1.2691
+      },
+      "filled_defaults": [
+        "SGAI"
+      ],
+      "available": 7,
+      "threshold": -1.78,
+      "formula": "M=-4.84+0.920*DSRI+0.528*GMI+0.404*AQI+0.892*SGI+0.115*DEPI-0.172*SGAI+4.679*TATA-0.327*LVGI",
+      "note": "M>-1.78で粉飾疑いが相対的に高い。欠損指数は1.0（TATAは0）で補完。"
+    },
+    "signals": {
+      "health_rank": "A",
+      "quality_rank": "A",
+      "fraud_risk": "高",
+      "health_model": "Z''",
+      "caption": "健全性A / ファンダA / 粉飾リスク高"
+    },
+    "accounting_standard": "J-GAAP",
+    "accounting_note": "会計基準はJ-GAAP想定です。のれんは規則償却されるため、大型買収企業では見かけの営業利益がIFRS企業より低く出やすい点に注意してください。",
+    "jquants": {
+      "used": true,
+      "latest_doc": {
+        "type": "FYFinancialStatements_Consolidated_JP",
+        "disclosed_date": null,
+        "period_end": null,
+        "period_type": null
+      }
+    },
+    "edinet": {
+      "source": "edinet",
+      "code": "4063",
+      "filings": [
+        {
+          "docID": "S100YPMX",
+          "date": "2026-07-09",
+          "filerName": "信越化学工業株式会社",
+          "docDescription": "自己株券買付状況報告書（法２４条の６第１項に基づくもの）",
+          "docTypeCode": "220",
+          "periodStart": null,
+          "periodEnd": null,
+          "submitDateTime": "2026-07-09 10:02",
+          "csvFlag": "1",
+          "edinet_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YPMX"
+        },
+        {
+          "docID": "S100YN06",
+          "date": "2026-06-29",
+          "filerName": "信越化学工業株式会社",
+          "docDescription": "臨時報告書",
+          "docTypeCode": "180",
+          "periodStart": null,
+          "periodEnd": null,
+          "submitDateTime": "2026-06-29 14:47",
+          "csvFlag": "1",
+          "edinet_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YN06"
+        }
+      ],
+      "latest": {
+        "docID": "S100YPMX",
+        "date": "2026-07-09",
+        "filerName": "信越化学工業株式会社",
+        "docDescription": "自己株券買付状況報告書（法２４条の６第１項に基づくもの）",
+        "docTypeCode": "220",
+        "periodStart": null,
+        "periodEnd": null,
+        "submitDateTime": "2026-07-09 10:02",
+        "csvFlag": "1",
+        "edinet_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YPMX"
+      },
+      "errors": []
+    },
+    "criteria_source": "企業財務の調査と評価基準（Googleドキュメント）"
+  },
+  "summary_ja": "4063の主な指標は PER 29.59、PBR 3.11、ROE 10.7%、営業利益率 21.4%、負債自己資本比率 5.24 です。Altman Zスコアは 10.60（安全圏（倒産リスク低））。日本株向け補助のZ''は 10.63（安全圏（倒産リスク低））。Piotroski Fスコアは 4/9（平均的な財務健全性）。Beneish Mスコアは -0.74（粉飾リスク: 高（粉飾疑い高め））。総合シグナルは 健全性A、ファンダA、粉飾リスク高。収益性は相対的に高い。株価は割高寄りに見える。会計基準はJ-GAAP想定です。のれんは規則償却されるため、大型買収企業では見かけの営業利益がIFRS企業より低く出やすい点に注意してください。数値は情報提供目的であり、投資判断はご自身で行ってください。",
+  "display": {
+    "PER": "29.59",
+    "PBR": "3.11",
+    "ROE": "10.7%",
+    "ROA": "7.0%",
+    "営業利益率": "21.4%",
+    "純利益率": "18.4%",
+    "売上成長率": "3.0%",
+    "EPS": "252.50",
+    "配当利回り": "144.0%",
+    "時価総額": "13.89兆",
+    "負債自己資本比率": "5.24",
+    "流動比率": "5.94",
+    "総資産": "5.66兆",
+    "売上高": "2.41兆",
+    "営業CF": "712.65B",
+    "会計基準": "J-GAAP",
+    "52週高値": "7930.00",
+    "52週安値": "4280.00",
+    "Altman Z": "10.60 / 安全圏（倒産リスク低）",
+    "Altman Z''": "10.63 / 安全圏（倒産リスク低）",
+    "Piotroski F": "4/9 / 平均的な財務健全性",
+    "Beneish M": "-0.74 / 高（粉飾疑い高め）",
+    "総合シグナル": "健全性A / ファンダA / 粉飾リスク高"
+  },
+  "raw_meta": {
+    "yf_symbol": "4063.T",
+    "errors": []
+  }
+}
