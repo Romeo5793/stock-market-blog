@@ -33,6 +33,14 @@ a:hover { text-decoration: underline; }
   padding-bottom: 8px;
 }
 .meta { color: var(--muted); font-size: 0.92rem; margin: 0 0 18px; }
+.meta-strong {
+  color: var(--ink);
+  font-size: 0.95rem;
+  margin: 0 0 14px;
+  padding: 10px 12px;
+  background: #eef3f1;
+  border-radius: 8px;
+}
 .lead {
   font-size: 1.05rem;
   background: #f3f6f5;
@@ -40,6 +48,45 @@ a:hover { text-decoration: underline; }
   padding: 14px 16px;
   margin: 0;
 }
+.signal-banner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 16px;
+}
+.signal-chip {
+  display: inline-block;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  background: #f3f6f5;
+}
+.signal-chip.health-a, .signal-chip.quality-s { border-color: #1f4e46; color: #1f4e46; }
+.signal-chip.health-b, .signal-chip.quality-a { border-color: #6b5b2c; color: #6b5b2c; }
+.signal-chip.health-c, .signal-chip.quality-c, .signal-chip.fraud-high {
+  border-color: #8a3b2e; color: #8a3b2e;
+}
+.signal-chip.fraud-low { border-color: #1f4e46; color: #1f4e46; }
+.signal-chip.fraud-warn { border-color: #6b5b2c; color: #6b5b2c; }
+.accounting-callout {
+  margin: 12px 0 0;
+  padding: 12px 14px;
+  border: 1px solid #d9cfc0;
+  background: #fbf7f0;
+  border-radius: 8px;
+  font-size: 0.92rem;
+}
+.fin-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin: 0 0 14px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.fin-meta-row strong { color: var(--ink); font-weight: 600; }
 .section-body { margin: 0; white-space: pre-wrap; }
 .scores {
   display: grid;
