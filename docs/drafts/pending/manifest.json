@@ -1,11 +1,10 @@
 {
   "issue": 4,
-  "status": "skipped",
-  "created_at": "2026-07-18T19:16:37",
-  "skipped_at": "2026-07-18T19:22:46",
-  "reason": "第3号と同一ランキング（updated_at=2026-07-13T22:20:08）のため公開しない",
-  "jp_ranking_updated_at": "2026-07-13T22:20:08",
-  "free_path": "docs/drafts/skipped/note-issue-04-free.txt",
-  "paid_path": "docs/drafts/skipped/note-issue-04-paid.txt",
-  "note_magazine": "https://note.com/merry_orca9232/m/m471c1317cc4e"
+  "status": "pending",
+  "created_at": "2026-07-18T19:38:41",
+  "jp_ranking_updated_at": "2026-07-18T19:33:08",
+  "free_path": "docs/drafts/note-issue-04-free.txt",
+  "paid_path": "docs/drafts/note-issue-04-paid.txt",
+  "note_magazine": "https://note.com/merry_orca9232/m/m471c1317cc4e",
+  "publish_hint": "Mac起動後にローカルが pending を検知して note へ反映する想定"
 }
