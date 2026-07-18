@@ -1,0 +1,229 @@
+{
+  "ticker": "6594",
+  "market": "jp",
+  "source": "jquants+yfinance",
+  "updated_at": "2026-07-14T23:31:37",
+  "metrics": {
+    "pe": 24.899752,
+    "pb": 1.6991633,
+    "roe": 0.06313,
+    "roa": 0.024300002,
+    "profitMargin": 0.04586,
+    "operatingMargin": 0.07153,
+    "grossMargin": 0.19373,
+    "debtToEquity": 40.098,
+    "currentRatio": 1.608,
+    "revenueGrowth": 0.0,
+    "eps": 104.74,
+    "dividendYield": 0.0192,
+    "marketCap": 2989576159232,
+    "52wHigh": 3296.0,
+    "52wLow": 1797.0,
+    "beta": 1.051,
+    "totalRevenue": 2348202000000.0,
+    "totalCash": 344454987776,
+    "totalDebt": 712031993856,
+    "freeCashflow": 55612751872,
+    "operatingCashflow": 298959994880,
+    "netIncome": 120102002688,
+    "ebit": 395730000000.0,
+    "operatingIncome": 395730000000.0,
+    "totalAssets": 3325561000000.0,
+    "totalLiabilities": 1579992000000.0,
+    "currentAssets": 1697544000000.0,
+    "currentLiabilities": 514275000000.0,
+    "retainedEarnings": 1334596000000.0,
+    "longTermDebt": 378487000000.0,
+    "sharesOutstanding": 1146309835,
+    "bookValue": 1534.873,
+    "receivables": 706175000000.0,
+    "ppe": 931059000000.0,
+    "longTermDebtPrev": 414817000000.0,
+    "totalAssetsPrev": 3159709000000.0,
+    "currentAssetsPrev": 1621144000000.0,
+    "currentLiabilitiesPrev": 544986000000.0,
+    "receivablesPrev": 672655000000.0,
+    "ppePrev": 876485000000.0,
+    "totalLiabilitiesPrev": 1501488000000.0,
+    "totalDebtPrev": 600899000000.0,
+    "currentRatioPrev": 2.9746525598822724,
+    "depreciation": 138068000000.0,
+    "depreciationPrev": 132533000000.0,
+    "operatingCashflowPrev": 320766000000.0,
+    "grossProfit": 536421000000.0,
+    "sga": 217706000000.0,
+    "totalRevenuePrev": 2348202000000.0,
+    "grossProfitPrev": 497162000000.0,
+    "grossMarginPrev": 0.2118143679230934,
+    "sgaPrev": 254251000000.0,
+    "netIncomePrev": 124499000000.0,
+    "roaPrev": 0.03940204620109004,
+    "assetTurnover": 0.7867259458864234,
+    "assetTurnoverPrev": 0.7428402425666414,
+    "workingCapital": 1183269000000.0,
+    "leverage": 0.47510540326880185,
+    "leveragePrev": 0.47519819071946184
+  },
+  "scores": {
+    "profitability": 58,
+    "safety": 100,
+    "valuation": 65
+  },
+  "advanced": {
+    "altman_z": {
+      "value": 3.223,
+      "label": "安全圏（倒産リスク低）",
+      "components": {
+        "X1": 0.3558,
+        "X2": 0.4013,
+        "X3": 0.119,
+        "X4": 1.8921,
+        "X5": 0.7061
+      },
+      "formula": "Z=1.2*X1+1.4*X2+3.3*X3+0.6*X4+1.0*X5",
+      "note": "米製造業由来の古典モデル。業種・日本企業では誤差が出うる。"
+    },
+    "altman_z2": {
+      "value": 5.602,
+      "label": "安全圏（倒産リスク低）",
+      "components": {
+        "X1": 0.3558,
+        "X2": 0.4013,
+        "X3": 0.119,
+        "X4": 1.1048
+      },
+      "formula": "Z''=6.56*X1+3.26*X2+6.72*X3+1.05*X4",
+      "note": "非製造業向けZ''。日本株の補助指標として表示（古典Zより業種差に強い）。"
+    },
+    "piotroski_f": {
+      "score": 6,
+      "raw_points": 5,
+      "raw_max": 8,
+      "label": "平均的な財務健全性",
+      "checks": [
+        {
+          "name": "純利益がプラス",
+          "pass": true,
+          "detail": "120.10B"
+        },
+        {
+          "name": "営業CFがプラス",
+          "pass": true,
+          "detail": "298.96B"
+        },
+        {
+          "name": "ROAが改善",
+          "pass": false,
+          "detail": "2.4% <- 3.9%"
+        },
+        {
+          "name": "営業CF > 純利益（利益の質）",
+          "pass": true,
+          "detail": "OCF 298.96B / NI 120.10B"
+        },
+        {
+          "name": "長期負債が減少",
+          "pass": true,
+          "detail": "378.49B <- 414.82B"
+        },
+        {
+          "name": "流動比率が改善",
+          "pass": false,
+          "detail": "1.61 <- 2.97"
+        },
+        {
+          "name": "希薄化なし",
+          "pass": null,
+          "detail": "-"
+        },
+        {
+          "name": "粗利率が改善",
+          "pass": false,
+          "detail": "19.4% <- 21.2%"
+        },
+        {
+          "name": "総資産回転率が改善",
+          "pass": true,
+          "detail": "0.79 <- 0.74"
+        }
+      ],
+      "note": "前年比較が取れない項目は未採点。取得できた基準から9点満点へ換算。"
+    },
+    "beneish_m": {
+      "value": -2.61,
+      "label": "低",
+      "suspended": false,
+      "components": {
+        "DSRI": 1.0498,
+        "GMI": 1.0933,
+        "AQI": 1.0002,
+        "SGI": 1.0,
+        "DEPI": 1.0171,
+        "SGAI": 0.8563,
+        "TATA": -0.0538,
+        "LVGI": 0.9998
+      },
+      "filled_defaults": [],
+      "available": 8,
+      "threshold": -1.78,
+      "formula": "M=-4.84+0.920*DSRI+0.528*GMI+0.404*AQI+0.892*SGI+0.115*DEPI-0.172*SGAI+4.679*TATA-0.327*LVGI",
+      "note": "M>-1.78で粉飾疑いが相対的に高い。欠損指数は1.0（TATAは0）で補完。"
+    },
+    "signals": {
+      "health_rank": "A",
+      "quality_rank": "A",
+      "fraud_risk": "低",
+      "health_model": "Z''",
+      "caption": "健全性A / ファンダA / 粉飾リスク低"
+    },
+    "accounting_standard": "IFRS",
+    "accounting_note": "会計基準はIFRS想定です。経常利益・特別損益の区分が無く、のれんの規則償却も行わないため、J-GAAP企業との営業利益比較には注意が必要です。",
+    "jquants": {
+      "used": true,
+      "latest_doc": {
+        "type": "FYFinancialStatements_Consolidated_IFRS",
+        "disclosed_date": null,
+        "period_end": null,
+        "period_type": null
+      }
+    },
+    "edinet": {
+      "source": "edinet",
+      "code": "6594",
+      "filings": [],
+      "note": "直近期間に該当書類が見つかりませんでした。",
+      "errors": []
+    },
+    "criteria_source": "企業財務の調査と評価基準（Googleドキュメント）"
+  },
+  "summary_ja": "6594の主な指標は PER 24.90、PBR 1.70、ROE 6.3%、営業利益率 7.2%、負債自己資本比率 40.10 です。Altman Zスコアは 3.22（安全圏（倒産リスク低））。日本株向け補助のZ''は 5.60（安全圏（倒産リスク低））。Piotroski Fスコアは 6/9（平均的な財務健全性）。Beneish Mスコアは -2.61（粉飾リスク: 低）。総合シグナルは 健全性A、ファンダA、粉飾リスク低。バランスシートは比較的安定。会計基準はIFRS想定です。経常利益・特別損益の区分が無く、のれんの規則償却も行わないため、J-GAAP企業との営業利益比較には注意が必要です。数値は情報提供目的であり、投資判断はご自身で行ってください。",
+  "display": {
+    "PER": "24.90",
+    "PBR": "1.70",
+    "ROE": "6.3%",
+    "ROA": "2.4%",
+    "営業利益率": "7.2%",
+    "純利益率": "4.6%",
+    "売上成長率": "0.0%",
+    "EPS": "104.74",
+    "配当利回り": "1.9%",
+    "時価総額": "2.99兆",
+    "負債自己資本比率": "40.10",
+    "流動比率": "1.61",
+    "総資産": "3.33兆",
+    "売上高": "2.35兆",
+    "営業CF": "298.96B",
+    "会計基準": "IFRS",
+    "52週高値": "3296.00",
+    "52週安値": "1797.00",
+    "Altman Z": "3.22 / 安全圏（倒産リスク低）",
+    "Altman Z''": "5.60 / 安全圏（倒産リスク低）",
+    "Piotroski F": "6/9 / 平均的な財務健全性",
+    "Beneish M": "-2.61 / 低",
+    "総合シグナル": "健全性A / ファンダA / 粉飾リスク低"
+  },
+  "raw_meta": {
+    "yf_symbol": "6594.T",
+    "errors": []
+  }
+}
