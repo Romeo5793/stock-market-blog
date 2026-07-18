@@ -7,13 +7,16 @@
 
 ## 毎週やること（固定）
 
-### ① データ更新（30〜60分）
-Auto-Pilot でランキング／カルテを更新し、`stock-market-blog` に反映する。
+### ① データ更新（自動・金曜）
+| 時刻 (JST) | 処理 | リポジトリ |
+|---|---|---|
+| 15:00 | ランキング強制更新 → ブログ反映 | `stock-marketing-bot` / `friday-ranking-refresh` |
+| 15:40 | note 無料+有料下書き生成（鮮度チェック付き） | `stock-market-blog` / `friday-note-drafts` |
 
+手動でランキングだけ更新する場合:
 ```bash
-cd ~/Projects/stock-market-blog
-python3 scripts/render_rankings.py
-# 必要なら git add / commit / push
+cd ~/Projects/stock-marketing-bot
+python3 main.py --blog-sync --refresh-rankings
 ```
 
 ### ② note下書き生成（自動）

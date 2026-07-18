@@ -312,6 +312,18 @@ def rankings_unchanged(old: dict[str, Any], new: dict[str, Any]) -> bool:
     return old_key == new_key and bool(old_key)
 
 
+def ranking_age_hours(data: dict[str, Any]) -> float | None:
+    updated = data.get("updated_at")
+    if not updated:
+        return None
+    try:
+        dt = datetime.fromisoformat(str(updated))
+    except ValueError:
+        return None
+    # naive はローカル（Actions では TZ=Asia/Tokyo）想定
+    return (datetime.now() - dt).total_seconds() / 3600.0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Generate note free+paid drafts")
     parser.add_argument(
@@ -330,6 +342,12 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help="Generate even when rankings are unchanged vs history",
     )
+    parser.add_argument(
+        "--require-fresh-hours",
+        type=float,
+        default=0.0,
+        help="Fail if jp ranking updated_at is older than this many hours (0=off)",
+    )
     args = parser.parse_args(argv)
 
     jp_new = load_json(RANK / "jp-top20.json")
@@ -338,6 +356,20 @@ def main(argv: list[str] | None = None) -> int:
     DRAFTS.mkdir(parents=True, exist_ok=True)
     jp_prev_path = snapshot_path("jp")
     us_prev_path = snapshot_path("us")
+
+    if args.require_fresh_hours and args.require_fresh_hours > 0:
+        age = ranking_age_hours(jp_new)
+        if age is None:
+            print("ERROR: jp ranking has no updated_at; cannot verify freshness.")
+            return 2
+        if age > args.require_fresh_hours:
+            print(
+                f"ERROR: jp ranking is stale ({age:.1f}h old, "
+                f"updated_at={jp_new.get('updated_at')}). "
+                "Run Friday ranking refresh first."
+            )
+            return 2
+        print(f"freshness OK: jp ranking age={age:.1f}h")
 
     if not jp_prev_path.exists() or not us_prev_path.exists():
         # First run: seed previous = current so diff is flat, still produce drafts

@@ -1,11 +1,12 @@
 name: Friday note drafts
 
-# 金曜 15:30 JST（= 06:30 UTC）に note 無料/有料の下書きを生成して push する。
+# 金曜 15:40 JST（= 06:40 UTC）に note 無料/有料の下書きを生成して push する。
+# 直前 15:00 の Friday ranking refresh（stock-marketing-bot）後の新しい順位を使う。
 # ローカル側は docs/drafts/pending/manifest.json の status=pending を検知して公開する想定。
 
 on:
   schedule:
-    - cron: "30 6 * * 5"
+    - cron: "40 6 * * 5"
   workflow_dispatch:
 
 permissions:
@@ -18,7 +19,7 @@ concurrency:
 jobs:
   generate-note-drafts:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -28,15 +29,45 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Wait for fresh rankings from bot publish
+        env:
+          TZ: Asia/Tokyo
+        run: |
+          set -e
+          # ranking refresh は 15:00。最大約10分リトライして pull
+          for i in $(seq 1 10); do
+            git fetch origin main
+            git reset --hard origin/main
+            if python3 - <<'PY'
+          from datetime import datetime
+          from pathlib import Path
+          import json
+          import sys
+          data = json.loads(Path("docs/rankings/jp-top20.json").read_text())
+          dt = datetime.fromisoformat(str(data.get("updated_at")))
+          age = (datetime.now() - dt).total_seconds() / 3600
+          print(f"jp_ranking_age_hours={age:.3f} updated_at={data.get('updated_at')}")
+          sys.exit(0 if age <= 8.0 else 1)
+          PY
+            then
+              echo "Fresh rankings ready (attempt=$i)"
+              exit 0
+            fi
+            echo "Rankings still stale; waiting 60s... (attempt=$i)"
+            sleep 60
+          done
+          echo "Timed out waiting for fresh rankings."
+          exit 1
+
       - name: Generate free + paid note drafts
         id: generate
         run: |
           set +e
-          python3 scripts/render_note_draft.py
+          python3 scripts/render_note_draft.py --require-fresh-hours 8
           code=$?
           echo "exit_code=$code" >> "$GITHUB_OUTPUT"
           if [ "$code" = "3" ]; then
-            echo "Rankings unchanged — skip commit."
+            echo "Rankings unchanged vs history — skip commit."
             exit 0
           fi
           exit "$code"
