@@ -16,11 +16,18 @@ python3 scripts/render_rankings.py
 # 必要なら git add / commit / push
 ```
 
-### ② note下書き生成（10分）
+### ② note下書き生成（自動）
+金曜 15:30 JST に GitHub Actions（`friday-note-drafts`）が実行する。
+
+手動でも可:
 ```bash
+cd ~/Projects/stock-market-blog
 python3 scripts/render_note_draft.py
 ```
-出力: `docs/drafts/note-issue-XX.txt`
+出力:
+- `docs/drafts/note-issue-XX-free.txt`
+- `docs/drafts/note-issue-XX-paid.txt`
+- `docs/drafts/pending/manifest.json`（status=pending → ローカル公開検知用）
 
 ### ③ 無料＋有料の2本を公開（40〜60分）
 | 記事 | 内容 | 価格 |
