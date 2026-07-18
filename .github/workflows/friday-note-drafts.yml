@@ -29,11 +29,22 @@ jobs:
           python-version: "3.12"
 
       - name: Generate free + paid note drafts
-        run: python3 scripts/render_note_draft.py
+        id: generate
+        run: |
+          set +e
+          python3 scripts/render_note_draft.py
+          code=$?
+          echo "exit_code=$code" >> "$GITHUB_OUTPUT"
+          if [ "$code" = "3" ]; then
+            echo "Rankings unchanged — skip commit."
+            exit 0
+          fi
+          exit "$code"
         env:
           TZ: Asia/Tokyo
 
       - name: Commit and push drafts
+        if: steps.generate.outputs.exit_code != '3'
         run: |
           set -e
           git config user.name "github-actions[bot]"

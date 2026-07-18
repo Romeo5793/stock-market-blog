@@ -274,11 +274,13 @@ def write_manifest(
     free_rel: str,
     paid_rel: str,
     jp_updated: str,
+    status: str = "pending",
+    reason: str = "",
 ) -> Path:
     PENDING.mkdir(parents=True, exist_ok=True)
     manifest = {
         "issue": issue_no,
-        "status": "pending",
+        "status": status,
         "created_at": datetime.now().isoformat(timespec="seconds"),
         "jp_ranking_updated_at": jp_updated,
         "free_path": free_rel,
@@ -286,9 +288,28 @@ def write_manifest(
         "note_magazine": "https://note.com/merry_orca9232/m/m471c1317cc4e",
         "publish_hint": "Mac起動後にローカルが pending を検知して note へ反映する想定",
     }
+    if reason:
+        manifest["reason"] = reason
     path = PENDING / "manifest.json"
     path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return path
+
+
+def rankings_unchanged(old: dict[str, Any], new: dict[str, Any]) -> bool:
+    """前回と同じスナップショットなら True（重複号を防ぐ）。"""
+    if str(old.get("updated_at") or "") and str(old.get("updated_at")) == str(
+        new.get("updated_at") or ""
+    ):
+        return True
+    old_key = [
+        (str(i.get("ticker")), int(i.get("rank") or 0), int(i.get("score") or 0))
+        for i in (old.get("ranking20") or [])
+    ]
+    new_key = [
+        (str(i.get("ticker")), int(i.get("rank") or 0), int(i.get("score") or 0))
+        for i in (new.get("ranking20") or [])
+    ]
+    return old_key == new_key and bool(old_key)
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -303,6 +324,11 @@ def main(argv: list[str] | None = None) -> int:
         "--no-roll-history",
         action="store_true",
         help="Do not update rankings/history snapshots after generate",
+    )
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Generate even when rankings are unchanged vs history",
     )
     args = parser.parse_args(argv)
 
@@ -325,6 +351,15 @@ def main(argv: list[str] | None = None) -> int:
 
     jp_old = load_json(jp_prev_path)
     us_old = load_json(us_prev_path)
+
+    if not args.force and rankings_unchanged(jp_old, jp_new):
+        print(
+            "SKIP: rankings unchanged vs history "
+            f"(updated_at={jp_new.get('updated_at')}). "
+            "Use --force to generate anyway."
+        )
+        return 3
+
     issue_no = args.issue if args.issue > 0 else next_issue_no()
     jp_rows = diff(jp_old, jp_new)
 
