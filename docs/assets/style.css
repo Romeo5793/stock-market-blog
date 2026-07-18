@@ -88,7 +88,7 @@ a:hover { text-decoration: underline; }
 }
 .fin-meta-row strong { color: var(--ink); font-weight: 600; }
 .freshness-hint {
-  color: var(--muted, #666);
+  color: var(--muted);
   font-size: 0.85em;
   margin-left: 0.35em;
 }
