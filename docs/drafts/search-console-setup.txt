@@ -1,0 +1,47 @@
+【Google Search Console 登録手順】
+
+所要: 10〜15分（Googleアカウントが必要）
+
+========================
+1. Search Console を開く
+========================
+https://search.google.com/search-console
+
+「プロパティを追加」→「URLプレフィックス」を選ぶ。
+
+入力するURL（末尾スラッシュあり）:
+https://romeo5793.github.io/stock-market-blog/
+
+========================
+2. 所有権の確認（いちばん簡単）
+========================
+おすすめ: 「HTMLタグ」方式
+
+1. Googleが出す meta タグをコピー
+   例: <meta name="google-site-verification" content="xxxxxxxx" />
+2. その content="..." の中身（xxxxxxxx）だけを、このチャットに貼る
+3. こちらで index.html に入れて push する
+4. Search Console で「確認」を押す
+
+（HTMLファイル方式でも可。ファイル名を教えてもらえれば docs/ に置いて push します）
+
+========================
+3. sitemap を送信
+========================
+確認が通ったら「サイトマップ」へ。
+
+新しいサイトマップの追加:
+sitemap.xml
+
+（フルURLはこれ）
+https://romeo5793.github.io/stock-market-blog/sitemap.xml
+
+送信後、ステータスが「成功」になるまで数分〜1日かかることがあります。
+
+========================
+4. 終わったら教えてほしいこと
+========================
+- 所有権確認が通ったか
+- sitemap 送信までできたか
+
+次は「インデックス登録をリクエスト」するページを一緒に選びます。
