@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://romeo5793.github.io/stock-market-blog/sitemap.xml
+Sitemap: https://romeo5793.github.io/stock-market-blog/sitemap.txt
