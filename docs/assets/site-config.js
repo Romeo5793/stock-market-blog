@@ -11,6 +11,6 @@ window.SITE = {
   noteFreeLabel: "無料ダイジェストを読む",
   notePaidLabel: "第4号ダイジェスト（有料あり）",
   contactNote: "情報提供目的であり、投資助言ではありません。投資判断は自己責任でお願いします。",
-  umamiWebsiteId: "",
+  umamiWebsiteId: "4929051f-377c-4633-8502-ecdb2211e9c8",
   umamiScriptUrl: "https://cloud.umami.is/script.js",
 };
