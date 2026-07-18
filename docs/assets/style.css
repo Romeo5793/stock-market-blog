@@ -87,6 +87,11 @@ a:hover { text-decoration: underline; }
   color: var(--muted);
 }
 .fin-meta-row strong { color: var(--ink); font-weight: 600; }
+.freshness-hint {
+  color: var(--muted, #666);
+  font-size: 0.85em;
+  margin-left: 0.35em;
+}
 .section-body { margin: 0; white-space: pre-wrap; }
 .scores {
   display: grid;

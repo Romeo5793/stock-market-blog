@@ -14,7 +14,7 @@
   function buildCta(options) {
     options = options || {};
     var box = el("aside", "cta-box");
-    box.appendChild(el("p", "cta-kicker", options.kicker || "続きと毎日更新はこちら"));
+    box.appendChild(el("p", "cta-kicker", options.kicker || "続きと週次更新はこちら"));
     box.appendChild(
       el(
         "h2",
