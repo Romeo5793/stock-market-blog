@@ -29,14 +29,29 @@ python3 scripts/render_note_draft.py
 - `docs/drafts/note-issue-XX-paid.txt`
 - `docs/drafts/pending/manifest.json`（status=pending → ローカル公開検知用）
 
-### ③ 無料＋有料の2本を公開（40〜60分）
-| 記事 | 内容 | 価格 |
-|---|---|---|
-| 無料ダイジェスト | Top5 ＋ 動きが大きい銘柄 | 無料 |
-| 有料全文 | Top20全文 ＋ 全差分 | **980円** |
+### ③ note無料＋有料の公開（Mac起動後）
+クラウドが `docs/drafts/pending/manifest.json` を `pending` にする。
+Mac ではログイン時／30分ごとに検知する（スリープ中は動かない）。
 
-公開順: **有料 → URLコピー → 無料に有料URLを貼る → 無料公開**
-両方をマガジン「株価調査メモ（週次）」へ追加。
+初回だけインストール:
+```bash
+cd ~/Projects/stock-market-blog
+chmod +x scripts/macos/*.sh scripts/sync_note_pending.py
+./scripts/macos/install_note_pending_agent.sh
+```
+
+検知されたら:
+1. 通知が出る／`docs/drafts/pending/READY_FOR_AGENT.md` が開く
+2. Cursor Agent に「READY_FOR_AGENT の手順で note 公開して」と依頼（ブラウザ自動可）
+3. 完了後:
+```bash
+python3 scripts/sync_note_pending.py --mark-published
+```
+
+手動チェック:
+```bash
+python3 scripts/sync_note_pending.py --notify --open-ready
+```
 
 ### ④ Xに1投稿（5分）
 無料ダイジェストURLを貼る。買い推奨にしない。
