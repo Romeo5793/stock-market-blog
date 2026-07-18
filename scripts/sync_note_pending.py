@@ -66,16 +66,24 @@ def write_ready_prompt(manifest: dict[str, Any]) -> Path:
     issue = manifest.get("issue")
     free_path = manifest.get("free_path") or ""
     paid_path = manifest.get("paid_path") or ""
+    magazine = (
+        manifest.get("note_magazine")
+        or "https://note.com/merry_orca9232/m/m471c1317cc4e"
+    )
     text = f"""# note 公開タスク（自動生成・編集しないでOK）
 
 pending の第{issue}号があります。Cursor Agent にこのファイルを渡して実行してください。
+詳細手順: `docs/drafts/note-publish-runbook.md`
 
 ## やること
-1. `{paid_path}` を開き、note 有料記事として新規作成（または下書き）して公開（980円）
+1. `{paid_path}` を note **有料**（980円・買い切り）として新規作成して公開
 2. 有料URLを控える
-3. `{free_path}` の「有料記事URLを貼ってください」を実URLに置換して無料公開
-4. 両方をマガジン https://note.com/merry_orca9232/m/m471c1317cc4e に追加
-5. 完了後、ターミナルで:
+3. `{free_path}` の「有料記事URLを貼ってください」を実URLに置換して **無料**公開
+4. **マガジン追加（必須・チェックだけでは不足）**
+   - 公開設定で「株価調査メモ（週次）」の横の **「追加」ボタン** を押す（無料・有料とも）
+   - 投稿後、{magazine} を開き、両方の記事が一覧に出ていることを確認
+   - 出ていなければ記事編集からマガジン追加をやり直す
+5. マガジン確認が終わってから、ターミナルで:
 
 ```bash
 cd {ROOT}
@@ -86,6 +94,7 @@ python3 scripts/sync_note_pending.py --mark-published
 - 投資助言にしない（原稿の免責を維持）
 - Cmd+A で全文置換しない（追記・新規作成）
 - note ログインが切れていたら先に Cursor ブラウザでログイン
+- 「マガジン」チェックのみで投稿すると、マガジンに入らないことがある（第4号で確認済み）
 """
     READY.write_text(text, encoding="utf-8")
     return READY

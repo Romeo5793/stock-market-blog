@@ -168,7 +168,7 @@ def render_free(
         "【公開設定メモ】",
         "",
         "- 公開範囲: 無料",
-        "- マガジン「株価調査メモ（週次）」に追加",
+        "- マガジン「株価調査メモ（週次）」に追加（チェックだけでなく「追加」ボタン必須）",
         "",
         "【X投稿用・短文】",
         "",
@@ -262,7 +262,7 @@ def render_paid(
         "【公開設定メモ】",
         "",
         "- 公開範囲: 有料（980円・買い切り）",
-        "- マガジン「株価調査メモ（週次）」に追加",
+        "- マガジン「株価調査メモ（週次）」に追加（チェックだけでなく「追加」ボタン必須）",
         "",
     ]
     return "\n".join(lines)
@@ -286,7 +286,7 @@ def write_manifest(
         "free_path": free_rel,
         "paid_path": paid_rel,
         "note_magazine": "https://note.com/merry_orca9232/m/m471c1317cc4e",
-        "publish_hint": "Mac起動後にローカルが pending を検知して note へ反映する想定",
+        "publish_hint": "Mac起動後に pending を検知→note公開。マガジンは「追加」ボタン必須（チェックだけでは不足）",
     }
     if reason:
         manifest["reason"] = reason

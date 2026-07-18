@@ -20,7 +20,7 @@ python3 main.py --blog-sync --refresh-rankings
 ```
 
 ### ② note下書き生成（自動）
-金曜 15:30 JST に GitHub Actions（`friday-note-drafts`）が実行する。
+金曜 **15:40** JST に GitHub Actions（`friday-note-drafts`）が実行する。
 
 手動でも可:
 ```bash
@@ -46,10 +46,14 @@ chmod +x scripts/macos/*.sh scripts/sync_note_pending.py
 検知されたら:
 1. 通知が出る／`docs/drafts/pending/READY_FOR_AGENT.md` が開く
 2. Cursor Agent に「READY_FOR_AGENT の手順で note 公開して」と依頼（ブラウザ自動可）
-3. 完了後:
+3. **マガジン「株価調査メモ（週次）」の「追加」ボタンまで含めて公開**（チェックだけでは不足）
+4. マガジン一覧で無料・有料の両方を確認
+5. 完了後:
 ```bash
 python3 scripts/sync_note_pending.py --mark-published
 ```
+
+詳細: `docs/drafts/note-publish-runbook.md`
 
 手動チェック:
 ```bash
