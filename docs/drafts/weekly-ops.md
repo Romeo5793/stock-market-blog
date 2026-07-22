@@ -63,7 +63,23 @@ python3 scripts/sync_note_pending.py --notify --open-ready
 ### ④ Xに1投稿（5分）
 無料ダイジェストURLを貼る。買い推奨にしない。
 
-テンプレ:
+公開前の助言口調チェック（ローカル LLM・任意）:
+```bash
+python3 scripts/run_local_llm.py tone-check --draft docs/drafts/note-issue-XX-free.txt
+python3 scripts/run_local_llm.py tone-check --draft docs/drafts/note-issue-XX-paid.txt
+```
+
+投稿文の自動生成（ローカル LLM）:
+```bash
+python3 scripts/run_local_llm.py x-post \
+  --draft docs/drafts/note-issue-XX-free.txt \
+  --free-url '（無料URL）' \
+  --issue XX
+```
+
+初回セットアップ: `docs/drafts/local-llm-automation.md`
+
+テンプレ（LLMなしの場合）:
 ```text
 今週の調査メモを公開しました（非助言）。
 
