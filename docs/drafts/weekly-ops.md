@@ -36,50 +36,65 @@ python3 scripts/render_note_draft.py
 クラウドが `docs/drafts/pending/manifest.json` を `pending` にする。
 Mac ではログイン時／30分ごとに検知する（スリープ中は動かない）。
 
-初回だけインストール:
+**初回だけ**（Ollama + launchd）:
 ```bash
 cd ~/Projects/stock-market-blog
-chmod +x scripts/macos/*.sh scripts/sync_note_pending.py
+chmod +x scripts/macos/*.sh scripts/sync_note_pending.py scripts/weekly_llm_prep.sh
+./scripts/macos/setup_ollama.sh          # Ollama + qwen2.5:14b（未導入時のみ）
 ./scripts/macos/install_note_pending_agent.sh
 ```
 
-検知されたら:
+launchd を入れ直したとき（`--llm-check` 追加後など）も `install_note_pending_agent.sh` を再実行する。
+
+検知されたら（**自動で tone-check 済み**）:
 1. 通知が出る／`docs/drafts/pending/READY_FOR_AGENT.md` が開く
+   - 本文に **ローカル LLM トーンチェック結果**（無料・有料）が載る
+   - 詳細 JSON: `docs/drafts/pending/tone-check-issue-XX.json`
+   - 要確認（⚠️）なら公開前に原稿を直す
 2. Cursor Agent に「READY_FOR_AGENT の手順で note 公開して」と依頼（ブラウザ自動可）
 3. **マガジン「株価調査メモ（週次）」の「追加」ボタンまで含めて公開**（チェックだけでは不足）
 4. マガジン一覧で無料・有料の両方を確認
-5. 完了後:
+5. 完了後（**無料 URL を渡すと X 投稿案も自動生成**）:
 ```bash
-python3 scripts/sync_note_pending.py --mark-published
+cd ~/Projects/stock-market-blog
+python3 scripts/sync_note_pending.py --mark-published \
+  --free-url 'https://note.com/merry_orca9232/n/........'
+git add docs/drafts/pending/manifest.json && git commit -m "docs: mark note issue N as published." && git push
+```
+- X 投稿案: `docs/drafts/pending/x-post-issue-XX.json`（`primary` をコピペ）
+
+詳細: `docs/drafts/note-publish-runbook.md`  
+Ollama 詳細: `docs/drafts/local-llm-automation.md`
+
+手動で pending を確認（tone-check 付き）:
+```bash
+python3 scripts/sync_note_pending.py --notify --open-ready --llm-check
 ```
 
-詳細: `docs/drafts/note-publish-runbook.md`
-
-手動チェック:
+tone-check だけ手動で一括:
 ```bash
-python3 scripts/sync_note_pending.py --notify --open-ready
+./scripts/weekly_llm_prep.sh
 ```
 
-### ④ Xに1投稿（5分）
-無料ダイジェストURLを貼る。買い推奨にしない。
+### ④ Xに1投稿（2分）
+`--mark-published` で生成された `docs/drafts/pending/x-post-issue-XX.json` の **`primary`** をコピーして投稿。買い推奨にしない。
 
-公開前の助言口調チェック（ローカル LLM・任意）:
+投稿文を再生成したいとき:
+```bash
+python3 scripts/run_local_llm.py x-post \
+  --draft docs/drafts/note-issue-XX-free.txt \
+  --free-url '（無料URL）' \
+  --issue XX \
+  -o docs/drafts/pending/x-post-issue-XX.json
+```
+
+tone-check を個別にやり直す場合:
 ```bash
 python3 scripts/run_local_llm.py tone-check --draft docs/drafts/note-issue-XX-free.txt
 python3 scripts/run_local_llm.py tone-check --draft docs/drafts/note-issue-XX-paid.txt
 ```
 
-投稿文の自動生成（ローカル LLM）:
-```bash
-python3 scripts/run_local_llm.py x-post \
-  --draft docs/drafts/note-issue-XX-free.txt \
-  --free-url '（無料URL）' \
-  --issue XX
-```
-
-初回セットアップ: `docs/drafts/local-llm-automation.md`
-
-テンプレ（LLMなしの場合）:
+テンプレ（LLM 未使用・Ollama 停止時）:
 ```text
 今週の調査メモを公開しました（非助言）。
 
@@ -113,9 +128,10 @@ python3 scripts/run_local_llm.py x-post \
 
 | 曜日 | 内容 | 時刻目安 |
 |---|---|---|
-| 金曜 15:30〜16:20 | データ更新＋下書き生成 | 公開前 |
+| 金曜 15:30〜16:20 | データ更新＋下書き生成＋（Mac）tone-check | 公開前 |
 | **金曜 16:30** | **note無料／有料を公開** | 本番 |
-| 金曜 16:40 | X投稿（無料URL） | 公開直後 |
+| 金曜 16:35 | `--mark-published --free-url` → X文案確認 | 公開直後 |
+| 金曜 16:40 | X投稿（`x-post-issue-XX.json` の primary） | 公開直後 |
 | 土曜 9:00（任意） | 米国の動きが大きければXで1行追記 | 補足 |
 | 日曜 21:00（任意） | 反応が良い回だけ再投稿／引用 | 拾い直し |
 

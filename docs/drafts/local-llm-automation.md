@@ -87,14 +87,15 @@ python3 scripts/run_local_llm.py x-post --dry-run --json \
 
 ## 週次フローへの差し込み方
 
-既存の `docs/drafts/weekly-ops.md` ③〜④の間に:
+`docs/drafts/weekly-ops.md` ③〜④に組み込み済み:
 
 1. `render_note_draft.py` で下書き生成（既存・自動）
-2. **`tone-check`** で無料・有料を検査
-3. note 公開（既存・READY_FOR_AGENT）
-4. **`x-post --free-url …`** で投稿文を生成 → X に貼る
+2. Mac の `sync_note_pending.py --llm-check` で **tone-check**（launchd が pending 検知時に実行）
+3. note 公開（READY_FOR_AGENT → Cursor Agent）
+4. `--mark-published --free-url …` で **x-post** JSON 生成 → X に貼る
 
-公開後の `sync_note_pending.py --mark-published` は従来どおり。
+手動一括: `./scripts/weekly_llm_prep.sh`  
+公開後の `sync_note_pending.py --mark-published` と manifest の git push は従来どおり。
 
 ---
 
