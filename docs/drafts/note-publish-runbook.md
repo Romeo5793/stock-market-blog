@@ -47,9 +47,13 @@
 
 ```bash
 cd ~/Projects/stock-market-blog
-python3 scripts/sync_note_pending.py --mark-published
+python3 scripts/sync_note_pending.py --mark-published \
+  --free-url '（Bで控えた無料URL）'
 git add docs/drafts/pending/manifest.json && git commit -m "docs: mark note issue N as published." && git push
 ```
+
+- `--free-url` を渡すと `docs/drafts/pending/x-post-issue-N.json` に X 投稿案が生成される
+- Ollama が止まっているときは `--skip-llm` で manifest 更新のみ
 
 ---
 
