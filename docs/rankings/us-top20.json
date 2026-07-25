@@ -1,22 +1,21 @@
 {
   "market": "us",
   "label": "米国株",
-  "updated_at": "2026-07-25T09:02:35",
+  "updated_at": "2026-07-13T22:20:28",
   "marketSignal": {
-    "status": "GREEN",
-    "reason": "AI関連銘柄や大手ハイテク株への需要が高く、主要企業の財務基盤も健全であるため市場環境は良好です。"
+    "status": "YELLOW",
+    "reason": "地政学的緊張により主要指数は下落傾向。一部セクターに強さが見られるものの、全体的に警戒が必要です。"
   },
   "ranking20": [
     {
       "rank": 1,
       "ticker": "MSFT",
-      "companyName": "Microsoft Corporation",
-      "sector": "テクノロジー",
+      "companyName": "Microsoft Corp.",
+      "sector": "Technology",
       "score": 100,
-      "reason": "高い営業利益率46.8%を誇り、財務健全性とファンダメンタルズともに最高水準評価です。AI市場の拡大とともに長期的な成長が期待できる安定銘柄です。",
-      "scoreBase": 96,
+      "reason": "クラウドサービスとソフトウェアで安定した成長を続ける。幅広い事業展開でリスクが分散されています。",
+      "scoreBase": 95,
       "scoreBoost": 20,
-      "financePriority": 96,
       "financialSignals": {
         "health_rank": "A",
         "quality_rank": "S",
@@ -25,18 +24,18 @@
         "health_model": "Z"
       },
       "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:32:59"
+      "financialUpdatedAt": "2026-07-14T23:32:59",
+      "financePriority": 96
     },
     {
       "rank": 2,
-      "ticker": "AAPL",
-      "companyName": "Apple Inc.",
-      "sector": "テクノロジー",
+      "ticker": "PG",
+      "companyName": "Procter & Gamble Co.",
+      "sector": "Consumer Staples",
       "score": 100,
-      "reason": "圧倒的なブランド力と高いROEを維持しており、財務健全性評価も極めて高水準です。倒産リスクが極めて低く初心者にも適した強固な経営基盤を持ちます。",
-      "scoreBase": 95,
+      "reason": "日用品大手で景気変動に強いディフェンシブ銘柄。強力なブランドポートフォリオを持っています。",
+      "scoreBase": 90,
       "scoreBoost": 20,
-      "financePriority": 96,
       "financialSignals": {
         "health_rank": "A",
         "quality_rank": "S",
@@ -45,18 +44,18 @@
         "health_model": "Z"
       },
       "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T20:52:16"
+      "financialUpdatedAt": "2026-07-14T23:34:22",
+      "financePriority": 96
     },
     {
       "rank": 3,
-      "ticker": "V",
-      "companyName": "Visa Inc.",
-      "sector": "金融サービス",
+      "ticker": "AAPL",
+      "companyName": "Apple Inc.",
+      "sector": "Technology",
       "score": 100,
-      "reason": "営業利益率61.1%という極めて高い収益性を持ち、健全性評価も最高評価です。世界的な決済インフラとして景気変動に強く安定感があります。",
-      "scoreBase": 94,
+      "reason": "強固なブランド力とエコシステムを持つ。安定した収益基盤と成長性が期待できます。",
+      "scoreBase": 90,
       "scoreBoost": 20,
-      "financePriority": 96,
       "financialSignals": {
         "health_rank": "A",
         "quality_rank": "S",
@@ -65,18 +64,18 @@
         "health_model": "Z"
       },
       "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:34:50"
+      "financialUpdatedAt": "2026-07-14T20:52:16",
+      "financePriority": 96
     },
     {
       "rank": 4,
       "ticker": "KO",
-      "companyName": "The Coca-Cola Company",
-      "sector": "生活必需品",
+      "companyName": "The Coca-Cola Co.",
+      "sector": "Consumer Staples",
       "score": 100,
-      "reason": "高いROEと安定した営業利益率を誇るディフェンシブ銘柄の代表格です。財務基盤が非常に健全で、初心者が長期保有するのに適しています。",
-      "scoreBase": 93,
+      "reason": "世界的な飲料ブランドで安定した需要がある。配当も魅力的なディフェンシブ銘柄です。",
+      "scoreBase": 88,
       "scoreBoost": 20,
-      "financePriority": 96,
       "financialSignals": {
         "health_rank": "A",
         "quality_rank": "S",
@@ -85,18 +84,18 @@
         "health_model": "Z"
       },
       "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:34:31"
+      "financialUpdatedAt": "2026-07-14T23:34:31",
+      "financePriority": 96
     },
     {
       "rank": 5,
-      "ticker": "PG",
-      "companyName": "Procter & Gamble Company",
-      "sector": "生活必需品",
+      "ticker": "V",
+      "companyName": "Visa Inc. (Class A)",
+      "sector": "Financial Services",
       "score": 100,
-      "reason": "生活必需品分野の世界的リーダーであり、安定した財務内容と高い健全性を備えています。株価の変動が比較的緩やかで安全性が高い銘柄です。",
-      "scoreBase": 92,
+      "reason": "世界的な決済ネットワークを提供し、キャッシュレス化の恩恵を受ける。安定した収益成長が期待できます。",
+      "scoreBase": 86,
       "scoreBoost": 20,
-      "financePriority": 96,
       "financialSignals": {
         "health_rank": "A",
         "quality_rank": "S",
@@ -105,18 +104,18 @@
         "health_model": "Z"
       },
       "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:34:22"
+      "financialUpdatedAt": "2026-07-14T23:34:50",
+      "financePriority": 96
     },
     {
       "rank": 6,
       "ticker": "COST",
-      "companyName": "Costco Wholesale Corporation",
-      "sector": "生活必需品",
+      "companyName": "Costco Wholesale Corp.",
+      "sector": "Consumer Staples",
       "score": 100,
-      "reason": "会員制ビジネスモデルにより極めて安定した収益基盤と低い負債比率を実現しています。財務スコアが最高水準で長期投資に適しています。",
-      "scoreBase": 91,
+      "reason": "会員制倉庫型店舗で高い顧客ロイヤルティを持つ。安定した売上成長が期待できます。",
+      "scoreBase": 84,
       "scoreBoost": 20,
-      "financePriority": 96,
       "financialSignals": {
         "health_rank": "A",
         "quality_rank": "S",
@@ -125,18 +124,18 @@
         "health_model": "Z"
       },
       "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:35:04"
+      "financialUpdatedAt": "2026-07-14T23:35:04",
+      "financePriority": 96
     },
     {
       "rank": 7,
-      "ticker": "AMZN",
-      "companyName": "Amazon.com, Inc.",
-      "sector": "一般消費財",
+      "ticker": "JNJ",
+      "companyName": "Johnson & Johnson",
+      "sector": "Healthcare",
       "score": 100,
-      "reason": "ECとクラウド事業の二本柱で成長を続けており、財務健全性もA評価と良好です。低負債で資金効率が高く、将来性にも優れています。",
-      "scoreBase": 88,
+      "reason": "多角的なヘルスケア事業で安定した収益を誇る。配当も魅力的で初心者にも安心です。",
+      "scoreBase": 92,
       "scoreBoost": 16,
-      "financePriority": 86,
       "financialSignals": {
         "health_rank": "A",
         "quality_rank": "A",
@@ -145,18 +144,18 @@
         "health_model": "Z"
       },
       "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:34:55"
+      "financialUpdatedAt": "2026-07-14T23:34:17",
+      "financePriority": 86
     },
     {
       "rank": 8,
-      "ticker": "JNJ",
-      "companyName": "Johnson & Johnson",
-      "sector": "ヘルスケア",
+      "ticker": "UNH",
+      "companyName": "UnitedHealth Group Inc.",
+      "sector": "Healthcare",
       "score": 100,
-      "reason": "ヘルスケア業界の巨頭であり、財務の健全性と粉飾リスクの低さが強みです。景気後退期にも強い事業構造でポートフォリオの安定に貢献します。",
-      "scoreBase": 87,
+      "reason": "米国最大の医療保険会社であり、ヘルスケアサービスも提供。安定した成長が見込まれます。",
+      "scoreBase": 89,
       "scoreBoost": 16,
-      "financePriority": 86,
       "financialSignals": {
         "health_rank": "A",
         "quality_rank": "A",
@@ -165,18 +164,18 @@
         "health_model": "Z"
       },
       "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:34:17"
+      "financialUpdatedAt": "2026-07-14T23:34:27",
+      "financePriority": 86
     },
     {
       "rank": 9,
-      "ticker": "WMT",
-      "companyName": "Walmart Inc.",
-      "sector": "生活必需品",
+      "ticker": "AMZN",
+      "companyName": "Amazon.com Inc.",
+      "sector": "Technology",
       "score": 100,
-      "reason": "世界最大の小売りチェーンで、安定した業績と健全な財務指標を確保しています。インフレ局面でも強い集客力を発揮する優良銘柄です。",
-      "scoreBase": 86,
+      "reason": "クラウドサービスAWSとEコマースで市場をリード。長期的な成長ポテンシャルが高いです。",
+      "scoreBase": 85,
       "scoreBoost": 16,
-      "financePriority": 86,
       "financialSignals": {
         "health_rank": "A",
         "quality_rank": "A",
@@ -185,18 +184,18 @@
         "health_model": "Z"
       },
       "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:34:59"
+      "financialUpdatedAt": "2026-07-14T23:34:55",
+      "financePriority": 86
     },
     {
       "rank": 10,
-      "ticker": "HD",
-      "companyName": "The Home Depot, Inc.",
-      "sector": "一般消費財",
+      "ticker": "WMT",
+      "companyName": "Walmart Inc.",
+      "sector": "Consumer Staples",
       "score": 100,
-      "reason": "住宅改修市場で強いシェアを持ち、高ROEを維持する優れた財務体制です。粉飾リスクも低く、堅実な事業展開が魅力です。",
+      "reason": "世界最大の小売業者として安定した収益基盤を持つ。Eコマースへの投資も積極的です。",
       "scoreBase": 85,
       "scoreBoost": 16,
-      "financePriority": 86,
       "financialSignals": {
         "health_rank": "A",
         "quality_rank": "A",
@@ -205,18 +204,18 @@
         "health_model": "Z"
       },
       "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:35:30"
+      "financialUpdatedAt": "2026-07-14T23:34:59",
+      "financePriority": 86
     },
     {
       "rank": 11,
-      "ticker": "XOM",
-      "companyName": "Exxon Mobil Corporation",
-      "sector": "エネルギー",
-      "score": 100,
-      "reason": "低い負債比率と安定した財務評価を持つエネルギー最大手の一角です。割安感のある水準で取引されておりインカムゲインも期待できます。",
-      "scoreBase": 84,
+      "ticker": "CRWD",
+      "companyName": "CrowdStrike Holdings Inc. (Class A)",
+      "sector": "Technology",
+      "score": 98,
+      "reason": "サイバーセキュリティ分野のリーダー企業。クラウドベースのソリューションで需要が拡大しています。",
+      "scoreBase": 82,
       "scoreBoost": 16,
-      "financePriority": 86,
       "financialSignals": {
         "health_rank": "A",
         "quality_rank": "A",
@@ -225,18 +224,18 @@
         "health_model": "Z"
       },
       "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:35:39"
+      "financialUpdatedAt": "2026-07-14T23:35:14",
+      "financePriority": 86
     },
     {
       "rank": 12,
-      "ticker": "UNH",
-      "companyName": "UnitedHealth Group Incorporated",
-      "sector": "ヘルスケア",
-      "score": 99,
-      "reason": "医療保険最大手として安定した売上を誇り、財務優先度も高めです。ヘルスケア需要の拡大に伴い長期的な安定成長が見込まれます。",
-      "scoreBase": 83,
+      "ticker": "PANW",
+      "companyName": "Palo Alto Networks Inc.",
+      "sector": "Technology",
+      "score": 96,
+      "reason": "ネットワークセキュリティの主要プロバイダー。企業のデジタル変革に伴い需要が増加しています。",
+      "scoreBase": 80,
       "scoreBoost": 16,
-      "financePriority": 86,
       "financialSignals": {
         "health_rank": "A",
         "quality_rank": "A",
@@ -245,18 +244,18 @@
         "health_model": "Z"
       },
       "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:34:27"
+      "financialUpdatedAt": "2026-07-14T23:35:20",
+      "financePriority": 86
     },
     {
       "rank": 13,
-      "ticker": "PANW",
-      "companyName": "Palo Alto Networks, Inc.",
-      "sector": "テクノロジー",
-      "score": 96,
-      "reason": "サイバーセキュリティ分野の需要増を追い風に成長中で、実質無負債に近い非常に健全なバランスシートを持ちます。",
-      "scoreBase": 80,
+      "ticker": "HD",
+      "companyName": "The Home Depot Inc.",
+      "sector": "Consumer Discretionary",
+      "score": 93,
+      "reason": "住宅リフォーム市場のリーダー企業。景気変動に左右されるが、長期的な需要は堅調です。",
+      "scoreBase": 77,
       "scoreBoost": 16,
-      "financePriority": 86,
       "financialSignals": {
         "health_rank": "A",
         "quality_rank": "A",
@@ -265,18 +264,18 @@
         "health_model": "Z"
       },
       "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:35:20"
+      "financialUpdatedAt": "2026-07-14T23:35:30",
+      "financePriority": 86
     },
     {
       "rank": 14,
-      "ticker": "CRWD",
-      "companyName": "CrowdStrike Holdings, Inc.",
-      "sector": "テクノロジー",
-      "score": 94,
-      "reason": "セキュリティ需要の高まりで注目を集めており、手元資金の豊富さと低い負債比率が強みです。成長性と健全性を併せ持ちます。",
-      "scoreBase": 78,
+      "ticker": "XOM",
+      "companyName": "Exxon Mobil Corp.",
+      "sector": "Energy",
+      "score": 91,
+      "reason": "大手エネルギー企業として安定した収益を上げている。高配当も魅力の一つです。",
+      "scoreBase": 75,
       "scoreBoost": 16,
-      "financePriority": 86,
       "financialSignals": {
         "health_rank": "A",
         "quality_rank": "A",
@@ -285,18 +284,18 @@
         "health_model": "Z"
       },
       "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:35:14"
+      "financialUpdatedAt": "2026-07-14T23:35:39",
+      "financePriority": 86
     },
     {
       "rank": 15,
       "ticker": "GOOGL",
-      "companyName": "Alphabet Inc.",
-      "sector": "通信サービス",
-      "score": 78,
-      "reason": "高い営業利益率32.7%と豊富な手元資金を誇ります。検索とAIでの優位性は揺るぎませんが財務分析上の注意点から中位に位置付けています。 財務エンジンは粉飾リスク注意。",
-      "scoreBase": 75,
+      "companyName": "Alphabet Inc. (Class A)",
+      "sector": "Technology",
+      "score": 90,
+      "reason": "検索広告とクラウドサービスで安定した収益基盤を持つ。AI分野への投資も積極的です。 財務エンジンは粉飾リスク注意。",
+      "scoreBase": 87,
       "scoreBoost": 3,
-      "financePriority": 66,
       "financialSignals": {
         "health_rank": "A",
         "quality_rank": "A",
@@ -305,18 +304,18 @@
         "health_model": "Z"
       },
       "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:34:45"
+      "financialUpdatedAt": "2026-07-14T23:34:45",
+      "financePriority": 66
     },
     {
       "rank": 16,
       "ticker": "NEE",
-      "companyName": "NextEra Energy, Inc.",
-      "sector": "公益事業",
-      "score": 69,
-      "reason": "再生可能エネルギー大手として安定した営業利益率29.5%を誇ります。有利子負債がやや多めのためバランスに注意が必要です。",
-      "scoreBase": 65,
+      "companyName": "NextEra Energy Inc.",
+      "sector": "Utilities",
+      "score": 87,
+      "reason": "米国最大の電力会社の一つで、再生可能エネルギーに注力。安定性と成長性を兼ね備えます。",
+      "scoreBase": 83,
       "scoreBoost": 4,
-      "financePriority": 60,
       "financialSignals": {
         "health_rank": "C",
         "quality_rank": "S",
@@ -325,38 +324,18 @@
         "health_model": "Z"
       },
       "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:35:09"
+      "financialUpdatedAt": "2026-07-14T23:35:09",
+      "financePriority": 60
     },
     {
       "rank": 17,
-      "ticker": "T",
-      "companyName": "AT&T Inc.",
-      "sector": "通信サービス",
-      "score": 60,
-      "reason": "PER6.79と株価水準が低く高配当が魅力の通信大手です。財務の負債比率はやや高めですが安定したキャッシュフローがあります。",
-      "scoreBase": 60,
-      "scoreBoost": 0,
-      "financePriority": 50,
-      "financialSignals": {
-        "health_rank": "C",
-        "quality_rank": "A",
-        "fraud_risk": "低",
-        "caption": "健全性C / ファンダA / 粉飾リスク低",
-        "health_model": "Z"
-      },
-      "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:35:46"
-    },
-    {
-      "rank": 18,
       "ticker": "JPM",
       "companyName": "JPMorgan Chase & Co.",
-      "sector": "金融サービス",
-      "score": 52,
-      "reason": "米金融最大手で営業利益率は高水準を維持しています。金融銘柄特有の負債構造と財務スコアを鑑みてこの位置付けとなります。",
-      "scoreBase": 55,
+      "sector": "Financial Services",
+      "score": 75,
+      "reason": "米国最大級の金融機関で強固な財務基盤を持つ。多様な金融サービスを提供しています。",
+      "scoreBase": 78,
       "scoreBoost": -3,
-      "financePriority": 44,
       "financialSignals": {
         "health_rank": "-",
         "quality_rank": "C",
@@ -365,18 +344,38 @@
         "health_model": "Z"
       },
       "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:35:25"
+      "financialUpdatedAt": "2026-07-14T23:35:25",
+      "financePriority": 44
+    },
+    {
+      "rank": 18,
+      "ticker": "T",
+      "companyName": "AT&T Inc.",
+      "sector": "Communication Services",
+      "score": 70,
+      "reason": "安定した通信サービスを提供し、高配当が魅力。初心者にも分かりやすいビジネスモデルです。",
+      "scoreBase": 70,
+      "scoreBoost": 0,
+      "financialSignals": {
+        "health_rank": "C",
+        "quality_rank": "A",
+        "fraud_risk": "低",
+        "caption": "健全性C / ファンダA / 粉飾リスク低",
+        "health_model": "Z"
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:35:46",
+      "financePriority": 50
     },
     {
       "rank": 19,
       "ticker": "NVDA",
-      "companyName": "NVIDIA Corporation",
-      "sector": "テクノロジー",
-      "score": 52,
-      "reason": "ニュースでも大注目のAI半導体市場を牽引する企業で圧倒的な成長性を誇ります。需要の急増により高い市場関心を集めています。 財務エンジンは粉飾リスク高と判定したため順位を抑制。",
-      "scoreBase": 73,
+      "companyName": "NVIDIA Corp.",
+      "sector": "Technology",
+      "score": 67,
+      "reason": "AIとデータセンター向け半導体で市場を牽引。高い成長性が期待されます。 財務エンジンは粉飾リスク高と判定したため順位を抑制。",
+      "scoreBase": 88,
       "scoreBoost": -21,
-      "financePriority": 43,
       "financialSignals": {
         "health_rank": "A",
         "quality_rank": "A",
@@ -385,18 +384,18 @@
         "health_model": "Z"
       },
       "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:34:36"
+      "financialUpdatedAt": "2026-07-14T23:34:36",
+      "financePriority": 43
     },
     {
       "rank": 20,
       "ticker": "C",
       "companyName": "Citigroup Inc.",
-      "sector": "金融サービス",
-      "score": 35,
-      "reason": "PBR1倍割れと割安感がありますが、財務スコアの低さとリスク管理上の注意事項から慎重な判断が必要です。 財務エンジンは粉飾リスク注意。",
-      "scoreBase": 50,
+      "sector": "Financial Services",
+      "score": 60,
+      "reason": "大手金融機関として安定した事業基盤を持つ。地政学的リスク下でも一定の需要が見込まれます。 財務エンジンは粉飾リスク注意。",
+      "scoreBase": 75,
       "scoreBoost": -15,
-      "financePriority": 24,
       "financialSignals": {
         "health_rank": "-",
         "quality_rank": "C",
@@ -405,8 +404,10 @@
         "health_model": "Z"
       },
       "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:35:34"
+      "financialUpdatedAt": "2026-07-14T23:35:34",
+      "financePriority": 24
     }
   ],
+  "financials_enriched_at": "2026-07-25T23:39:22",
   "ranking_method": "news+llm+financial_rerank"
 }
