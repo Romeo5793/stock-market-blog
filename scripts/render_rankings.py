@@ -4,10 +4,17 @@
 from __future__ import annotations
 
 import json
+import sys
 from datetime import datetime
 from html import escape
 from pathlib import Path
 from zoneinfo import ZoneInfo
+
+_SCRIPTS = Path(__file__).resolve().parent
+if str(_SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS))
+
+from ranking_response import coerce_ranking_payload  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1] / "docs"
 JST = ZoneInfo("Asia/Tokyo")
@@ -154,7 +161,8 @@ def render(
     seo_desc: str,
     canonical: str,
 ) -> dict:
-    data = json.loads((ROOT / market_json).read_text(encoding="utf-8"))
+    raw = json.loads((ROOT / market_json).read_text(encoding="utf-8"))
+    data = coerce_ranking_payload(raw)
     items = data.get("ranking20") or []
     signal = data.get("marketSignal") or {}
     updated = data.get("updated_at") or ""

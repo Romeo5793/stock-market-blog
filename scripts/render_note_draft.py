@@ -15,9 +15,16 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import sys
 from datetime import datetime
 from pathlib import Path
 from typing import Any
+
+_SCRIPTS = Path(__file__).resolve().parent
+if str(_SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS))
+
+from ranking_response import coerce_ranking_payload  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
@@ -29,7 +36,9 @@ BLOG = "https://romeo5793.github.io/stock-market-blog"
 
 
 def load_json(path: Path) -> dict[str, Any]:
-    return json.loads(path.read_text(encoding="utf-8"))
+    raw = json.loads(path.read_text(encoding="utf-8"))
+    # Gemini が配列 JSON を書いた場合も ranking20 として受理する
+    return coerce_ranking_payload(raw)
 
 
 def rank_map(data: dict[str, Any]) -> dict[str, dict[str, Any]]:
