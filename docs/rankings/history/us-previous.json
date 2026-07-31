@@ -1,20 +1,20 @@
 {
   "market": "us",
   "label": "米国株",
-  "updated_at": "2026-07-24T17:30:29",
+  "updated_at": "2026-07-31T17:52:22",
   "marketSignal": {
-    "status": "GREEN",
-    "reason": "主要インデックスの好調なパフォーマンスと利下げ傾向により、米国株式市場全体は堅調な推移を示しています。"
+    "status": "YELLOW",
+    "reason": "クラウド部門の好調が市場を牽引する一方、供給制約や大手テックの動きによるボラティリティが存在します。"
   },
   "ranking20": [
     {
       "rank": 1,
       "ticker": "MSFT",
       "companyName": "マイクロソフト",
-      "sector": "テクノロジー",
+      "sector": "情報技術",
       "score": 100,
-      "reason": "営業利益率46.8パーセントと極めて高い収益性を誇り、財務健全性も最高水準です。クラウドとAI分野での市場支配力が強みです。",
-      "scoreBase": 96,
+      "reason": "高い財務健全性と営業利益率46.8%を誇り、クラウド市場の拡大にも大きく寄与しています。",
+      "scoreBase": 98,
       "scoreBoost": 20,
       "financePriority": 96,
       "financialSignals": {
@@ -31,10 +31,10 @@
       "rank": 2,
       "ticker": "V",
       "companyName": "ビザ",
-      "sector": "金融サービス",
+      "sector": "金融",
       "score": 100,
-      "reason": "営業利益率61.1パーセントと圧倒的な稼ぐ力を持ち、財務基盤も非常に堅固です。世界的な決済インフラとしての地位が揺らぎません。",
-      "scoreBase": 95,
+      "reason": "営業利益率61.1%と極めて高い収益性を持ち、ファンダメンタルズと財務基盤が非常に強固です。",
+      "scoreBase": 96,
       "scoreBoost": 20,
       "financePriority": 96,
       "financialSignals": {
@@ -51,10 +51,10 @@
       "rank": 3,
       "ticker": "AAPL",
       "companyName": "アップル",
-      "sector": "テクノロジー",
+      "sector": "情報技術",
       "score": 100,
-      "reason": "強大なブランド力と高いROEを背景に優れた財務健全性を維持しています。粉飾リスクも低く初心者にも安心感のある銘柄です。",
-      "scoreBase": 94,
+      "reason": "需要超過による供給制限のリスクはあるものの、ROE146.7%とトップクラスの財務水準を維持しています。",
+      "scoreBase": 95,
       "scoreBoost": 20,
       "financePriority": 96,
       "financialSignals": {
@@ -69,12 +69,12 @@
     },
     {
       "rank": 4,
-      "ticker": "COST",
-      "companyName": "コストコ・ホールセール",
+      "ticker": "KO",
+      "companyName": "コカ・コーラ",
       "sector": "生活必需品",
       "score": 100,
-      "reason": "会員制モデルによる安定した収益構造と低い負債比率が強みです。破綻懸念が極めて低く長期保有に適しています。",
-      "scoreBase": 93,
+      "reason": "安定したディフェンシブ株であり、営業利益率30.0%と優れた健全性を有しています。",
+      "scoreBase": 94,
       "scoreBoost": 20,
       "financePriority": 96,
       "financialSignals": {
@@ -85,7 +85,7 @@
         "health_model": "Z"
       },
       "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:35:04"
+      "financialUpdatedAt": "2026-07-14T23:34:31"
     },
     {
       "rank": 5,
@@ -93,8 +93,8 @@
       "companyName": "プロクター・アンド・ギャンブル",
       "sector": "生活必需品",
       "score": 100,
-      "reason": "景気変動に強い生活必需品大手で、高い営業利益率と健全な財務バランスを誇ります。連続増配実績も魅力です。",
-      "scoreBase": 92,
+      "reason": "堅実な財務内容と低い自己資本負債比率を備え、初心者にも適した安定した業績を展開しています。",
+      "scoreBase": 93,
       "scoreBoost": 20,
       "financePriority": 96,
       "financialSignals": {
@@ -109,12 +109,12 @@
     },
     {
       "rank": 6,
-      "ticker": "KO",
-      "companyName": "コカ・コーラ",
+      "ticker": "COST",
+      "companyName": "コストコ・ホールセール",
       "sector": "生活必需品",
       "score": 100,
-      "reason": "高いROEと30パーセントの営業利益率を維持する世界的な飲料メーカーです。財務面も安全圏内にあり非常に安定しています。",
-      "scoreBase": 91,
+      "reason": "高い顧客ロイヤリティと安全圏の財務スコアを有し、着実な成長を継続しています。",
+      "scoreBase": 92,
       "scoreBoost": 20,
       "financePriority": 96,
       "financialSignals": {
@@ -125,7 +125,7 @@
         "health_model": "Z"
       },
       "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:34:31"
+      "financialUpdatedAt": "2026-07-14T23:35:04"
     },
     {
       "rank": 7,
@@ -133,8 +133,8 @@
       "companyName": "アマゾン・ドット・コム",
       "sector": "一般消費財",
       "score": 100,
-      "reason": "ECとクラウド事業のリーダーであり、ニュースでも強い成長が評価されています。財務健全性もA評価と良好です。",
-      "scoreBase": 88,
+      "reason": "クラウド部門の強力な伸びにより株価が上昇しており、財務面も着実に改善しています。",
+      "scoreBase": 90,
       "scoreBoost": 16,
       "financePriority": 86,
       "financialSignals": {
@@ -153,8 +153,8 @@
       "companyName": "ジョンソン・エンド・ジョンソン",
       "sector": "ヘルスケア",
       "score": 100,
-      "reason": "ヘルスケア全般を手掛け、25パーセントを超える営業利益率と低い財務リスクを誇ります。ディフェンシブ株として優れています。",
-      "scoreBase": 87,
+      "reason": "ヘルスケア領域の大型株として営業利益率25.9%と高い健全性を保っています。",
+      "scoreBase": 88,
       "scoreBoost": 16,
       "financePriority": 86,
       "financialSignals": {
@@ -169,11 +169,31 @@
     },
     {
       "rank": 9,
+      "ticker": "HD",
+      "companyName": "ホーム・デポ",
+      "sector": "一般消費財",
+      "score": 100,
+      "reason": "高ROEと安定した店舗需要を背景に、強固なファンダメンタルズを維持しています。",
+      "scoreBase": 87,
+      "scoreBoost": 16,
+      "financePriority": 86,
+      "financialSignals": {
+        "health_rank": "A",
+        "quality_rank": "A",
+        "fraud_risk": "低",
+        "caption": "健全性A / ファンダA / 粉飾リスク低",
+        "health_model": "Z"
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:35:30"
+    },
+    {
+      "rank": 10,
       "ticker": "WMT",
       "companyName": "ウォルマート",
       "sector": "生活必需品",
       "score": 100,
-      "reason": "世界最大の小売りチェーンであり、堅実なビジネスモデルで高い安全性を保持しています。インフレ下でも強い耐性を示します。",
+      "reason": "大規模な小売インフラを背景に高い自己資本利益率を誇り、景気後退期にも強みを発揮します。",
       "scoreBase": 86,
       "scoreBoost": 16,
       "financePriority": 86,
@@ -188,33 +208,13 @@
       "financialUpdatedAt": "2026-07-14T23:34:59"
     },
     {
-      "rank": 10,
-      "ticker": "HD",
-      "companyName": "ホーム・デポ",
-      "sector": "一般消費財",
-      "score": 100,
-      "reason": "住宅リフォーム市場の最大手で、高ROEを実現しています。財務スコアも安全圏に位置し高い成長力を持っています。",
-      "scoreBase": 85,
-      "scoreBoost": 16,
-      "financePriority": 86,
-      "financialSignals": {
-        "health_rank": "A",
-        "quality_rank": "A",
-        "fraud_risk": "低",
-        "caption": "健全性A / ファンダA / 粉飾リスク低",
-        "health_model": "Z"
-      },
-      "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:35:30"
-    },
-    {
       "rank": 11,
       "ticker": "XOM",
-      "companyName": "エクソン・モービル",
+      "companyName": "エクソンモービル",
       "sector": "エネルギー",
       "score": 100,
-      "reason": "低負債比率で健全な財務構造を持つエネルギー大手です。割安感のある株価水準と堅実な資金効率が評価できます。",
-      "scoreBase": 84,
+      "reason": "低い負債比率と安定した現金創出力を持つ、エネルギーセクターの代表銘柄です。",
+      "scoreBase": 85,
       "scoreBoost": 16,
       "financePriority": 86,
       "financialSignals": {
@@ -229,32 +229,12 @@
     },
     {
       "rank": 12,
-      "ticker": "PANW",
-      "companyName": "パロアルト・ネットワークス",
-      "sector": "テクノロジー",
-      "score": 96,
-      "reason": "負債比率が0.05と非常に低く、倒産リスクが極めて低いサイバーセキュリティ企業です。事業の成長性も高い水準です。",
-      "scoreBase": 80,
-      "scoreBoost": 16,
-      "financePriority": 86,
-      "financialSignals": {
-        "health_rank": "A",
-        "quality_rank": "A",
-        "fraud_risk": "低",
-        "caption": "健全性A / ファンダA / 粉飾リスク低",
-        "health_model": "Z"
-      },
-      "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:35:20"
-    },
-    {
-      "rank": 13,
       "ticker": "UNH",
       "companyName": "ユナイテッドヘルス・グループ",
       "sector": "ヘルスケア",
-      "score": 95,
-      "reason": "米国最大の医療保険会社で、安定した売上成長と健全なファンダメンタルズを備えています。長期投資の候補として良好です。",
-      "scoreBase": 79,
+      "score": 100,
+      "reason": "医療保険最大手として安定した収益基盤と高い財務優先度を備えています。",
+      "scoreBase": 84,
       "scoreBoost": 16,
       "financePriority": 86,
       "financialSignals": {
@@ -268,13 +248,13 @@
       "financialUpdatedAt": "2026-07-14T23:34:27"
     },
     {
-      "rank": 14,
+      "rank": 13,
       "ticker": "CRWD",
       "companyName": "クラウドストライク・ホールディングス",
-      "sector": "テクノロジー",
-      "score": 91,
-      "reason": "ニュースでも注目される成長株ですが、PERが高く足元の利益面には課題があります。資金繰りの健全性は高く倒産リスクは低いです。",
-      "scoreBase": 75,
+      "sector": "情報技術",
+      "score": 96,
+      "reason": "高いPER水準ですが財務安全性が非常に高いため、サイバーセキュリティの需要で長期的成長が期待されます。",
+      "scoreBase": 80,
       "scoreBoost": 16,
       "financePriority": 86,
       "financialSignals": {
@@ -288,13 +268,33 @@
       "financialUpdatedAt": "2026-07-14T23:35:14"
     },
     {
+      "rank": 14,
+      "ticker": "PANW",
+      "companyName": "パロアルトネットワークス",
+      "sector": "情報技術",
+      "score": 95,
+      "reason": "負債比率が非常に低く健全なバランスシートを有しており、セキュリティ市場で存在感を示します。",
+      "scoreBase": 79,
+      "scoreBoost": 16,
+      "financePriority": 86,
+      "financialSignals": {
+        "health_rank": "A",
+        "quality_rank": "A",
+        "fraud_risk": "低",
+        "caption": "健全性A / ファンダA / 粉飾リスク低",
+        "health_model": "Z"
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:35:20"
+    },
+    {
       "rank": 15,
       "ticker": "GOOGL",
       "companyName": "アルファベット",
-      "sector": "コミュニケーション・サービス",
-      "score": 73,
-      "reason": "営業利益率32.7パーセントと高い収益力を誇りますが、粉飾リスクへの注意が必要なためスコアを抑えています。 財務エンジンは粉飾リスク注意。",
-      "scoreBase": 70,
+      "sector": "通信サービス",
+      "score": 78,
+      "reason": "決算発表を経て強固な広告・クラウド事業を見せる一方、財務指標の一部に注意が必要です。 財務エンジンは粉飾リスク注意。",
+      "scoreBase": 75,
       "scoreBoost": 3,
       "financePriority": 66,
       "financialSignals": {
@@ -309,12 +309,22 @@
     },
     {
       "rank": 16,
+      "ticker": "MA",
+      "companyName": "マスターカード",
+      "sector": "金融",
+      "score": 74,
+      "reason": "堅調な消費支出に支えられ安定した事業成長を維持している優れた決済ネットワーク企業です。",
+      "scoreBase": 74,
+      "scoreBoost": 0
+    },
+    {
+      "rank": 17,
       "ticker": "NEE",
       "companyName": "ネクステラ・エナジー",
       "sector": "公益事業",
-      "score": 69,
-      "reason": "再生可能エネルギーのリーダーでファンダメンタルズは優秀ですが、負債比率が高く財務健全性に注意を要します。",
-      "scoreBase": 65,
+      "score": 72,
+      "reason": "営業利益率29.5%と事業基盤は優秀ですが、負債比率の高さから健全性判定に留意が必要です。",
+      "scoreBase": 68,
       "scoreBoost": 4,
       "financePriority": 60,
       "financialSignals": {
@@ -328,13 +338,13 @@
       "financialUpdatedAt": "2026-07-14T23:35:09"
     },
     {
-      "rank": 17,
+      "rank": 18,
       "ticker": "T",
       "companyName": "AT&T",
-      "sector": "コミュニケーション・サービス",
-      "score": 58,
-      "reason": "低PERと高い配当水準が魅力ですが、財務スコアが低めで有利子負債の多さに留意が必要です。",
-      "scoreBase": 58,
+      "sector": "通信サービス",
+      "score": 60,
+      "reason": "PER6.79倍とバリュエーションは割安ですが、レバレッジが高いため注意した投資判断が求められます。",
+      "scoreBase": 60,
       "scoreBoost": 0,
       "financePriority": 50,
       "financialSignals": {
@@ -348,13 +358,13 @@
       "financialUpdatedAt": "2026-07-14T23:35:46"
     },
     {
-      "rank": 18,
+      "rank": 19,
       "ticker": "JPM",
       "companyName": "JPモルガン・チェース",
-      "sector": "金融サービス",
-      "score": 57,
-      "reason": "米金融最大手で営業利益率も高いものの、足元の財務指標スコアがやや弱めであるため中位の評価となります。",
-      "scoreBase": 60,
+      "sector": "金融",
+      "score": 55,
+      "reason": "営業利益率41.2%と銀行大手として高い収益性を有しますが、Fスコアなど財務モメンタムは弱めです。",
+      "scoreBase": 58,
       "scoreBoost": -3,
       "financePriority": 44,
       "financialSignals": {
@@ -368,23 +378,13 @@
       "financialUpdatedAt": "2026-07-14T23:35:25"
     },
     {
-      "rank": 19,
-      "ticker": "LMT",
-      "companyName": "ロッキード・マーティン",
-      "sector": "資本財",
-      "score": 55,
-      "reason": "防衛需要の増加により株価は好調ですが、財務データの詳細確認が必要なため慎重な付け加減としています。",
-      "scoreBase": 55,
-      "scoreBoost": 0
-    },
-    {
       "rank": 20,
       "ticker": "C",
       "companyName": "シティグループ",
-      "sector": "金融サービス",
-      "score": 30,
-      "reason": "PBR1倍割れで割安感はあるものの、財務スコアが弱く粉飾リスクにも注意が必要なため低い順位となっています。 財務エンジンは粉飾リスク注意。",
-      "scoreBase": 45,
+      "sector": "金融",
+      "score": 35,
+      "reason": "PBR1.0倍割れと割安感はあるものの、高い負債比率と粉飾リスク指標への注意が必要です。 財務エンジンは粉飾リスク注意。",
+      "scoreBase": 50,
       "scoreBoost": -15,
       "financePriority": 24,
       "financialSignals": {
