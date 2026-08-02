@@ -1,0 +1,2 @@
+# Local LLM automation (Ollama client + CLI)
+pydantic>=2.0,<3
