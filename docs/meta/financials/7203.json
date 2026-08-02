@@ -2,7 +2,7 @@
   "ticker": "7203",
   "market": "jp",
   "source": "jquants+yfinance+edinet_csv",
-  "updated_at": "2026-08-01T23:40:24",
+  "updated_at": "2026-08-02T23:41:32",
   "metrics": {
     "totalRevenue": 11837879000000.0,
     "netIncome": 3848098021376,
