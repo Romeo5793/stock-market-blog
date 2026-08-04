@@ -2,7 +2,7 @@
   "ticker": "8031",
   "market": "jp",
   "source": "jquants+yfinance+edinet_csv",
-  "updated_at": "2026-08-04T00:52:54",
+  "updated_at": "2026-08-05T00:33:41",
   "metrics": {
     "grossProfit": 1328153000000.0,
     "netIncome": 833971027968,
@@ -41,8 +41,8 @@
     "totalLiabilitiesPrev": 9048877000000.0,
     "currentRatio": 1.408,
     "currentRatioPrev": 2.062132184747526,
-    "pe": 16.761236,
-    "pb": 1.5755291,
+    "pe": 16.54753,
+    "pb": 1.5564573,
     "roe": 0.10301,
     "roa": 0.0159,
     "profitMargin": 0.05959,
@@ -50,12 +50,12 @@
     "grossMargin": 0.0949,
     "debtToEquity": 63.294,
     "revenueGrowth": -0.4762670699500547,
-    "eps": 290.79,
-    "dividendYield": 0.028399999999999998,
-    "marketCap": 13813833269248,
+    "eps": 290.98,
+    "dividendYield": 0.0287,
+    "marketCap": 13646616854528,
     "52wHigh": 6675.0,
-    "52wLow": 3023.0,
-    "beta": 0.435,
+    "52wLow": 3075.0,
+    "beta": 0.447,
     "totalRevenue": 3839914000000.0,
     "totalCash": 983874994176,
     "totalDebt": 5707766169600,
@@ -83,13 +83,13 @@
   },
   "advanced": {
     "altman_z": {
-      "value": 1.943,
+      "value": 1.935,
       "label": "グレーゾーン（警戒）",
       "components": {
         "X1": 0.3349,
         "X2": 0.2949,
         "X3": 0.0734,
-        "X4": 1.1703,
+        "X4": 1.1561,
         "X5": 0.1844
       },
       "formula": "Z=1.2*X1+1.4*X2+3.3*X3+0.6*X4+1.0*X5",
@@ -239,6 +239,18 @@
       "code": "8031",
       "filings": [
         {
+          "docID": "S100YU0K",
+          "date": "2026-08-04",
+          "filerName": "三井物産株式会社",
+          "docDescription": "有価証券届出書（参照方式）",
+          "docTypeCode": "030",
+          "periodStart": null,
+          "periodEnd": null,
+          "submitDateTime": "2026-08-04 13:30",
+          "csvFlag": "1",
+          "edinet_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YU0K"
+        },
+        {
           "docID": "S100YQTB",
           "date": "2026-07-23",
           "filerName": "三井物産株式会社",
@@ -374,16 +386,16 @@
         }
       ],
       "latest": {
-        "docID": "S100YQTB",
-        "date": "2026-07-23",
+        "docID": "S100YU0K",
+        "date": "2026-08-04",
         "filerName": "三井物産株式会社",
-        "docDescription": "変更報告書",
-        "docTypeCode": "350",
+        "docDescription": "有価証券届出書（参照方式）",
+        "docTypeCode": "030",
         "periodStart": null,
         "periodEnd": null,
-        "submitDateTime": "2026-07-23 15:30",
+        "submitDateTime": "2026-08-04 13:30",
         "csvFlag": "1",
-        "edinet_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YQTB"
+        "edinet_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YU0K"
       },
       "csv_metrics": {
         "売上総利益": 1328153000000.0,
@@ -438,22 +450,24 @@
         "currentRatio": 2.4249227046646054,
         "currentRatioPrev": 2.2796000977073665
       },
-      "errors": []
+      "errors": [
+        "CSV S100YU0K: 数値抽出0件"
+      ]
     },
     "criteria_source": "企業財務の調査と評価基準（Googleドキュメント）"
   },
-  "summary_ja": "8031の主な指標は PER 16.76、PBR 1.58、ROE 10.3%、営業利益率 3.8%、負債自己資本比率 63.29 です。Altman Zスコアは 1.94（グレーゾーン（警戒））。日本株向け補助のZ''は 4.43（安全圏（倒産リスク低））。日本校正Z''_JPは 4.33（安全圏（倒産リスク低））。日本向けZ''_JP（ルールベース係数）で健全性を再判定しました。Piotroski Fスコアは 4/9（平均的な財務健全性）。Beneish Mスコアは -2.24（粉飾リスク: 低）。総合シグナルは 健全性A、ファンダA、粉飾リスク低。バランスシートは比較的安定。【IFRS】経常利益・特別損益の区分がありません。のれんは規則償却せず減損のみのため、同業のJ-GAAP企業より営業利益が大きく見えやすい点に注意してください。数値は情報提供目的であり、投資判断はご自身で行ってください。",
+  "summary_ja": "8031の主な指標は PER 16.55、PBR 1.56、ROE 10.3%、営業利益率 3.8%、負債自己資本比率 63.29 です。Altman Zスコアは 1.94（グレーゾーン（警戒））。日本株向け補助のZ''は 4.43（安全圏（倒産リスク低））。日本校正Z''_JPは 4.33（安全圏（倒産リスク低））。日本向けZ''_JP（ルールベース係数）で健全性を再判定しました。Piotroski Fスコアは 4/9（平均的な財務健全性）。Beneish Mスコアは -2.24（粉飾リスク: 低）。総合シグナルは 健全性A、ファンダA、粉飾リスク低。バランスシートは比較的安定。【IFRS】経常利益・特別損益の区分がありません。のれんは規則償却せず減損のみのため、同業のJ-GAAP企業より営業利益が大きく見えやすい点に注意してください。数値は情報提供目的であり、投資判断はご自身で行ってください。",
   "display": {
-    "PER": "16.76",
-    "PBR": "1.58",
+    "PER": "16.55",
+    "PBR": "1.56",
     "ROE": "10.3%",
     "ROA": "1.6%",
     "営業利益率": "3.8%",
     "純利益率": "6.0%",
     "売上成長率": "-47.6%",
-    "EPS": "290.79",
-    "配当利回り": "2.8%",
-    "時価総額": "13.81兆",
+    "EPS": "290.98",
+    "配当利回り": "2.9%",
+    "時価総額": "13.65兆",
     "負債自己資本比率": "63.29",
     "流動比率": "1.41",
     "総資産": "20.82兆",
@@ -462,7 +476,7 @@
     "会計基準": "IFRS",
     "市場区分": "東証プライム",
     "52週高値": "6675.00",
-    "52週安値": "3023.00",
+    "52週安値": "3075.00",
     "Altman Z": "1.94 / グレーゾーン（警戒）",
     "Altman Z''": "4.43 / 安全圏（倒産リスク低）",
     "Altman Z''_JP": "4.33 / 安全圏（倒産リスク低）",
