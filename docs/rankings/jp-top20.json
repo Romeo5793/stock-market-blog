@@ -1,10 +1,10 @@
 {
   "market": "jp",
   "label": "日本株（東証）",
-  "updated_at": "2026-07-13T22:20:08",
+  "updated_at": "2026-08-07T10:41:48",
   "marketSignal": {
     "status": "YELLOW",
-    "reason": "日経平均の大幅下落と世界経済の不確実性により、市場は慎重な見方です。半導体セクターには特に逆風が吹いています。"
+    "reason": "割安な高配当銘柄が減少傾向にあり、業績や財務健全性を重視した厳選投資が必要な状況です。"
   },
   "ranking20": [
     {
@@ -13,9 +13,10 @@
       "companyName": "ファーストリテイリング",
       "sector": "小売業",
       "score": 100,
-      "reason": "ユニクロのグローバル展開が好調で、ブランド力と収益性が高いです。インフレ耐性も期待できます。",
-      "scoreBase": 90,
+      "reason": "ROE22.5パーセント、営業利益率21.0パーセントと極めて高い収益性を誇ります。Altman Zスコアも安全圏であり、財務健全性は非常に優秀です。",
+      "scoreBase": 96,
       "scoreBoost": 21,
+      "financePriority": 96,
       "financialSignals": {
         "health_rank": "A",
         "quality_rank": "S",
@@ -24,38 +25,18 @@
         "health_model": "Z''"
       },
       "financialSource": "jquants+yfinance+edinet_csv",
-      "financialUpdatedAt": "2026-08-07T00:18:05",
-      "financePriority": 96
+      "financialUpdatedAt": "2026-07-15T00:29:54"
     },
     {
       "rank": 2,
-      "ticker": "6758",
-      "companyName": "ソニーグループ",
-      "sector": "電気機器",
-      "score": 100,
-      "reason": "ゲーム、音楽、映画など多角的な事業展開が強みです。イメージセンサーも高シェアを誇ります。",
-      "scoreBase": 92,
-      "scoreBoost": 21,
-      "financialSignals": {
-        "health_rank": "A",
-        "quality_rank": "S",
-        "fraud_risk": "低",
-        "caption": "健全性A / ファンダS / 粉飾リスク低",
-        "health_model": "Z''"
-      },
-      "financialSource": "jquants+yfinance+edinet_csv",
-      "financialUpdatedAt": "2026-08-07T00:19:18",
-      "financePriority": 96
-    },
-    {
-      "rank": 3,
       "ticker": "2503",
       "companyName": "キリンホールディングス",
       "sector": "食料品",
-      "score": 98,
-      "reason": "国内外で安定した飲料・食品事業を展開しています。ディフェンシブ銘柄として評価できます。",
-      "scoreBase": 77,
+      "score": 100,
+      "reason": "ファンダメンタルズ評価が非常に高く、ROE12.2パーセントと安定した稼ぐ力を有しています。安定した事業基盤を持つ初心者向け銘柄です。",
+      "scoreBase": 95,
       "scoreBoost": 21,
+      "financePriority": 96,
       "financialSignals": {
         "health_rank": "A",
         "quality_rank": "S",
@@ -63,59 +44,19 @@
         "caption": "健全性A / ファンダS / 粉飾リスク低",
         "health_model": "Z''"
       },
-      "financialSource": "jquants+yfinance+edinet_csv",
-      "financialUpdatedAt": "2026-08-07T00:25:06",
-      "financePriority": 96
+      "financialSource": "jquants+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:31:11"
     },
     {
-      "rank": 4,
-      "ticker": "6098",
-      "companyName": "リクルートホールディングス",
-      "sector": "サービス業",
-      "score": 98,
-      "reason": "人材サービスと販促メディア事業で高い成長性を持っています。DX推進も追い風となります。 粉飾スコアは期間不一致の疑いで保留。",
-      "scoreBase": 80,
-      "scoreBoost": 18,
-      "financialSignals": {
-        "health_rank": "A",
-        "quality_rank": "S",
-        "fraud_risk": "保留",
-        "caption": "健全性A / ファンダS / 粉飾リスク保留",
-        "health_model": "Z''"
-      },
-      "financialSource": "jquants+yfinance+edinet_csv",
-      "financialUpdatedAt": "2026-08-07T00:27:13",
-      "financePriority": 88
-    },
-    {
-      "rank": 5,
-      "ticker": "4063",
-      "companyName": "信越化学工業",
-      "sector": "化学",
-      "score": 95,
-      "reason": "半導体シリコンウェハーで世界トップシェアを誇ります。多角的な化学製品も安定収益に貢献します。",
-      "scoreBase": 83,
-      "scoreBoost": 12,
-      "financialSignals": {
-        "health_rank": "B",
-        "quality_rank": "A",
-        "fraud_risk": "低",
-        "caption": "健全性B / ファンダA / 粉飾リスク低",
-        "health_model": "Z''"
-      },
-      "financialSource": "jquants+yfinance+edinet_csv",
-      "financialUpdatedAt": "2026-08-07T00:26:22",
-      "financePriority": 74
-    },
-    {
-      "rank": 6,
+      "rank": 3,
       "ticker": "3382",
       "companyName": "セブン＆アイ・ホールディングス",
       "sector": "小売業",
-      "score": 93,
-      "reason": "コンビニエンスストア事業が安定しており、海外事業も成長ドライバーです。生活必需品を扱う強みがあります。",
-      "scoreBase": 76,
+      "score": 100,
+      "reason": "PBR1.25倍と割安感があり、堅実なファンダメンタルズが評価されています。国内外での安定した流通基盤を有しています。",
+      "scoreBase": 88,
       "scoreBoost": 17,
+      "financePriority": 86,
       "financialSignals": {
         "health_rank": "A",
         "quality_rank": "A",
@@ -123,39 +64,39 @@
         "caption": "健全性A / ファンダA / 粉飾リスク低",
         "health_model": "Z''"
       },
-      "financialSource": "jquants+yfinance+edinet_csv",
-      "financialUpdatedAt": "2026-08-07T00:27:59",
-      "financePriority": 86
+      "financialSource": "jquants+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:31:23"
     },
     {
-      "rank": 7,
-      "ticker": "8001",
-      "companyName": "伊藤忠商事",
-      "sector": "卸売業",
-      "score": 91,
-      "reason": "非資源分野に強みを持つ総合商社で、安定した収益基盤があります。株主還元にも積極的です。",
-      "scoreBase": 74,
-      "scoreBoost": 17,
-      "financialSignals": {
-        "health_rank": "A",
-        "quality_rank": "A",
-        "fraud_risk": "低",
-        "caption": "健全性A / ファンダA / 粉飾リスク低",
-        "health_model": "Z''"
-      },
-      "financialSource": "jquants+yfinance+edinet_csv",
-      "financialUpdatedAt": "2026-08-07T00:32:35",
-      "financePriority": 86
-    },
-    {
-      "rank": 8,
+      "rank": 4,
       "ticker": "6594",
-      "companyName": "日本電産",
+      "companyName": "ニデック",
       "sector": "電気機器",
-      "score": 88,
-      "reason": "モーターの世界大手で、EV向けなど成長分野への展開が期待されます。高い技術力とM&A戦略が強みです。 粉飾スコアは期間不一致の疑いで保留。",
-      "scoreBase": 75,
+      "score": 100,
+      "reason": "Altman Zスコアが安全圏であり、負債比率も低く保たれています。精密モーター分野で世界的なシェアを持つ技術力が強みです。",
+      "scoreBase": 86,
+      "scoreBoost": 17,
+      "financePriority": 86,
+      "financialSignals": {
+        "health_rank": "A",
+        "quality_rank": "A",
+        "fraud_risk": "低",
+        "caption": "健全性A / ファンダA / 粉飾リスク低",
+        "health_model": "Z''"
+      },
+      "financialSource": "jquants+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:31:37"
+    },
+    {
+      "rank": 5,
+      "ticker": "8031",
+      "companyName": "三井物産",
+      "sector": "卸売業",
+      "score": 96,
+      "reason": "強固な資源ポートフォリオと高い収益力を誇る大手総合商社です。高配当トレンドにおいても安定感があります。 粉飾スコアは期間不一致の疑いで保留。",
+      "scoreBase": 83,
       "scoreBoost": 13,
+      "financePriority": 78,
       "financialSignals": {
         "health_rank": "A",
         "quality_rank": "A",
@@ -164,178 +105,48 @@
         "health_model": "Z''"
       },
       "financialSource": "jquants+yfinance",
-      "financialUpdatedAt": "2026-08-07T00:29:15",
-      "financePriority": 78
+      "financialUpdatedAt": "2026-07-14T23:30:03"
+    },
+    {
+      "rank": 6,
+      "ticker": "8015",
+      "companyName": "豊田通商",
+      "sector": "卸売業",
+      "score": 92,
+      "reason": "EV磁石素材の調達などレアアース関連としての成長要因を備えています。商社としてバランスの取れた強固な財務基盤も魅力です。",
+      "scoreBase": 92,
+      "scoreBoost": 0
+    },
+    {
+      "rank": 7,
+      "ticker": "8002",
+      "companyName": "丸紅",
+      "sector": "卸売業",
+      "score": 85,
+      "reason": "非鉄・資源分野に強みを持ち、レアアース関連ニュースでも注目されています。株主還元意欲と配当利回りの高さが魅力です。",
+      "scoreBase": 85,
+      "scoreBoost": 0
+    },
+    {
+      "rank": 8,
+      "ticker": "2768",
+      "companyName": "双日",
+      "sector": "卸売業",
+      "score": 84,
+      "reason": "レアアース鉱山への投資や調達ネットワークで豊富な実績を持ちます。高配当かつ資源高の波に乗れる構造を有しています。",
+      "scoreBase": 84,
+      "scoreBoost": 0
     },
     {
       "rank": 9,
-      "ticker": "6367",
-      "companyName": "ダイキン工業",
-      "sector": "機械",
-      "score": 88,
-      "reason": "世界的な空調機器メーカーで、省エネ需要の高まりが追い風です。グローバル市場での高い競争力を持っています。 財務エンジンは粉飾リスク注意。",
-      "scoreBase": 84,
-      "scoreBoost": 4,
-      "financialSignals": {
-        "health_rank": "A",
-        "quality_rank": "A",
-        "fraud_risk": "注意",
-        "caption": "健全性A / ファンダA / 粉飾リスク注意",
-        "health_model": "Z''"
-      },
-      "financialSource": "jquants+yfinance+edinet_csv",
-      "financialUpdatedAt": "2026-08-07T00:24:02",
-      "financePriority": 66
-    },
-    {
-      "rank": 10,
-      "ticker": "7203",
-      "companyName": "トヨタ自動車",
-      "sector": "自動車",
-      "score": 88,
-      "reason": "世界的な販売網とEV戦略で安定成長が期待されます。円安も収益に寄与する可能性があります。 財務エンジンは粉飾リスク注意。",
-      "scoreBase": 95,
-      "scoreBoost": -7,
-      "financialSignals": {
-        "health_rank": "A",
-        "quality_rank": "C",
-        "fraud_risk": "注意",
-        "caption": "健全性A / ファンダC / 粉飾リスク注意",
-        "health_model": "Z''"
-      },
-      "financialSource": "jquants+yfinance",
-      "financialUpdatedAt": "2026-08-07T00:19:57",
-      "financePriority": 42
-    },
-    {
-      "rank": 11,
-      "ticker": "8306",
-      "companyName": "三菱UFJフィナンシャル・グループ",
-      "sector": "銀行業",
-      "score": 87,
-      "reason": "国内最大の金融グループで、金利上昇局面での収益改善が期待されます。海外事業も安定した収益源です。 粉飾スコアは期間不一致の疑いで保留。",
-      "scoreBase": 82,
-      "scoreBoost": 5,
-      "financialSignals": {
-        "health_rank": "-",
-        "quality_rank": "A",
-        "fraud_risk": "保留",
-        "caption": "健全性- / ファンダA / 粉飾リスク保留",
-        "health_model": "Z"
-      },
-      "financialSource": "jquants+yfinance",
-      "financialUpdatedAt": "2026-08-07T00:29:40",
-      "financePriority": 60
-    },
-    {
-      "rank": 12,
-      "ticker": "6981",
-      "companyName": "村田製作所",
-      "sector": "電気機器",
-      "score": 86,
-      "reason": "積層セラミックコンデンサで世界トップシェアを誇ります。スマホや自動車向け需要が期待されます。",
-      "scoreBase": 65,
-      "scoreBoost": 21,
-      "financialSignals": {
-        "health_rank": "A",
-        "quality_rank": "S",
-        "fraud_risk": "低",
-        "caption": "健全性A / ファンダS / 粉飾リスク低",
-        "health_model": "Z''"
-      },
-      "financialSource": "jquants+yfinance+edinet_csv",
-      "financialUpdatedAt": "2026-08-07T00:37:06",
-      "financePriority": 96
-    },
-    {
-      "rank": 13,
       "ticker": "2587",
       "companyName": "サントリー食品インターナショナル",
       "sector": "食料品",
-      "score": 85,
-      "reason": "国内外で多様な飲料ブランドを展開し、安定した収益を上げています。ディフェンシブな特性を持ちます。",
-      "scoreBase": 68,
-      "scoreBoost": 17,
-      "financialSignals": {
-        "health_rank": "A",
-        "quality_rank": "A",
-        "fraud_risk": "低",
-        "caption": "健全性A / ファンダA / 粉飾リスク低",
-        "health_model": "Z''"
-      },
-      "financialSource": "jquants+yfinance",
-      "financialUpdatedAt": "2026-08-07T00:34:38",
-      "financePriority": 86
-    },
-    {
-      "rank": 14,
-      "ticker": "4503",
-      "companyName": "アステラス製薬",
-      "sector": "医薬品",
-      "score": 81,
-      "reason": "泌尿器科やがん領域に強みを持つ大手製薬会社です。新薬開発の進捗に注目が集まります。 財務エンジンは粉飾リスク注意。",
-      "scoreBase": 73,
-      "scoreBoost": 8,
-      "financialSignals": {
-        "health_rank": "A",
-        "quality_rank": "S",
-        "fraud_risk": "注意",
-        "caption": "健全性A / ファンダS / 粉飾リスク注意",
-        "health_model": "Z''"
-      },
-      "financialSource": "jquants+yfinance+edinet_csv",
-      "financialUpdatedAt": "2026-08-07T00:32:01",
-      "financePriority": 76
-    },
-    {
-      "rank": 15,
-      "ticker": "4502",
-      "companyName": "武田薬品工業",
-      "sector": "医薬品",
-      "score": 80,
-      "reason": "グローバルな医薬品大手で、安定した収益基盤と新薬開発に期待が持てます。ディフェンシブ銘柄としての魅力もあります。 財務エンジンは粉飾リスク注意。",
-      "scoreBase": 87,
-      "scoreBoost": -7,
-      "financialSignals": {
-        "health_rank": "A",
-        "quality_rank": "C",
-        "fraud_risk": "注意",
-        "caption": "健全性A / ファンダC / 粉飾リスク注意",
-        "health_model": "Z''"
-      },
-      "financialSource": "jquants+yfinance+edinet_csv",
-      "financialUpdatedAt": "2026-08-07T00:23:14",
-      "financePriority": 42
-    },
-    {
-      "rank": 16,
-      "ticker": "8031",
-      "companyName": "三井物産",
-      "sector": "卸売業",
-      "score": 78,
-      "reason": "多角的な事業ポートフォリオを持ち、資源価格の変動にも対応できる強みがあります。株主還元にも積極的です。 財務エンジンは粉飾リスク注意。",
-      "scoreBase": 85,
-      "scoreBoost": -7,
-      "financialSignals": {
-        "health_rank": "A",
-        "quality_rank": "C",
-        "fraud_risk": "注意",
-        "caption": "健全性A / ファンダC / 粉飾リスク注意",
-        "health_model": "Z''"
-      },
-      "financialSource": "jquants+yfinance+edinet_csv",
-      "financialUpdatedAt": "2026-08-07T00:22:22",
-      "financePriority": 42
-    },
-    {
-      "rank": 17,
-      "ticker": "9503",
-      "companyName": "関西電力",
-      "sector": "電気・ガス業",
-      "score": 76,
-      "reason": "安定した電力供給を担う公益企業で、高配当も魅力です。原発再稼働の進展が収益に寄与します。 財務エンジンは粉飾リスク注意。",
-      "scoreBase": 72,
+      "score": 79,
+      "reason": "負債自己資本比率が5.26パーセントと極めて低く、実質無借金に近い財務構造です。ディフェンシブ株として安定しています。 財務エンジンは粉飾リスク注意。",
+      "scoreBase": 75,
       "scoreBoost": 4,
+      "financePriority": 66,
       "financialSignals": {
         "health_rank": "A",
         "quality_rank": "A",
@@ -343,71 +154,169 @@
         "caption": "健全性A / ファンダA / 粉飾リスク注意",
         "health_model": "Z''"
       },
-      "financialSource": "jquants+yfinance+edinet_csv",
-      "financialUpdatedAt": "2026-08-07T00:33:06",
-      "financePriority": 66
+      "financialSource": "jquants+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:32:38"
     },
     {
-      "rank": 18,
-      "ticker": "6301",
-      "companyName": "小松製作所",
-      "sector": "機械",
-      "score": 76,
-      "reason": "建設機械の世界大手で、鉱山機械も手掛けています。インフラ投資の拡大が追い風となる可能性があります。",
-      "scoreBase": 70,
-      "scoreBoost": 6,
-      "financialSignals": {
-        "health_rank": "A",
-        "quality_rank": "C",
-        "fraud_risk": "低",
-        "caption": "健全性A / ファンダC / 粉飾リスク低",
-        "health_model": "Z''"
-      },
-      "financialSource": "jquants+yfinance+edinet_csv",
-      "financialUpdatedAt": "2026-08-07T00:35:45",
-      "financePriority": 62
-    },
-    {
-      "rank": 19,
-      "ticker": "7267",
-      "companyName": "ホンダ",
-      "sector": "自動車",
-      "score": 71,
-      "reason": "二輪車事業が堅調で、四輪車も電動化戦略を推進しています。グローバルなブランド力も魅力です。 財務エンジンは粉飾リスク注意。",
-      "scoreBase": 78,
-      "scoreBoost": -7,
-      "financialSignals": {
-        "health_rank": "A",
-        "quality_rank": "C",
-        "fraud_risk": "注意",
-        "caption": "健全性A / ファンダC / 粉飾リスク注意",
-        "health_model": "Z''"
-      },
-      "financialSource": "jquants+yfinance+edinet_csv",
-      "financialUpdatedAt": "2026-08-07T00:30:54",
-      "financePriority": 42
-    },
-    {
-      "rank": 20,
-      "ticker": "6861",
-      "companyName": "キーエンス",
-      "sector": "電気機器",
-      "score": 68,
-      "reason": "高収益体質のFAセンサーメーカーで、高い技術力とグローバル展開が魅力です。景気変動に強いビジネスモデルです。 財務エンジンは粉飾リスク高と判定したため順位を抑制。",
-      "scoreBase": 88,
-      "scoreBoost": -20,
+      "rank": 10,
+      "ticker": "4063",
+      "companyName": "信越化学工業",
+      "sector": "化学",
+      "score": 78,
+      "reason": "塩ビやシリコンウェハーで世界首位のシェアを持ち、自己資本比率が高く極めて健全な財務基盤を持っています。 粉飾スコアは期間不一致の疑いで保留。",
+      "scoreBase": 65,
+      "scoreBoost": 13,
+      "financePriority": 78,
       "financialSignals": {
         "health_rank": "A",
         "quality_rank": "A",
-        "fraud_risk": "高",
-        "caption": "健全性A / ファンダA / 粉飾リスク高",
+        "fraud_risk": "保留",
+        "caption": "健全性A / ファンダA / 粉飾リスク保留",
+        "health_model": "Z''"
+      },
+      "financialSource": "jquants+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:30:26"
+    },
+    {
+      "rank": 11,
+      "ticker": "7203",
+      "companyName": "トヨタ自動車",
+      "sector": "輸送用機器",
+      "score": 76,
+      "reason": "世界トップクラスの販売台数を誇り、強大な自己資本と安定した営業キャッシュフローを有します。長期投資の軸となる銘柄です。 粉飾スコアは期間不一致の疑いで保留。",
+      "scoreBase": 73,
+      "scoreBoost": 3,
+      "financePriority": 54,
+      "financialSignals": {
+        "health_rank": "A",
+        "quality_rank": "C",
+        "fraud_risk": "保留",
+        "caption": "健全性A / ファンダC / 粉飾リスク保留",
         "health_model": "Z''"
       },
       "financialSource": "jquants+yfinance+edinet_csv",
-      "financialUpdatedAt": "2026-08-07T00:21:09",
-      "financePriority": 43
+      "financialUpdatedAt": "2026-07-15T00:28:36"
+    },
+    {
+      "rank": 12,
+      "ticker": "3036",
+      "companyName": "アルコニックス",
+      "sector": "卸売業",
+      "score": 74,
+      "reason": "非鉄金属やレアメタルに特化した専門商社として独自の立ち位置を築いています。テーマ性と高配当の両面で注目されます。",
+      "scoreBase": 74,
+      "scoreBoost": 0
+    },
+    {
+      "rank": 13,
+      "ticker": "4502",
+      "companyName": "武田薬品工業",
+      "sector": "医薬品",
+      "score": 71,
+      "reason": "グローバルに展開する製薬大手であり、高い配当利回りが投資家の支持を集めています。ディフェンシブ性が強みです。 粉飾スコアは期間不一致の疑いで保留。",
+      "scoreBase": 68,
+      "scoreBoost": 3,
+      "financePriority": 54,
+      "financialSignals": {
+        "health_rank": "A",
+        "quality_rank": "C",
+        "fraud_risk": "保留",
+        "caption": "健全性A / ファンダC / 粉飾リスク保留",
+        "health_model": "Z''"
+      },
+      "financialSource": "jquants+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:29:50"
+    },
+    {
+      "rank": 14,
+      "ticker": "9432",
+      "companyName": "日本電信電話",
+      "sector": "情報・通信業",
+      "score": 71,
+      "reason": "安定した通信インフラ事業による確実な収益と、連続増配の実績が魅力です。少額から購入可能で分散投資に適しています。",
+      "scoreBase": 71,
+      "scoreBoost": 0
+    },
+    {
+      "rank": 15,
+      "ticker": "6301",
+      "companyName": "小松製作所",
+      "sector": "機械",
+      "score": 70,
+      "reason": "世界的な建設機械需要に支えられており、新興国インフラ投資の波を取り込めています。財務バランスも優れています。 粉飾スコアは期間不一致の疑いで保留。",
+      "scoreBase": 67,
+      "scoreBoost": 3,
+      "financePriority": 54,
+      "financialSignals": {
+        "health_rank": "A",
+        "quality_rank": "C",
+        "fraud_risk": "保留",
+        "caption": "健全性A / ファンダC / 粉飾リスク保留",
+        "health_model": "Z''"
+      },
+      "financialSource": "jquants+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:32:26"
+    },
+    {
+      "rank": 16,
+      "ticker": "8591",
+      "companyName": "オリックス",
+      "sector": "その他金融業",
+      "score": 70,
+      "reason": "事業の多角化により景気変動リスクを分散しており、ROE・配当利回りともに高水準を維持しています。",
+      "scoreBase": 70,
+      "scoreBoost": 0
+    },
+    {
+      "rank": 17,
+      "ticker": "8306",
+      "companyName": "三菱UFJフィナンシャル・グループ",
+      "sector": "銀行業",
+      "score": 67,
+      "reason": "国内最大の金融グループであり、金利上昇局面での業績拡大が期待されます。還元姿勢も積極的で初心者にも扱いやすい銘柄です。 粉飾スコアは期間不一致の疑いで保留。",
+      "scoreBase": 72,
+      "scoreBoost": -5,
+      "financePriority": 36,
+      "financialSignals": {
+        "health_rank": "-",
+        "quality_rank": "C",
+        "fraud_risk": "保留",
+        "caption": "健全性- / ファンダC / 粉飾リスク保留",
+        "health_model": "Z"
+      },
+      "financialSource": "jquants+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:30:34"
+    },
+    {
+      "rank": 18,
+      "ticker": "2914",
+      "companyName": "日本たばこ産業",
+      "sector": "食料品",
+      "score": 66,
+      "reason": "高い配当利回りと豊富な海外キャッシュフローが魅力の高配当株の代表格です。堅実な手元資金を保有しています。",
+      "scoreBase": 66,
+      "scoreBoost": 0
+    },
+    {
+      "rank": 19,
+      "ticker": "8058",
+      "companyName": "三菱商事",
+      "sector": "卸売業",
+      "score": 64,
+      "reason": "卓越した経営基盤と積極的な株主還元方針により、長期保有に適した日本を代表する総合商社です。",
+      "scoreBase": 64,
+      "scoreBoost": 0
+    },
+    {
+      "rank": 20,
+      "ticker": "9433",
+      "companyName": "KDDI",
+      "sector": "情報・通信業",
+      "score": 63,
+      "reason": "20年以上の連続増配実績を誇り、業績のブレが少ないため初心者が安心して保有できる安定株です。",
+      "scoreBase": 63,
+      "scoreBoost": 0
     }
   ],
-  "financials_enriched_at": "2026-08-07T00:37:34",
   "ranking_method": "news+llm+financial_rerank"
 }
