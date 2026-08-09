@@ -2,7 +2,7 @@
   "ticker": "8031",
   "market": "jp",
   "source": "jquants+yfinance+edinet_csv",
-  "updated_at": "2026-08-08T22:54:03",
+  "updated_at": "2026-08-09T22:58:05",
   "metrics": {
     "grossProfit": 1328153000000.0,
     "netIncome": 936376008704,
