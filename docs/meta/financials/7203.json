@@ -2,10 +2,10 @@
   "ticker": "7203",
   "market": "jp",
   "source": "jquants+yfinance",
-  "updated_at": "2026-08-20T22:53:17",
+  "updated_at": "2026-08-21T22:52:39",
   "metrics": {
-    "pe": 8.723858,
-    "pb": 0.97314924,
+    "pe": 8.913935,
+    "pb": 0.99409765,
     "roe": 0.12404,
     "roa": 0.02339,
     "profitMargin": 0.0863,
@@ -14,9 +14,9 @@
     "debtToEquity": 114.974,
     "currentRatio": 1.169,
     "revenueGrowth": -0.49155355213905755,
-    "eps": 351.45,
-    "dividendYield": 0.034,
-    "marketCap": 36304666492928,
+    "eps": 351.36,
+    "dividendYield": 0.0326,
+    "marketCap": 37086178574336,
     "52wHigh": 4000.0,
     "52wLow": 2686.0,
     "beta": 0.335,
@@ -71,13 +71,13 @@
   },
   "advanced": {
     "altman_z": {
-      "value": 1.036,
+      "value": 1.044,
       "label": "破綻圏寄り（倒産リスク高）",
       "components": {
         "X1": 0.3014,
         "X2": 0.0025,
         "X3": 0.0671,
-        "X4": 0.5628,
+        "X4": 0.575,
         "X5": 0.1122
       },
       "formula": "Z=1.2*X1+1.4*X2+3.3*X3+0.6*X4+1.0*X5",
@@ -227,6 +227,18 @@
       "code": "7203",
       "filings": [
         {
+          "docID": "S100YXR7",
+          "date": "2026-08-21",
+          "filerName": "トヨタ自動車株式会社",
+          "docDescription": "変更報告書",
+          "docTypeCode": "350",
+          "periodStart": null,
+          "periodEnd": null,
+          "submitDateTime": "2026-08-21 10:47",
+          "csvFlag": "1",
+          "edinet_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YXR7"
+        },
+        {
           "docID": "S100YVEP",
           "date": "2026-08-07",
           "filerName": "トヨタ自動車株式会社",
@@ -357,59 +369,47 @@
           "submitDateTime": "2026-06-15 10:15",
           "csvFlag": "1",
           "edinet_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100Y751"
-        },
-        {
-          "docID": "S100YBTK",
-          "date": "2026-06-15",
-          "filerName": "トヨタ自動車株式会社",
-          "docDescription": "臨時報告書",
-          "docTypeCode": "180",
-          "periodStart": null,
-          "periodEnd": null,
-          "submitDateTime": "2026-06-15 15:36",
-          "csvFlag": "1",
-          "edinet_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YBTK"
         }
       ],
       "latest": {
-        "docID": "S100YVEP",
-        "date": "2026-08-07",
+        "docID": "S100YXR7",
+        "date": "2026-08-21",
         "filerName": "トヨタ自動車株式会社",
-        "docDescription": "訂正臨時報告書",
-        "docTypeCode": "190",
+        "docDescription": "変更報告書",
+        "docTypeCode": "350",
         "periodStart": null,
         "periodEnd": null,
-        "submitDateTime": "2026-08-07 15:30",
+        "submitDateTime": "2026-08-21 10:47",
         "csvFlag": "1",
-        "edinet_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YVEP"
+        "edinet_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YXR7"
       },
       "csv_metrics": {},
       "csv_raw": {},
       "errors": [
+        "CSV S100YVEP: 数値抽出0件",
         "CSV S100YU3U: 数値抽出0件",
         "CSV S100YSDH: 数値抽出0件",
         "CSV S100YQ7I: 数値抽出0件",
         "CSV S100YIXC: 数値抽出0件",
         "CSV S100YE7V: 数値抽出0件",
         "CSV S100YDIS: 数値抽出0件",
-        "CSV S100Y751: 数値抽出0件",
-        "CSV S100YBTK: 数値抽出0件"
+        "CSV S100Y751: 数値抽出0件"
       ]
     },
     "criteria_source": "企業財務の調査と評価基準（Googleドキュメント）"
   },
-  "summary_ja": "7203の主な指標は PER 8.72、PBR 0.97、ROE 12.4%、営業利益率 7.9%、負債自己資本比率 114.97 です。Altman Zスコアは 1.04（破綻圏寄り（倒産リスク高））。日本株向け補助のZ''は 3.10（安全圏（倒産リスク低））。日本校正Z''_JPは 3.04（安全圏（倒産リスク低））。日本向けZ''_JP（ルールベース係数）で健全性を再判定しました。Piotroski Fスコアは 2/9（弱め / バリュートラップ注意）。Beneish Mスコアは -1.78（粉飾リスク: 注意（グレー））。総合シグナルは 健全性A、ファンダC、粉飾リスク注意。バランスシートは比較的安定。バリュエーションは相対的に抑えめ。【IFRS】経常利益・特別損益の区分がありません。のれんは規則償却せず減損のみのため、同業のJ-GAAP企業より営業利益が大きく見えやすい点に注意してください。数値は情報提供目的であり、投資判断はご自身で行ってください。",
+  "summary_ja": "7203の主な指標は PER 8.91、PBR 0.99、ROE 12.4%、営業利益率 7.9%、負債自己資本比率 114.97 です。Altman Zスコアは 1.04（破綻圏寄り（倒産リスク高））。日本株向け補助のZ''は 3.10（安全圏（倒産リスク低））。日本校正Z''_JPは 3.04（安全圏（倒産リスク低））。日本向けZ''_JP（ルールベース係数）で健全性を再判定しました。Piotroski Fスコアは 2/9（弱め / バリュートラップ注意）。Beneish Mスコアは -1.78（粉飾リスク: 注意（グレー））。総合シグナルは 健全性A、ファンダC、粉飾リスク注意。バランスシートは比較的安定。バリュエーションは相対的に抑えめ。【IFRS】経常利益・特別損益の区分がありません。のれんは規則償却せず減損のみのため、同業のJ-GAAP企業より営業利益が大きく見えやすい点に注意してください。数値は情報提供目的であり、投資判断はご自身で行ってください。",
   "display": {
-    "PER": "8.72",
-    "PBR": "0.97",
+    "PER": "8.91",
+    "PBR": "0.99",
     "ROE": "12.4%",
     "ROA": "2.3%",
     "営業利益率": "7.9%",
     "純利益率": "8.6%",
     "売上成長率": "-49.2%",
-    "EPS": "351.45",
-    "配当利回り": "3.4%",
-    "時価総額": "36.30兆",
+    "EPS": "351.36",
+    "配当利回り": "3.3%",
+    "時価総額": "37.09兆",
     "負債自己資本比率": "114.97",
     "流動比率": "1.17",
     "総資産": "105.52兆",
