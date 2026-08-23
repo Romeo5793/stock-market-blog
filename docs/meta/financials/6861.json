@@ -2,7 +2,7 @@
   "ticker": "6861",
   "market": "jp",
   "source": "jquants+yfinance+edinet_csv",
-  "updated_at": "2026-08-22T22:38:18",
+  "updated_at": "2026-08-23T22:39:10",
   "metrics": {
     "totalRevenue": 247223000000.0,
     "ordinaryProfit": 635756000000.0,
