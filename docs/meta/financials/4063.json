@@ -2,7 +2,7 @@
   "ticker": "4063",
   "market": "jp",
   "source": "jquants+yfinance+edinet_csv",
-  "updated_at": "2026-08-23T22:44:40",
+  "updated_at": "2026-08-24T23:08:04",
   "metrics": {
     "totalRevenue": 597930000000.0,
     "ordinaryProfit": 708281000000.0,
