@@ -2,7 +2,7 @@
   "ticker": "7203",
   "market": "jp",
   "source": "jquants+yfinance",
-  "updated_at": "2026-08-30T02:05:16",
+  "updated_at": "2026-08-31T02:19:46",
   "metrics": {
     "pe": 8.865369,
     "pb": 0.9890192,
