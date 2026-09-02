@@ -1,27 +1,27 @@
 {
   "ticker": "4502",
   "market": "jp",
-  "source": "jquants+yfinance+edinet_csv",
-  "updated_at": "2026-09-02T02:23:41",
+  "source": "jquants+edinet_csv",
+  "updated_at": "2026-09-03T02:13:21",
   "metrics": {
-    "netIncome": -163436003328,
+    "netIncome": -142355000000.0,
     "equityBook": 7430649000000.0,
     "totalAssets": 15511506000000.0,
     "cash": 595054000000.0,
     "totalRevenue": 1207990000000.0,
     "ordinaryProfit": 205504000000.0,
     "sga": 1084215000000.0,
-    "operatingIncome": 1187750000000.0,
+    "operatingIncome": 24747000000.0,
     "ppe": 2120639000000.0,
-    "currentAssets": 12421004000000.0,
-    "receivables": 876348000000.0,
-    "currentLiabilities": 5248783000000.0,
-    "retainedEarnings": -2848000000.0,
+    "currentAssets": 77010000000.0,
+    "receivables": 844312000000.0,
+    "currentLiabilities": 99818000000.0,
+    "retainedEarnings": 712381000000.0,
     "depreciation": 721127000000.0,
     "noncurrentAssets": 9037404000000.0,
     "noncurrentLiabilities": 3841272000000.0,
-    "grossProfit": 2934132000000.0,
-    "netIncomePrev": 107928000000.0,
+    "grossProfit": 290447000000.0,
+    "netIncomePrev": 108143000000.0,
     "equityBookPrev": 107928000000.0,
     "totalAssetsPrev": 14248344000000.0,
     "cashPrev": 385113000000.0,
@@ -30,90 +30,65 @@
     "sgaPrev": 1104766000000.0,
     "operatingIncomePrev": 26212000000.0,
     "ppePrev": 1968209000000.0,
-    "currentAssetsPrev": 11727152000000.0,
-    "receivablesPrev": 725254000000.0,
-    "currentLiabilitiesPrev": 4805844000000.0,
+    "currentAssetsPrev": 70282000000.0,
+    "receivablesPrev": 709465000000.0,
+    "currentLiabilitiesPrev": 82859000000.0,
     "retainedEarningsPrev": 107928000000.0,
     "depreciationPrev": 761396000000.0,
     "noncurrentAssetsPrev": -2117000000.0,
     "noncurrentLiabilitiesPrev": 3611655000000.0,
-    "grossProfitPrev": 3001334000000.0,
-    "ebit": 1187750000000.0,
+    "grossProfitPrev": 321456000000.0,
+    "ebit": 24747000000.0,
     "totalLiabilities": 8080857000000.0,
-    "totalLiabilitiesPrev": 7312365000000.0,
-    "currentRatio": 1.14,
-    "currentRatioPrev": 2.4401857405275744,
-    "pe": 41.634018,
-    "pb": 1.2221452,
-    "roe": -0.02262,
-    "roa": 0.02694,
-    "profitMargin": -0.035380002,
-    "operatingMargin": 0.16445999,
-    "grossMargin": 0.64468,
-    "debtToEquity": 73.245,
+    "totalLiabilitiesPrev": 14140416000000.0,
+    "currentRatio": 0.7715041375303051,
+    "currentRatioPrev": 0.848212022833971,
     "revenueGrowth": -0.4932987364242366,
-    "eps": -104.4,
-    "dividendYield": 0.0354,
-    "marketCap": 9333012168704,
-    "52wHigh": 6033.0,
-    "52wLow": 4102.0,
-    "beta": 0.096,
-    "totalCash": 460981993472,
-    "totalDebt": 5536499105792,
-    "freeCashflow": 541443883008,
-    "operatingCashflow": 953630982144,
-    "longTermDebt": 4369681000000.0,
-    "sharesOutstanding": 1596751439,
-    "bookValue": 4782.574,
-    "longTermDebtPrev": 3966326000000.0,
-    "totalDebtPrev": 4515265000000.0,
-    "operatingCashflowPrev": 1057182000000.0,
-    "grossMarginPrev": 0.6550912562143256,
-    "roaPrev": 0.00757477500543221,
-    "assetTurnover": 0.29777474944547616,
-    "assetTurnoverPrev": 0.3215497183391979,
-    "workingCapital": 7172221000000.0,
+    "assetTurnover": 0.07787702883266139,
+    "assetTurnoverPrev": 0.16731965483146674,
+    "grossMargin": 0.24043824866099886,
+    "grossMarginPrev": 0.13483734251443355,
+    "workingCapital": -22808000000.0,
     "leverage": 0.5209588933531019,
-    "leveragePrev": 0.5132080612315368
+    "leveragePrev": 0.9924252249945678
   },
   "scores": {
-    "profitability": 45,
-    "safety": 85,
-    "valuation": 45
+    "profitability": 50,
+    "safety": 40,
+    "valuation": 50
   },
   "advanced": {
     "altman_z": {
-      "value": 1.578,
-      "label": "破綻圏寄り（倒産リスク高）",
+      "value": null,
+      "label": "計算不可（必要指標不足）",
       "components": {
-        "X1": 0.4624,
-        "X2": -0.0002,
-        "X3": 0.0766,
-        "X4": 1.155,
-        "X5": 0.0779
+        "X1": -0.0014703923655124138,
+        "X2": 0.04592597262960798,
+        "X3": 0.0015953963464282578,
+        "X4": null,
+        "X5": 0.07787702883266139
       },
-      "formula": "Z=1.2*X1+1.4*X2+3.3*X3+0.6*X4+1.0*X5",
-      "note": "米製造業由来の古典モデル。業種・日本企業では誤差が出うる。"
+      "available": 4
     },
     "altman_z2": {
-      "value": 4.513,
-      "label": "安全圏（倒産リスク低）",
+      "value": 1.116,
+      "label": "グレーゾーン（警戒）",
       "components": {
-        "X1": 0.4624,
-        "X2": -0.0002,
-        "X3": 0.0766,
+        "X1": -0.0015,
+        "X2": 0.0459,
+        "X3": 0.0016,
         "X4": 0.9195
       },
       "formula": "Z''=6.56*X1+3.26*X2+6.72*X3+1.05*X4",
       "note": "非製造業向けZ''。日本株の補助指標として表示（古典Zより業種差に強い）。"
     },
     "altman_z2_jp": {
-      "value": 4.413,
-      "label": "安全圏（倒産リスク低）",
+      "value": 1.385,
+      "label": "グレーゾーン（警戒）",
       "components": {
-        "X1": 0.4624,
-        "X2": -0.0002,
-        "X3": 0.0766,
+        "X1": -0.0015,
+        "X2": 0.0459,
+        "X3": 0.0016,
         "X4": 0.9195
       },
       "formula": "Z''_JP=5.80*X1+3.10*X2+6.40*X3+1.35*X4",
@@ -126,40 +101,40 @@
       "note": "日本の資本構成を意識したルールベース係数。上場企業の倒産データで再学習したMLモデルではない。"
     },
     "piotroski_f": {
-      "score": 3,
-      "raw_points": 3,
-      "raw_max": 8,
+      "score": 2,
+      "raw_points": 1,
+      "raw_max": 4,
       "label": "弱め / バリュートラップ注意",
       "checks": [
         {
           "name": "純利益がプラス",
           "pass": false,
-          "detail": "-163.44B"
+          "detail": "-142.35B"
         },
         {
           "name": "営業CFがプラス",
-          "pass": true,
-          "detail": "953.63B"
+          "pass": null,
+          "detail": "-"
         },
         {
-          "name": "ROAが改善",
-          "pass": true,
-          "detail": "2.7% <- 0.8%"
+          "name": "ROA改善",
+          "pass": null,
+          "detail": "-"
         },
         {
-          "name": "営業CF > 純利益（利益の質）",
-          "pass": true,
-          "detail": "OCF 953.63B / NI -163.44B"
+          "name": "営業CF > 純利益",
+          "pass": null,
+          "detail": "-"
         },
         {
-          "name": "長期負債が減少",
-          "pass": false,
-          "detail": "4.37兆 <- 3.97兆"
+          "name": "長期負債の減少",
+          "pass": null,
+          "detail": "-"
         },
         {
           "name": "流動比率が改善",
           "pass": false,
-          "detail": "1.14 <- 2.44"
+          "detail": "0.77 <- 0.85"
         },
         {
           "name": "希薄化なし",
@@ -168,43 +143,45 @@
         },
         {
           "name": "粗利率が改善",
-          "pass": false,
-          "detail": "64.5% <- 65.5%"
+          "pass": true,
+          "detail": "24.0% <- 13.5%"
         },
         {
           "name": "総資産回転率が改善",
           "pass": false,
-          "detail": "0.30 <- 0.32"
+          "detail": "0.08 <- 0.17"
         }
       ],
       "note": "前年比較が取れない項目は未採点。取得できた基準から9点満点へ換算。"
     },
     "beneish_m": {
-      "value": -1.882,
+      "value": -1.905,
       "label": "注意（グレー）",
       "suspended": false,
       "components": {
-        "DSRI": 2.3847,
-        "GMI": 1.0161,
-        "AQI": 1.6111,
+        "DSRI": 2.3487,
+        "GMI": 0.5608,
+        "AQI": 1.0016,
         "SGI": 0.5067,
         "DEPI": 1.0992,
         "SGAI": 1.9368,
-        "TATA": -0.072,
-        "LVGI": 1.0151
+        "TATA": null,
+        "LVGI": 0.5249
       },
-      "filled_defaults": [],
-      "available": 8,
+      "filled_defaults": [
+        "TATA"
+      ],
+      "available": 7,
       "threshold": -1.78,
       "formula": "M=-4.84+0.920*DSRI+0.528*GMI+0.404*AQI+0.892*SGI+0.115*DEPI-0.172*SGAI+4.679*TATA-0.327*LVGI",
       "note": "M>-1.78で粉飾疑いが相対的に高い。欠損指数は1.0（TATAは0）で補完。"
     },
     "signals": {
-      "health_rank": "A",
+      "health_rank": "B",
       "quality_rank": "C",
       "fraud_risk": "注意",
       "health_model": "Z''",
-      "caption": "健全性A / ファンダC / 粉飾リスク注意"
+      "caption": "健全性B / ファンダC / 粉飾リスク注意"
     },
     "accounting_standard": "IFRS",
     "accounting_note": "【IFRS】経常利益・特別損益の区分がありません。のれんは規則償却せず減損のみのため、同業のJ-GAAP企業より営業利益が大きく見えやすい点に注意してください。",
@@ -457,36 +434,39 @@
     },
     "criteria_source": "企業財務の調査と評価基準（Googleドキュメント）"
   },
-  "summary_ja": "4502の主な指標は PER 41.63、PBR 1.22、ROE -2.3%、営業利益率 16.4%、負債自己資本比率 73.25 です。Altman Zスコアは 1.58（破綻圏寄り（倒産リスク高））。日本株向け補助のZ''は 4.51（安全圏（倒産リスク低））。日本校正Z''_JPは 4.41（安全圏（倒産リスク低））。日本向けZ''_JP（ルールベース係数）で健全性を再判定しました。Piotroski Fスコアは 3/9（弱め / バリュートラップ注意）。Beneish Mスコアは -1.88（粉飾リスク: 注意（グレー））。総合シグナルは 健全性A、ファンダC、粉飾リスク注意。バランスシートは比較的安定。【IFRS】経常利益・特別損益の区分がありません。のれんは規則償却せず減損のみのため、同業のJ-GAAP企業より営業利益が大きく見えやすい点に注意してください。数値は情報提供目的であり、投資判断はご自身で行ってください。",
+  "summary_ja": "4502の主な指標は PER -、PBR -、ROE -、営業利益率 -、負債自己資本比率 - です。日本株向け補助のZ''は 1.12（グレーゾーン（警戒））。日本校正Z''_JPは 1.39（グレーゾーン（警戒））。日本向けZ''_JP（ルールベース係数）で健全性を再判定しました。Piotroski Fスコアは 2/9（弱め / バリュートラップ注意）。Beneish Mスコアは -1.91（粉飾リスク: 注意（グレー））。総合シグナルは 健全性B、ファンダC、粉飾リスク注意。財務安全性には注意。【IFRS】経常利益・特別損益の区分がありません。のれんは規則償却せず減損のみのため、同業のJ-GAAP企業より営業利益が大きく見えやすい点に注意してください。数値は情報提供目的であり、投資判断はご自身で行ってください。",
   "display": {
-    "PER": "41.63",
-    "PBR": "1.22",
-    "ROE": "-2.3%",
-    "ROA": "2.7%",
-    "営業利益率": "16.4%",
-    "純利益率": "-3.5%",
+    "PER": "-",
+    "PBR": "-",
+    "ROE": "-",
+    "ROA": "-",
+    "営業利益率": "-",
+    "純利益率": "-",
     "売上成長率": "-49.3%",
-    "EPS": "-104.40",
-    "配当利回り": "3.5%",
-    "時価総額": "9.33兆",
-    "負債自己資本比率": "73.25",
-    "流動比率": "1.14",
+    "EPS": "-",
+    "配当利回り": "-",
+    "時価総額": "-",
+    "負債自己資本比率": "-",
+    "流動比率": "0.77",
     "総資産": "15.51兆",
     "売上高": "1.21兆",
-    "営業CF": "953.63B",
+    "営業CF": "-",
     "会計基準": "IFRS",
     "市場区分": "東証プライム",
-    "52週高値": "6033.00",
-    "52週安値": "4102.00",
-    "Altman Z": "1.58 / 破綻圏寄り（倒産リスク高）",
-    "Altman Z''": "4.51 / 安全圏（倒産リスク低）",
-    "Altman Z''_JP": "4.41 / 安全圏（倒産リスク低）",
-    "Piotroski F": "3/9 / 弱め / バリュートラップ注意",
-    "Beneish M": "-1.88 / 注意（グレー）",
-    "総合シグナル": "健全性A / ファンダC / 粉飾リスク注意"
+    "52週高値": "-",
+    "52週安値": "-",
+    "Altman Z": "計算不可（必要指標不足）",
+    "Altman Z''": "1.12 / グレーゾーン（警戒）",
+    "Altman Z''_JP": "1.39 / グレーゾーン（警戒）",
+    "Piotroski F": "2/9 / 弱め / バリュートラップ注意",
+    "Beneish M": "-1.91 / 注意（グレー）",
+    "総合シグナル": "健全性B / ファンダC / 粉飾リスク注意"
   },
   "raw_meta": {
-    "yf_symbol": "4502.T",
-    "errors": []
+    "yf_symbol": null,
+    "errors": [
+      "yfinance 取得失敗 (4502.T): Too Many Requests. Rate limited. Try after a while.",
+      "Finnhub metric 取得失敗: 403 Client Error: Forbidden for url: https://finnhub.io/api/v1/stock/metric?symbol=4502.T&metric=all&token=d99fr19r01qssj13133gd99fr19r01qssj131340"
+    ]
   }
 }
