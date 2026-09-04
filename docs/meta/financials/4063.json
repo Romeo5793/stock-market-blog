@@ -2,7 +2,7 @@
   "ticker": "4063",
   "market": "jp",
   "source": "jquants+yfinance+edinet_csv",
-  "updated_at": "2026-09-04T02:10:16",
+  "updated_at": "2026-09-05T01:58:37",
   "metrics": {
     "totalRevenue": 597930000000.0,
     "ordinaryProfit": 708281000000.0,
@@ -43,8 +43,8 @@
     "totalLiabilitiesPrev": 799019000000.0,
     "currentRatio": 6.093,
     "currentRatioPrev": 9.265808914765676,
-    "pe": 23.212234,
-    "pb": 2.3901985,
+    "pe": 22.913036,
+    "pb": 2.3604178,
     "roe": 0.112320006,
     "roa": 0.07294,
     "profitMargin": 0.18361999,
@@ -52,9 +52,9 @@
     "grossMargin": 0.33928,
     "debtToEquity": 5.487,
     "revenueGrowth": -0.5278729687475325,
-    "eps": 252.41,
+    "eps": 252.52,
     "dividendYield": 0.019799999999999998,
-    "marketCap": 10837372698624,
+    "marketCap": 10702344421376,
     "52wHigh": 7930.0,
     "52wLow": 4366.0,
     "beta": 1.061,
@@ -83,13 +83,13 @@
   },
   "advanced": {
     "altman_z": {
-      "value": 8.479,
+      "value": 8.399,
       "label": "安全圏（倒産リスク低）",
       "components": {
         "X1": 0.3638,
         "X2": 0.7105,
         "X3": 0.1692,
-        "X4": 10.6395,
+        "X4": 10.5069,
         "X5": 0.1056
       },
       "formula": "Z=1.2*X1+1.4*X2+3.3*X3+0.6*X4+1.0*X5",
@@ -239,6 +239,18 @@
       "code": "4063",
       "filings": [
         {
+          "docID": "S100Z0ID",
+          "date": "2026-09-04",
+          "filerName": "信越化学工業株式会社",
+          "docDescription": "自己株券買付状況報告書（法２４条の６第１項に基づくもの）",
+          "docTypeCode": "220",
+          "periodStart": null,
+          "periodEnd": null,
+          "submitDateTime": "2026-09-04 10:46",
+          "csvFlag": "1",
+          "edinet_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100Z0ID"
+        },
+        {
           "docID": "S100YV3P",
           "date": "2026-08-07",
           "filerName": "信越化学工業株式会社",
@@ -362,16 +374,16 @@
         }
       ],
       "latest": {
-        "docID": "S100YV3P",
-        "date": "2026-08-07",
+        "docID": "S100Z0ID",
+        "date": "2026-09-04",
         "filerName": "信越化学工業株式会社",
         "docDescription": "自己株券買付状況報告書（法２４条の６第１項に基づくもの）",
         "docTypeCode": "220",
         "periodStart": null,
         "periodEnd": null,
-        "submitDateTime": "2026-08-07 09:22",
+        "submitDateTime": "2026-09-04 10:46",
         "csvFlag": "1",
-        "edinet_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YV3P"
+        "edinet_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100Z0ID"
       },
       "csv_metrics": {
         "売上高": 2573969000000.0,
@@ -433,18 +445,18 @@
     },
     "criteria_source": "企業財務の調査と評価基準（Googleドキュメント）"
   },
-  "summary_ja": "4063の主な指標は PER 23.21、PBR 2.39、ROE 11.2%、営業利益率 26.2%、負債自己資本比率 5.49 です。Altman Zスコアは 8.48（安全圏（倒産リスク低））。日本株向け補助のZ''は 9.61（安全圏（倒産リスク低））。日本校正Z''_JPは 10.24（安全圏（倒産リスク低））。金融機関はAltman系を健全性判定の主指標に使いません。Piotroski Fスコアは 4/9（平均的な財務健全性）。Beneish Mスコアは -2.35（粉飾リスク: 低）。総合シグナルは 健全性B、ファンダA、粉飾リスク低。収益性は相対的に高い。【J-GAAP】のれんは原則として規則償却されます。大型買収企業では償却費が営業利益を押し下げるため、IFRS企業との単純な利益比較は避けてください。数値は情報提供目的であり、投資判断はご自身で行ってください。",
+  "summary_ja": "4063の主な指標は PER 22.91、PBR 2.36、ROE 11.2%、営業利益率 26.2%、負債自己資本比率 5.49 です。Altman Zスコアは 8.40（安全圏（倒産リスク低））。日本株向け補助のZ''は 9.61（安全圏（倒産リスク低））。日本校正Z''_JPは 10.24（安全圏（倒産リスク低））。金融機関はAltman系を健全性判定の主指標に使いません。Piotroski Fスコアは 4/9（平均的な財務健全性）。Beneish Mスコアは -2.35（粉飾リスク: 低）。総合シグナルは 健全性B、ファンダA、粉飾リスク低。収益性は相対的に高い。【J-GAAP】のれんは原則として規則償却されます。大型買収企業では償却費が営業利益を押し下げるため、IFRS企業との単純な利益比較は避けてください。数値は情報提供目的であり、投資判断はご自身で行ってください。",
   "display": {
-    "PER": "23.21",
-    "PBR": "2.39",
+    "PER": "22.91",
+    "PBR": "2.36",
     "ROE": "11.2%",
     "ROA": "7.3%",
     "営業利益率": "26.2%",
     "純利益率": "18.4%",
     "売上成長率": "-52.8%",
-    "EPS": "252.41",
+    "EPS": "252.52",
     "配当利回り": "2.0%",
-    "時価総額": "10.84兆",
+    "時価総額": "10.70兆",
     "負債自己資本比率": "5.49",
     "流動比率": "6.09",
     "総資産": "5.66兆",
@@ -454,7 +466,7 @@
     "市場区分": "東証プライム",
     "52週高値": "7930.00",
     "52週安値": "4366.00",
-    "Altman Z": "8.48 / 安全圏（倒産リスク低）",
+    "Altman Z": "8.40 / 安全圏（倒産リスク低）",
     "Altman Z''": "9.61 / 安全圏（倒産リスク低）",
     "Altman Z''_JP": "10.24 / 安全圏（倒産リスク低）",
     "Piotroski F": "4/9 / 平均的な財務健全性",
