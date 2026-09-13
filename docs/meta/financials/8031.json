@@ -2,7 +2,7 @@
   "ticker": "8031",
   "market": "jp",
   "source": "jquants+yfinance",
-  "updated_at": "2026-09-13T01:10:58",
+  "updated_at": "2026-09-14T01:58:52",
   "metrics": {
     "pe": 17.391304,
     "pb": 1.5972203,
