@@ -32,6 +32,17 @@ JSONを更新したら、必ずこのスクリプトでHTMLを作り直す（手
 python3 scripts/render_rankings.py
 ```
 
+## ローカル LLM 自動化（Ollama）
+
+週次の X 投稿案・助言口調チェック・要約を Mac 上の Ollama で処理できます。
+
+```bash
+./scripts/macos/setup_ollama.sh
+python3 scripts/run_local_llm.py doctor
+```
+
+詳細: `docs/drafts/local-llm-automation.md`
+
 ## note 開設（初回チェックリスト）
 
 1. https://note.com/signup でアカウント作成（済ならスキップ）

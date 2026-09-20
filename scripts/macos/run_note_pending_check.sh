@@ -9,7 +9,7 @@ LOG="$LOG_DIR/note-pending.log"
 {
   echo "---- $(date '+%Y-%m-%d %H:%M:%S') ----"
   cd "$ROOT"
-  /usr/bin/python3 scripts/sync_note_pending.py --notify --open-ready
+  /usr/bin/python3 scripts/sync_note_pending.py --notify --open-ready --llm-check
   code=$?
   echo "exit=$code"
   exit 0
