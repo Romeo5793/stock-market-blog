@@ -2,7 +2,7 @@
   "ticker": "6758",
   "market": "jp",
   "source": "jquants+yfinance+edinet_csv",
-  "updated_at": "2026-09-23T02:36:55",
+  "updated_at": "2026-09-24T02:50:05",
   "metrics": {
     "operatingIncome": 2705143000000.0,
     "netIncome": 1114027065344,
