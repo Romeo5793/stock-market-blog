@@ -1,40 +1,20 @@
 {
   "market": "us",
   "label": "米国株",
-  "updated_at": "2026-09-18T19:44:41",
+  "updated_at": "2026-09-25T20:23:12",
   "marketSignal": {
-    "status": "YELLOW",
-    "reason": "金利動向への警戒感があるものの、財務健全性の高い主要ハイテクやディフェンシブ銘柄は底堅い推移が期待されます。"
+    "status": "GREEN",
+    "reason": "ナスダックが最高値を更新し、AI関連の成長期待と原油安が市場を牽引しているため。"
   },
   "ranking20": [
     {
       "rank": 1,
-      "ticker": "MSFT",
-      "companyName": "マイクロソフト",
-      "sector": "テクノロジー",
-      "score": 100,
-      "reason": "財務優先度96、健全性A、ファンダSと極めて優秀です。営業利益率46.8%と高い収益性を誇り、初心者にも最も推奨できる銘柄です。",
-      "scoreBase": 98,
-      "scoreBoost": 20,
-      "financePriority": 96,
-      "financialSignals": {
-        "health_rank": "A",
-        "quality_rank": "S",
-        "fraud_risk": "低",
-        "caption": "健全性A / ファンダS / 粉飾リスク低",
-        "health_model": "Z"
-      },
-      "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:32:59"
-    },
-    {
-      "rank": 2,
       "ticker": "AAPL",
-      "companyName": "アップル",
+      "companyName": "Apple Inc.",
       "sector": "テクノロジー",
       "score": 100,
-      "reason": "財務優先度96、健全性A、ファンダSの評価を得ています。ROEが146.7%と非常に高く、強固なブランド力と財務基盤が魅力です。",
-      "scoreBase": 97,
+      "reason": "財務優先度96と極めて高く、健全性Aおよび低リスクで初心者にも安心できる銘柄です。高いROEと安定した営業利益率が強みです。",
+      "scoreBase": 96,
       "scoreBoost": 20,
       "financePriority": 96,
       "financialSignals": {
@@ -48,73 +28,13 @@
       "financialUpdatedAt": "2026-07-14T20:52:16"
     },
     {
-      "rank": 3,
-      "ticker": "V",
-      "companyName": "ビザ",
-      "sector": "金融サービス",
-      "score": 100,
-      "reason": "財務優先度96、健全性A、ファンダSの高評価銘柄です。営業利益率が61.1%と圧倒的な収益力を持ち、粉飾リスクも低いです。",
-      "scoreBase": 96,
-      "scoreBoost": 20,
-      "financePriority": 96,
-      "financialSignals": {
-        "health_rank": "A",
-        "quality_rank": "S",
-        "fraud_risk": "低",
-        "caption": "健全性A / ファンダS / 粉飾リスク低",
-        "health_model": "Z"
-      },
-      "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:34:50"
-    },
-    {
-      "rank": 4,
-      "ticker": "KO",
-      "companyName": "コカ・コーラ",
-      "sector": "生活必需品",
-      "score": 100,
-      "reason": "財務優先度96、健全性A、ファンダSのディフェンシブ銘柄です。高いROEと安定したビジネスモデルで、長期保有に適しています。",
-      "scoreBase": 95,
-      "scoreBoost": 20,
-      "financePriority": 96,
-      "financialSignals": {
-        "health_rank": "A",
-        "quality_rank": "S",
-        "fraud_risk": "低",
-        "caption": "健全性A / ファンダS / 粉飾リスク低",
-        "health_model": "Z"
-      },
-      "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:34:31"
-    },
-    {
-      "rank": 5,
-      "ticker": "PG",
-      "companyName": "プロクター・アンド・ギャンブル",
-      "sector": "生活必需品",
-      "score": 100,
-      "reason": "財務優先度96、健全性A、ファンダSを維持する優良企業です。景気左右されにくい事業構造と、健全な財務内容が強みです。",
-      "scoreBase": 94,
-      "scoreBoost": 20,
-      "financePriority": 96,
-      "financialSignals": {
-        "health_rank": "A",
-        "quality_rank": "S",
-        "fraud_risk": "低",
-        "caption": "健全性A / ファンダS / 粉飾リスク低",
-        "health_model": "Z"
-      },
-      "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:34:22"
-    },
-    {
-      "rank": 6,
+      "rank": 2,
       "ticker": "COST",
-      "companyName": "コストコ・ホールセール",
-      "sector": "生活必需品",
+      "companyName": "Costco Wholesale Corporation",
+      "sector": "小売",
       "score": 100,
-      "reason": "財務優先度96、健全性A、ファンダSの会員制小売大手です。安定したキャッシュフローと高い顧客ロイヤルティを誇ります。",
-      "scoreBase": 93,
+      "reason": "財務優先度96を誇り、粉飾リスクが低く健全なバランスシートを持っています。堅実なビジネスモデルで長期投資に向いています。",
+      "scoreBase": 95,
       "scoreBoost": 20,
       "financePriority": 96,
       "financialSignals": {
@@ -128,13 +48,93 @@
       "financialUpdatedAt": "2026-07-14T23:35:04"
     },
     {
+      "rank": 3,
+      "ticker": "MSFT",
+      "companyName": "Microsoft Corporation",
+      "sector": "テクノロジー",
+      "score": 100,
+      "reason": "AI分野の進展を背景に好調を維持しつつ、財務健全性と高い営業利益率を兼ね備えています。安全圏のAltman Zスコアを示しています。",
+      "scoreBase": 95,
+      "scoreBoost": 20,
+      "financePriority": 96,
+      "financialSignals": {
+        "health_rank": "A",
+        "quality_rank": "S",
+        "fraud_risk": "低",
+        "caption": "健全性A / ファンダS / 粉飾リスク低",
+        "health_model": "Z"
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:32:59"
+    },
+    {
+      "rank": 4,
+      "ticker": "V",
+      "companyName": "Visa Inc.",
+      "sector": "金融",
+      "score": 100,
+      "reason": "圧倒的な営業利益率と高いROEを誇り、財務健全性Aの優良銘柄です。リスクが低く初心者におすすめです。",
+      "scoreBase": 94,
+      "scoreBoost": 20,
+      "financePriority": 96,
+      "financialSignals": {
+        "health_rank": "A",
+        "quality_rank": "S",
+        "fraud_risk": "低",
+        "caption": "健全性A / ファンダS / 粉飾リスク低",
+        "health_model": "Z"
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:34:50"
+    },
+    {
+      "rank": 5,
+      "ticker": "KO",
+      "companyName": "The Coca-Cola Company",
+      "sector": "生活必需品",
+      "score": 100,
+      "reason": "安定した収益基盤を持ち、財務優先度96と安全性の高いディフェンシブ銘柄です。粉飾リスクも低く評価されています。",
+      "scoreBase": 93,
+      "scoreBoost": 20,
+      "financePriority": 96,
+      "financialSignals": {
+        "health_rank": "A",
+        "quality_rank": "S",
+        "fraud_risk": "低",
+        "caption": "健全性A / ファンダS / 粉飾リスク低",
+        "health_model": "Z"
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:34:31"
+    },
+    {
+      "rank": 6,
+      "ticker": "PG",
+      "companyName": "Procter & Gamble Company",
+      "sector": "生活必需品",
+      "score": 100,
+      "reason": "高いROEと安定した財務基盤を持ち、景気変動に強いことで知られています。初心者向けの長期保有に適しています。",
+      "scoreBase": 92,
+      "scoreBoost": 20,
+      "financePriority": 96,
+      "financialSignals": {
+        "health_rank": "A",
+        "quality_rank": "S",
+        "fraud_risk": "低",
+        "caption": "健全性A / ファンダS / 粉飾リスク低",
+        "health_model": "Z"
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:34:22"
+    },
+    {
       "rank": 7,
       "ticker": "AMZN",
-      "companyName": "アマゾン・ドット・コム",
+      "companyName": "Amazon.com, Inc.",
       "sector": "一般消費財",
       "score": 100,
-      "reason": "財務優先度86、健全性A、ファンダAと良好な水準です。ECとクラウド事業の双方で高い競争力を維持しています。",
-      "scoreBase": 89,
+      "reason": "クラウドやAI関連の市場トレンドに乗る成長株でありながら、財務の健全性も高く評価されています。粉飾リスクは低いです。",
+      "scoreBase": 88,
       "scoreBoost": 16,
       "financePriority": 86,
       "financialSignals": {
@@ -149,31 +149,11 @@
     },
     {
       "rank": 8,
-      "ticker": "JNJ",
-      "companyName": "ジョンソン・エンド・ジョンソン",
-      "sector": "ヘルスケア",
-      "score": 100,
-      "reason": "財務優先度86、健全性A、ファンダAのヘルスケア大手です。営業利益率25.9%と安定した収益性と低リスクな財務が特徴です。",
-      "scoreBase": 88,
-      "scoreBoost": 16,
-      "financePriority": 86,
-      "financialSignals": {
-        "health_rank": "A",
-        "quality_rank": "A",
-        "fraud_risk": "低",
-        "caption": "健全性A / ファンダA / 粉飾リスク低",
-        "health_model": "Z"
-      },
-      "financialSource": "finnhub+yfinance",
-      "financialUpdatedAt": "2026-07-14T23:34:17"
-    },
-    {
-      "rank": 9,
       "ticker": "HD",
-      "companyName": "ホーム・デポ",
-      "sector": "一般消費財",
+      "companyName": "The Home Depot, Inc.",
+      "sector": "小売",
       "score": 100,
-      "reason": "財務優先度86、健全性A、ファンダAの住宅改善小売です。ROEが113.3%と非常に高く、効率的な経営が行われています。",
+      "reason": "高いROEを記録しており、米国小売セクターを代表する安定企業です。財務優先度86の優良株です。",
       "scoreBase": 87,
       "scoreBoost": 16,
       "financePriority": 86,
@@ -188,13 +168,33 @@
       "financialUpdatedAt": "2026-07-14T23:35:30"
     },
     {
+      "rank": 9,
+      "ticker": "JNJ",
+      "companyName": "Johnson & Johnson",
+      "sector": "ヘルスケア",
+      "score": 100,
+      "reason": "医薬品および医療機器の安定した需要を背景に、堅実な財務内容を維持しています。粉飾リスクも低い安全銘柄です。",
+      "scoreBase": 86,
+      "scoreBoost": 16,
+      "financePriority": 86,
+      "financialSignals": {
+        "health_rank": "A",
+        "quality_rank": "A",
+        "fraud_risk": "低",
+        "caption": "健全性A / ファンダA / 粉飾リスク低",
+        "health_model": "Z"
+      },
+      "financialSource": "finnhub+yfinance",
+      "financialUpdatedAt": "2026-07-14T23:34:17"
+    },
+    {
       "rank": 10,
       "ticker": "WMT",
-      "companyName": "ウォルマート",
-      "sector": "生活必需品",
+      "companyName": "Walmart Inc.",
+      "sector": "小売",
       "score": 100,
-      "reason": "財務優先度86、健全性A、ファンダAの小売最大手です。ディフェンシブ性が高く、インフレ局面でも強い業績を示しています。",
-      "scoreBase": 86,
+      "reason": "生活必需品を中心に手堅い業績を誇り、市場での存在感が強い企業です。健全性Aと低い粉飾リスクが魅力です。",
+      "scoreBase": 85,
       "scoreBoost": 16,
       "financePriority": 86,
       "financialSignals": {
@@ -210,11 +210,11 @@
     {
       "rank": 11,
       "ticker": "XOM",
-      "companyName": "エクソンモービル",
+      "companyName": "Exxon Mobil Corporation",
       "sector": "エネルギー",
       "score": 100,
-      "reason": "財務優先度86、健全性A、ファンダAのエネルギー大手です。PBR1.96倍と比較的割安感があり、財務も健全です。",
-      "scoreBase": 85,
+      "reason": "エネルギーセクターを代表する企業で、財務基盤がしっかりしています。粉飾リスクが低く安心して保有できます。",
+      "scoreBase": 84,
       "scoreBoost": 16,
       "financePriority": 86,
       "financialSignals": {
@@ -230,11 +230,11 @@
     {
       "rank": 12,
       "ticker": "UNH",
-      "companyName": "ユナイテッドヘルス・グループ",
+      "companyName": "UnitedHealth Group Incorporated",
       "sector": "ヘルスケア",
-      "score": 100,
-      "reason": "財務優先度86、健全性A、ファンダAの医療保険大手です。安定した需要を背景に、着実な成長を続けています。",
-      "scoreBase": 84,
+      "score": 99,
+      "reason": "医療保険大手としての安定した収益力があり、財務面でのリスクが低く評価されています。",
+      "scoreBase": 83,
       "scoreBoost": 16,
       "financePriority": 86,
       "financialSignals": {
@@ -250,11 +250,11 @@
     {
       "rank": 13,
       "ticker": "PANW",
-      "companyName": "パロアルトネットワークス",
+      "companyName": "Palo Alto Networks, Inc.",
       "sector": "テクノロジー",
-      "score": 94,
-      "reason": "財務優先度86、健全性A、ファンダAのサイバーセキュリティ企業です。需要は旺盛ですが、PERが234.25倍と割高感が強い点に注意です。",
-      "scoreBase": 78,
+      "score": 98,
+      "reason": "サイバーセキュリティ需要の拡大を背景に成長を続けています。負債自己資本比率が低く財務的にも安定しています。",
+      "scoreBase": 82,
       "scoreBoost": 16,
       "financePriority": 86,
       "financialSignals": {
@@ -270,11 +270,11 @@
     {
       "rank": 14,
       "ticker": "CRWD",
-      "companyName": "クラウドストライク・ホールディングス",
+      "companyName": "CrowdStrike Holdings, Inc.",
       "sector": "テクノロジー",
-      "score": 91,
-      "reason": "財務優先度86、健全性A、ファンダAですが、足元のROEや営業利益率はマイナスです。成長性は高いものの、初心者にはやや難易度が高いです。",
-      "scoreBase": 75,
+      "score": 96,
+      "reason": "高度なセキュリティ技術を持ち成長期待が高い銘柄です。粉飾リスクは低いもののバリュエーションには注意が必要です。",
+      "scoreBase": 80,
       "scoreBoost": 16,
       "financePriority": 86,
       "financialSignals": {
@@ -290,11 +290,11 @@
     {
       "rank": 15,
       "ticker": "GOOGL",
-      "companyName": "アルファベット",
+      "companyName": "Alphabet Inc.",
       "sector": "テクノロジー",
-      "score": 85,
-      "reason": "財務優先度66、健全性A、ファンダAですが、粉飾リスクに注意が必要です。高い営業利益率32.7%を誇る検索・広告の覇者です。 財務エンジンは粉飾リスク注意。",
-      "scoreBase": 82,
+      "score": 78,
+      "reason": "高い営業利益率と優れた収益性を持つ検索・AIの巨像です。粉飾リスクにやや注意が必要なため中位としています。 財務エンジンは粉飾リスク注意。",
+      "scoreBase": 75,
       "scoreBoost": 3,
       "financePriority": 66,
       "financialSignals": {
@@ -309,22 +309,12 @@
     },
     {
       "rank": 16,
-      "ticker": "AMD",
-      "companyName": "アドバンスト・マイクロ・デバイシズ",
-      "sector": "テクノロジー",
-      "score": 80,
-      "reason": "ニュースでも注目されるAI半導体の有力候補です。成長期待は高いものの、財務の安定性を確認しながらの投資が推奨されます。",
-      "scoreBase": 80,
-      "scoreBoost": 0
-    },
-    {
-      "rank": 17,
       "ticker": "NEE",
-      "companyName": "ネクステラ・エナジー",
+      "companyName": "NextEra Energy, Inc.",
       "sector": "公益事業",
-      "score": 76,
-      "reason": "財務優先度60、健全性C、ファンダSのクリーンエネルギー大手です。ファンダメンタルズは強いですが、財務健全性にやや課題があります。",
-      "scoreBase": 72,
+      "score": 74,
+      "reason": "クリーンエネルギー分野の大手ですが、財務の健全性はC評価となっています。投資の際は財務データに留意が必要です。",
+      "scoreBase": 70,
       "scoreBoost": 4,
       "financePriority": 60,
       "financialSignals": {
@@ -338,13 +328,13 @@
       "financialUpdatedAt": "2026-07-14T23:35:09"
     },
     {
-      "rank": 18,
+      "rank": 17,
       "ticker": "T",
-      "companyName": "AT&T",
-      "sector": "通信サービス",
-      "score": 68,
-      "reason": "財務優先度50、健全性C、ファンダAの通信大手です。低PERで高配当ですが、負債比率が高く成長性は限定的です。",
-      "scoreBase": 68,
+      "companyName": "AT&T Inc.",
+      "sector": "通信",
+      "score": 65,
+      "reason": "通信インフラ大手で配当利回りが魅力ですが、破綻圏寄りのスコアなど財務面の懸念も存在します。",
+      "scoreBase": 65,
       "scoreBoost": 0,
       "financePriority": 50,
       "financialSignals": {
@@ -358,13 +348,13 @@
       "financialUpdatedAt": "2026-07-14T23:35:46"
     },
     {
-      "rank": 19,
+      "rank": 18,
       "ticker": "JPM",
-      "companyName": "ジェー・ピー・モルガン・チェース",
-      "sector": "金融サービス",
-      "score": 62,
-      "reason": "財務優先度44、ファンダCの金融最大手です。規模のメリットは大きいですが、現在のファンダメンタルズ評価は控えめです。",
-      "scoreBase": 65,
+      "companyName": "JPMorgan Chase & Co.",
+      "sector": "金融",
+      "score": 57,
+      "reason": "メガバンクとして業界最大手ですが、Piotroski Fスコアが低めのため慎重な判断が求められます。",
+      "scoreBase": 60,
       "scoreBoost": -3,
       "financePriority": 44,
       "financialSignals": {
@@ -378,13 +368,23 @@
       "financialUpdatedAt": "2026-07-14T23:35:25"
     },
     {
+      "rank": 19,
+      "ticker": "IONQ",
+      "companyName": "IonQ, Inc.",
+      "sector": "テクノロジー",
+      "score": 45,
+      "reason": "量子コンピュータ関連のトレンド銘柄として注目されますが、現時点では財務的な裏付けが弱くリスクが大きいです。",
+      "scoreBase": 45,
+      "scoreBoost": 0
+    },
+    {
       "rank": 20,
       "ticker": "C",
-      "companyName": "シティグループ",
-      "sector": "金融サービス",
-      "score": 40,
-      "reason": "財務優先度24、ファンダCであり、粉飾リスクにも注意が必要です。割安感はありますが、初心者向けとしては慎重な判断が求められます。 財務エンジンは粉飾リスク注意。",
-      "scoreBase": 55,
+      "companyName": "Citigroup Inc.",
+      "sector": "金融",
+      "score": 35,
+      "reason": "バリュエーションには割安感があるものの、財務の弱さや粉飾リスクへの注意が指摘されています。 財務エンジンは粉飾リスク注意。",
+      "scoreBase": 50,
       "scoreBoost": -15,
       "financePriority": 24,
       "financialSignals": {
