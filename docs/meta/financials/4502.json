@@ -2,7 +2,7 @@
   "ticker": "4502",
   "market": "jp",
   "source": "jquants+yfinance+edinet_csv",
-  "updated_at": "2026-10-04T02:15:13",
+  "updated_at": "2026-10-05T02:28:39",
   "metrics": {
     "netIncome": -163436003328,
     "equityBook": 7430649000000.0,
