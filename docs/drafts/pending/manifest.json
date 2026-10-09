@@ -1,10 +1,10 @@
 {
-  "issue": 15,
+  "issue": 16,
   "status": "pending",
-  "created_at": "2026-10-02T22:05:01",
-  "jp_ranking_updated_at": "2026-10-02T21:03:37",
-  "free_path": "docs/drafts/note-issue-15-free.txt",
-  "paid_path": "docs/drafts/note-issue-15-paid.txt",
+  "created_at": "2026-10-09T22:40:27",
+  "jp_ranking_updated_at": "2026-10-09T21:45:21",
+  "free_path": "docs/drafts/note-issue-16-free.txt",
+  "paid_path": "docs/drafts/note-issue-16-paid.txt",
   "note_magazine": "https://note.com/merry_orca9232/m/m471c1317cc4e",
   "publish_hint": "Mac起動後に pending を検知→note公開。マガジンは「追加」ボタン必須（チェックだけでは不足）"
 }
