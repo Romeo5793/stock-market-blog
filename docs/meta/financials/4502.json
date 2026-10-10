@@ -2,7 +2,7 @@
   "ticker": "4502",
   "market": "jp",
   "source": "jquants+yfinance+edinet_csv",
-  "updated_at": "2026-10-10T03:49:03",
+  "updated_at": "2026-10-11T02:51:51",
   "metrics": {
     "netIncome": -163436003328,
     "equityBook": 7430649000000.0,
@@ -53,7 +53,7 @@
     "debtToEquity": 73.245,
     "revenueGrowth": -0.4932987364242366,
     "eps": -104.5,
-    "dividendYield": 0.0351,
+    "dividendYield": 0.0349,
     "marketCap": 9332942962688,
     "52wHigh": 6033.0,
     "52wLow": 4102.0,
